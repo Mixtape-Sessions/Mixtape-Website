@@ -1,0 +1,241 @@
+---
+import Layout from "../layouts/Layout.astro";
+import sessions from "../../public/data/sessions";
+import SessionHeader from "../components/SessionHeader.astro";
+
+let tracks = sessions.filter((session) => {
+  return !session.id.includes("ci_");
+});
+let ci1 = sessions.filter((session) => {
+  return session.id === "ci_I";
+})[0];
+let ci2 = sessions.filter((session) => {
+  return session.id === "ci_II";
+})[0];
+---
+
+<Layout title="Mixtape Sessions">
+  <!-- Mixtape Sessions -->
+  <div class="bg-slate-50 relative pb-48 pt-24">
+    <div class="w-full max-w-6xl mx-auto px-4 md:px-12 xl:px-0">
+      <div class="mb-12">
+        <a class="cursor-pointer">
+          <h1
+            class="text-lg font-semibold leading-7 text-picton-blue-400 font-marker"
+          >
+            Mixtape Sessions
+          </h1>
+        </a>
+        <p
+          class="mt-4 text-5xl font-semibold tracking-tight text-slate-900 max-w-[25ch]"
+        >
+          Our flagship Causal Inference Series.
+        </p>
+        <p class="text-2xl max-w-prose mt-8 leading-[1.5]">
+          This two-part series is designed to survey the large and complicated
+          field of causal inference following the structure of Scott
+          Cunninghams's book,
+          <a href="https://mixtape.scunning.com/"
+            >Causal Inference: The Mixtape
+          </a>. We will review the theory behind each of these research designs
+          in detail with the aim being comprehension, competency and confidence.
+        </p>
+      </div>
+
+      <div class="mt-24 mb-24 relative">
+        <!-- Causal Inference 1 -->
+        <SessionHeader session={ci1} includeArrow />
+
+        <ul
+          class="mt-4 w-full grid grid-cols-1 gap-y-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8"
+          role="list"
+        >
+          <!-- Potential Outcome -->
+          <li class="flex flex-row gap-x-4 items-center">
+            <svg
+              class="shrink-0 w-14 h-14 border-2 border-fern-400 bg-fern-50 rounded-md p-1 text-slate-800"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path d="M16 3h5v5M8 3H3v5"></path>
+                <path
+                  d="m21 3l-7.536 7.536A5 5 0 0 0 12 14.07V21M3 3l7.536 7.536A5 5 0 0 1 12 14.07V15"
+                ></path>
+              </g>
+            </svg>
+            <h3 class="text-lg lg:text-xl">Potential Outcomes</h3>
+          </li>
+
+          <!-- Matching -->
+          <li class="flex flex-row gap-x-4 items-center">
+            <svg
+              class="shrink-0 w-14 h-14 border-2 border-fern-400 bg-fern-50 rounded-md p-1 text-slate-800"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 1024 1024"
+            >
+              <path
+                fill="currentColor"
+                d="M892 772h-80v-80c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v80h-80c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h80v80c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8v-80h80c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM373.5 498.4c-.9-8.7-1.4-17.5-1.4-26.4c0-15.9 1.5-31.4 4.3-46.5c.7-3.6-1.2-7.3-4.5-8.8c-13.6-6.1-26.1-14.5-36.9-25.1a127.54 127.54 0 0 1-38.7-95.4c.9-32.1 13.8-62.6 36.3-85.6c24.7-25.3 57.9-39.1 93.2-38.7c31.9.3 62.7 12.6 86 34.4c7.9 7.4 14.7 15.6 20.4 24.4c2 3.1 5.9 4.4 9.3 3.2c17.6-6.1 36.2-10.4 55.3-12.4c5.6-.6 8.8-6.6 6.3-11.6c-32.5-64.3-98.9-108.7-175.7-109.9c-110.8-1.7-203.2 89.2-203.2 200c0 62.8 28.9 118.8 74.2 155.5c-31.8 14.7-61.1 35-86.5 60.4c-54.8 54.7-85.8 126.9-87.8 204a8 8 0 0 0 8 8.2h56.1c4.3 0 7.9-3.4 8-7.7c1.9-58 25.4-112.3 66.7-153.5c29.4-29.4 65.4-49.8 104.7-59.7c3.8-1.1 6.4-4.8 5.9-8.8zM824 472c0-109.4-87.9-198.3-196.9-200C516.3 270.3 424 361.2 424 472c0 62.8 29 118.8 74.2 155.5a300.95 300.95 0 0 0-86.4 60.4C357 742.6 326 814.8 324 891.8a8 8 0 0 0 8 8.2h56c4.3 0 7.9-3.4 8-7.7c1.9-58 25.4-112.3 66.7-153.5C505.8 695.7 563 672 624 672c110.4 0 200-89.5 200-200zm-109.5 90.5C690.3 586.7 658.2 600 624 600s-66.3-13.3-90.5-37.5a127.26 127.26 0 0 1-37.5-91.8c.3-32.8 13.4-64.5 36.3-88c24-24.6 56.1-38.3 90.4-38.7c33.9-.3 66.8 12.9 91 36.6c24.8 24.3 38.4 56.8 38.4 91.4c-.1 34.2-13.4 66.3-37.6 90.5z"
+              ></path>
+            </svg>
+            <h3 class="text-lg lg:text-xl">Matching Methods</h3>
+          </li>
+
+          <!-- IV -->
+          <li class="flex flex-row gap-x-4 items-center">
+            <svg
+              class="shrink-0 w-14 h-14 border-2 border-fern-400 bg-fern-50 rounded-md p-1 text-slate-800"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill="currentColor"
+                d="m9.128 14.169l1.767-2a.5.5 0 0 1 .798.597l-.054.072l-1.017 1.165H12.5a.5.5 0 0 1 .437.744l-.046.067l-2.445 3.003a.5.5 0 0 1-.831-.547l.05-.076l1.797-2.191H9.5a.5.5 0 0 1-.423-.768l.051-.066l1.767-2l-1.767 2ZM11 6c2.465 0 3.863 1.574 4.066 3.474h.062c1.586 0 2.872 1.237 2.872 2.763C18 13.763 16.714 15 15.128 15h-1.256a1.071 1.071 0 0 0 .01-1h1.3C16.186 14 17 13.221 17 12.26c0-.96-.814-1.739-1.818-1.739h-.55c-.29 0-.545-.218-.545-.496C14.087 8.248 12.65 7 11 7c-1.65 0-3.087 1.27-3.087 3.025c0 .278-.254.496-.545.496h-.55C5.814 10.521 5 11.3 5 12.261C5 13.22 5.814 14 6.818 14h1.3a1.071 1.071 0 0 0 .01 1H6.872C5.286 15 4 13.763 4 12.237c0-1.526 1.286-2.763 2.872-2.763h.062C7.139 7.561 8.535 6 11 6ZM8.392 3c1.456 0 2.726.828 3.353 2.045a6.055 6.055 0 0 0-1.284-.022A2.647 2.647 0 0 0 8.375 4a2.67 2.67 0 0 0-2.62 2.225l-.037.21a1 1 0 0 1-.986.83h-.258C3.66 7.265 3 7.933 3 8.757c0 .57.315 1.065.778 1.316c-.214.272-.39.576-.52.902a2.622 2.622 0 0 1 1.2-4.856l.221-.005A3.77 3.77 0 0 1 8.392 3Z"
+              ></path>
+            </svg>
+            <h3 class="text-lg lg:text-xl">Instrumental Variables</h3>
+          </li>
+
+          <!-- RD -->
+          <li class="flex flex-row gap-x-4 items-center">
+            <svg
+              class="shrink-0 w-14 h-14 border-2 border-fern-400 bg-fern-50 rounded-md p-1 text-slate-800"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 32 32"
+            >
+              <path fill="currentColor" d="M16 24v-2h2v2z"></path>
+              <path
+                fill="currentColor"
+                d="M18 28v-2h-2v2H4V2H2v26a2 2 0 0 0 2 2h26v-2Z"></path>
+              <path
+                fill="currentColor"
+                d="M26.053 19.679A3.44 3.44 0 0 1 23 22c-2.17 0-3.312-3.333-4.52-6.862c-.356-1.039-.724-2.11-1.138-3.138H18v-2h-1.578c-1.21-2.285-2.84-4-5.422-4c-3.678 0-4.898 3.533-4.949 3.684l1.896.637A3.44 3.44 0 0 1 11 8c2.92 0 4.276 3.958 5.587 7.786c.255.742.51 1.49.782 2.214H16v2h2.202c1.083 2.289 2.496 4 4.798 4c3.678 0 4.898-3.533 4.949-3.684ZM16 8V6h2v2zm0-4V2h2v2z"
+              ></path>
+            </svg>
+            <h3 class="text-lg lg:text-xl">Regression Discontinuity</h3>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mt-24 relative">
+        <!-- Causal Inference 2 -->
+        <SessionHeader session={ci2} includeArrow />
+
+        <ul
+          class="mt-4 w-full grid grid-cols-1 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8"
+          role="list"
+        >
+          <!-- Difference-in-Differences -->
+          <li class="flex flex-row gap-x-4 items-center">
+            <svg
+              class="shrink-0 w-14 h-14 border-2 border-picton-blue-400 bg-picton-blue-50 rounded-md p-1 text-slate-800"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M21 5.47L12 12L7.62 7.62L3 11V8.52L7.83 5l4.38 4.38L21 3v2.47zM21 15h-4.7l-4.17 3.34L6 12.41l-3 2.13V17l2.8-2l6.2 6l5-4h4v-2z"
+              ></path>
+            </svg>
+            <h3 class="text-lg lg:text-xl">Difference-in-Differences</h3>
+          </li>
+
+          <!-- Advanced Differenced-in-Differences -->
+          <li class="flex flex-row gap-x-4 items-center">
+            <svg
+              class="shrink-0 w-14 h-14 border-2 border-picton-blue-400 bg-picton-blue-50 rounded-md p-1 text-slate-800"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 32 32"
+            >
+              <path
+                fill="currentColor"
+                d="m4.586 28l7.178-5.998l7.994 1.938a2.021 2.021 0 0 0 1.314-.12L28 20.58l-.848-1.812l-6.916 3.229l-7.994-1.938a2.003 2.003 0 0 0-1.74.384L4 25.882V20.49l7.764-6.488l7.994 1.938a2.021 2.021 0 0 0 1.314-.12L28 12.58l-.847-1.812l-6.918 3.229l-7.994-1.938a2.005 2.005 0 0 0-1.74.384L4 17.882V12.49l7.764-6.488l7.994 1.938a2.021 2.021 0 0 0 1.314-.12L28 4.585l-.846-1.812l-6.918 3.224l-7.994-1.938a2.003 2.003 0 0 0-1.74.384L4 9.882V2H2v26a2 2 0 0 0 2 2h26v-2Z"
+              ></path>
+            </svg>
+            <h3 class="text-lg lg:text-xl">Advanced Diff-in-Diff</h3>
+          </li>
+
+          <!-- Synthetic Control -->
+          <li class="flex flex-row gap-x-4 items-center">
+            <svg
+              class="shrink-0 w-14 h-14 border-2 border-picton-blue-400 bg-picton-blue-50 rounded-md p-1 text-slate-800"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="m1.5 1l-.5.5v3l.5.5h3l.5-.5v-3L4.5 1h-3zM2 4V2h2v2H2zm-.5 2l-.5.5v3l.5.5h3l.5-.5v-3L4.5 6h-3zM2 9V7h2v2H2zm-1 2.5l.5-.5h3l.5.5v3l-.5.5h-3l-.5-.5v-3zm1 .5v2h2v-2H2zm10.5-7l-.5.5v6l.5.5h3l.5-.5v-6l-.5-.5h-3zM15 8h-2V6h2v2zm0 3h-2V9h2v2zM9.1 8H6v1h3.1l-1 1l.7.6l1.8-1.8v-.7L8.8 6.3l-.7.7l1 1z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <h3 class="text-lg lg:text-xl">Synthetic Control</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mixtape Tracks -->
+  <div class="relative pb-48 pt-24">
+    <div class="w-full max-w-6xl mx-auto px-4 md:px-12 xl:px-0">
+      <div class="mb-12">
+        <h1
+          class="text-lg font-semibold leading-7 text-picton-blue-400 font-marker"
+        >
+          Mixtape Tracks
+        </h1>
+        <p
+          class="mt-4 text-5xl font-extrabold tracking-tight text-slate-900 max-w-[25ch]"
+        >
+          Courses MC'd by leading scholars.
+        </p>
+        <p class="text-2xl max-w-prose mt-8 leading-[1.5]">
+          These shorter courses are taught by a leading researcher focusing on
+          <i>specific topics</i>.
+        </p>
+      </div>
+
+      <div class="space-y-24">
+        {
+          tracks.map((track) => {
+            return (
+              <SessionHeader
+                session={track}
+                includeAbstract
+                includeArrow
+              />
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
+</Layout>

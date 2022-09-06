@@ -1,0 +1,44 @@
+---
+import sessions from "../../../public/data/sessions";
+import Layout from "../../layouts/Layout.astro";
+import SessionHeader from "../../components/SessionHeader.astro";
+import SessionCalendar from "../../components/SessionCalendar.astro";
+import SessionHost from "../../components/SessionHost.astro";
+import CallToAction from "../../components/CallToAction.astro";
+import SessionFAQ from "../../components/SessionFAQ.astro";
+
+export async function getStaticPaths() {
+  const slugs = sessions.flatMap((session) => {
+    const dates = session.dates.map((date) => {
+      return { 
+        id: date.url,
+        date: date
+      }
+    });
+
+    return dates.map((date) => {
+      return {
+        params: { id: date.id },
+        props: { session: session, date: date.date },
+      };
+    });
+  });
+  return slugs;
+}
+
+const { params } = Astro.params;
+const { session, date } = Astro.props;
+---
+
+<Layout title={session.title}>
+  <div class="relative pb-48 pt-12">
+    <div class="w-full max-w-6xl mx-auto px-4 md:px-12 xl:px-0">
+      <SessionHeader session={session} includeAbstract currentDate={date.date} />
+      <CallToAction session={session} date={date} />
+      <SessionCalendar date={date} />
+      <SessionHost instructors={session.instructors}/>
+      <SessionFAQ instructor={session.instructors[0]} />
+    </div>
+  </div>
+</Layout>
+

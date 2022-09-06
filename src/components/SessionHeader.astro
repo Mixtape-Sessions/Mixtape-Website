@@ -1,0 +1,110 @@
+---
+import HoverArrow from "./HoverArrow.astro";
+import { Session } from "../../public/data/sessions";
+
+export interface Props {
+  session: Session;
+  includeAbstract?: boolean;
+  includeArrow?: boolean;
+  currentDate?: string;
+}
+
+const {
+  session,
+  includeAbstract = false,
+  includeArrow = false,
+  currentDate = null,
+} = Astro.props;
+
+let listMultipleDates: boolean = includeAbstract && session.dates.length > 1;
+---
+
+<div class="py-4 sm:py-6 mt-4">
+  <!-- Vertical Bar -->
+  <div class={`${session.buttonGradient} h-3 mb-4`}></div>
+
+  <!-- Mixtape Session Title -->
+  {
+    includeArrow ? (
+      <a
+        class="pb-2 group cursor-pointer flex justify-between items-center"
+        href={`/session/${session.dates[0].url}`}
+      >
+        <h2
+          class={`inline-block text-4xl md:text-[3rem] leading-[1.5] font-semibold tracking-tight text-gradient mr-2  ${session.buttonGradient}`}
+        >
+          {session.title}
+        </h2>
+        <HoverArrow />
+      </a>
+    ) : (
+      <h2
+        class={`inline-block text-4xl md:text-[3rem] leading-[1.5] font-semibold tracking-tight text-gradient ${session.buttonGradient}`}
+      >
+        {session.title}
+      </h2>
+    )
+  }
+
+  <!-- Instructors -->
+  <div
+    class="flex flex-col lg:flex-row gap-y-4 gap-x-2 text-slate-800 text-xl md:text-2xl font-light tracking-wide mt-4 lg:mt-2 mb-2 leading-[1.5]"
+  >
+    <p class="block md:inline-block">
+      {
+        session.instructors.map((instructor, i) => {
+          return (
+            <Fragment>
+              {i > 0 && <span> and </span>}
+              <a
+                class="underline underline-offset-4 decoration-2 decoration-slate-500/60 hover:decoration-slate-500"
+                href={instructor.url}
+              >
+                {instructor.name}
+              </a>
+            </Fragment>
+          );
+        })
+      }
+    </p>
+    <p class="block md:inline-block">
+      <span class="hidden lg:inline mx-1 text-slate-800">•</span>
+      <span class="text-slate-800"
+        >Starting {currentDate ?? session.dates[0].date}
+      </span>
+    </p>
+  </div>
+
+  <!-- Abstract -->
+  {
+    includeAbstract && (
+      <p
+        class="text-slate-600 text-lg md:text-[1.375rem] max-w-[75ch] mt-8 mb-4 leading-normal"
+        set:html={session.about}
+      />
+    )
+  }
+
+  <!-- Other Dates -->
+  {
+    listMultipleDates && (
+      <p class="text-slate-600 text-lg md:text-[1.375rem] max-w-[75ch] mt-4 mb-4 leading-normal">
+        We have sessions on{" "}
+        {session.dates.map((date, i) => {
+          return (
+            <Fragment>
+              {i > 0 && " and "}{" "}
+              <a
+                href={`/session/${date.url}`}
+                class="underline underline-offset-4 decoration-2 decoration-slate-500/60 hover:decoration-slate-500"
+              >
+                {date.date}
+              </a>
+            </Fragment>
+          );
+        })}
+        .
+      </p>
+    )
+  }
+</div>

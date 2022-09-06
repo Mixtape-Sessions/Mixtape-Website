@@ -1,0 +1,25 @@
+---
+const { svgClass = "grow-0 inline-block w-10 h-10 group transition-all duration-75 hover:translate-x-[-4px]" } = Astro.props
+---
+
+<span
+  class="text-lg font-semibold text-slate-500 group-hover:text-slate-700 block"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    aria-hidden="true"
+    role="img"
+    class={svgClass}
+    width="32"
+    height="32"
+    preserveAspectRatio="xMidYMid meet"
+    viewBox="0 0 20 20"
+  >
+    <path
+      fill="currentColor"
+      fill-rule="evenodd"
+      d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414Z"
+      clip-rule="evenodd"></path>
+  </svg>
+</span>

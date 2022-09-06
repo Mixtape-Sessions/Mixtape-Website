@@ -1,0 +1,56 @@
+---
+import { Instructor } from "../../public/data/sessions";
+
+export interface Props {
+  instructors: Instructor[];
+}
+const { instructors } = Astro.props;
+---
+
+<section class="mt-36 py-4 border-t-4 border-slate-400">
+  <h2
+    class="text-[2.5rem] font-semibold tracking-tight leading-normal text-transparent bg-clip-text bg-gradient-to-r from-violet-red-700 to-violet-red-500 mb-4"
+  >
+    Who will be <i>hosting this session</i>?
+  </h2>
+
+  <!-- About Instructor -->
+
+  {
+    instructors.map((instructor) => {
+      return (
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-8 mt-12">
+          <div class="col-span-1 lg:col-span-1 text-center justify-center">
+            <img
+              class="rounded-xl w-2/3 md:w-1/2  lg:w-full mx-auto"
+              src={`/img/headshots/${instructor.img}`}
+              alt={instructor.name}
+            />
+          </div>
+          <div class="col-span-1 lg:col-span-3">
+            <div class="prose mx-auto text-xl" set:html={instructor.about}></div>
+          </div>
+        </div>
+      );
+    })
+  }
+</section>
+
+{
+  instructors[0].reviews != null && (
+    <div>
+      <ul class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-8">
+        {instructors[0].reviews.map((review) => {
+          return (
+            <li class="bg-slate-50 border border-slate-200 rounded-xl px-4 md:px-8 py-4 md:py-8 flex flex-col">
+              <p class="text-5xl leading-1 inline-block font-marker text-violet-red-500">
+                “
+              </p>
+              <p class="text-lg lg:text-xl text-slate-600">{review}</p>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  )
+}

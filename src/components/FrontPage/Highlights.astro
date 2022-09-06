@@ -1,0 +1,84 @@
+---
+interface Highlight {
+  highlight: string;
+  description: string;
+  img: string;
+  classes: {
+    headerColor: string;
+    textColor: string;
+  };
+}
+
+const highlights: Highlight[] = [
+  {
+    highlight: "Course Library",
+    description:
+      "After you take the course, all the material is yours. We provide you with the slides, the app, the coding exercises, and video recordings to keep.",
+    img: "/img/Slides.webp",
+    classes: {
+      headerColor: "text-electric-violet-500",
+      textColor: "text-electric-violet-400",
+    },
+  },
+  {
+    highlight: "Coding Labs",
+    description:
+      "We believe in the learning power of active-learning. For all of our courses, we will all get our hands dirty with real data to implement the methods you are using.",
+    img: "/img/Coding-Labs.webp",
+    classes: {
+      headerColor: "text-picton-blue-500",
+      textColor: "text-picton-blue-400",
+    },
+  },
+  {
+    highlight: "Interactive Apps",
+    description: `"A picture is worth a thousand words" is true for causal inference too. Our flagship courses come with interactive applications for students to explore aimed at proving intuition.`,
+    img: "/img/Shiny-Apps.webp",
+    classes: {
+      headerColor: "text-sun-500",
+      textColor: "text-sun-400",
+    },
+  },
+];
+---
+
+{
+  highlights.map(({ highlight, description, img, classes }, i) => {
+    return (
+      <div
+        class={`w-full border-b border-slate-200 pt-48 ${
+          i % 2 == 1 ? "bg-white" : "bg-slate-50"
+        }`}
+      >
+        <div class="w-full max-w-6xl mx-auto px-4 md:px-12 xl:px-0 text-white grid grid-cols-1 gap-y-16 lg:gap-y-0 lg:grid-cols-12 lg:gap-x-12">
+          <div
+            class={`lg:col-span-5 ${
+              i % 2 == 1 ? "lg:col-start-8 lg:row-start-1" : ""
+            }`}
+          >
+            <h2
+              class={`text-3xl lg:text-5xl font-marker mt-6 mb-6 ${classes.headerColor}`}
+              set:html={highlight}
+            />
+            <p
+              class={`text-xl lg:text-2xl ${classes.textColor}`}
+              set:html={description}
+            />
+          </div>
+          <div
+            class={`relative lg:col-span-7 px-4 md:px-0  ${
+              i % 2 == 1 ? "lg:col-start-1 lg:row-start-1" : ""
+            }`}
+          >
+            <img class="w-full rounded-t-xl" src={img} />
+            <div class="z-0 block">
+              <div class="absolute -top-4 right-0 left-0 md:-right-12 md:-left-12 h-px bg-slate-900/[0.2] [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]" />
+              <div class="absolute -top-12 bottom-0 hidden md:block -left-4 w-px bg-slate-900/[0.2] [mask-image:linear-gradient(to_top,white_4rem,white_calc(100%-4rem),transparent)]" />
+              <div class="absolute -top-12 bottom-0 hidden md:block -right-4 w-px bg-slate-900/[0.2] [mask-image:linear-gradient(to_top,white_4rem,white_calc(100%-4rem),transparent)]" />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  })
+}

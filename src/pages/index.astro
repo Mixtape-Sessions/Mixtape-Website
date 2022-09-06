@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Features from "../components/FrontPage/Features.astro";
+import FeaturesV2 from "../components/FrontPage/FeaturesV2.astro";
+import Highlights from "../components/FrontPage/Highlights.astro";
+import MixtapeBook from "../components/FrontPage/MixtapeBook.astro";
+---
+
+<Layout title="Mixtape Sessions">
+  <div class="w-full mt-24 bg-white flex flex-col items-center justify-center">
+    <p class="text-slate-400 font-medium text-2xl mb-6">
+      Welcome to
+      <span class="font-marker">Mixtape Sessions</span>
+    </p>
+    <h1 class="font-extrabold tracking-tighter text-center text-6xl">
+      Online Causal Inference Courses
+    </h1>
+
+    <!-- Call to Action -->
+    <div class="mt-24 mx-auto relative group">
+      <div
+        class="absolute -inset-1 bg-gradient-to-br from-sun-600 to-violet-red-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse animation-delay-2000"
+      >
+      </div>
+      <a
+        href="/sessions"
+        class="relative px-7 py-4 bg-white rounded-lg leading-none flex items-center"
+      >
+        <span
+          class="text-violet-red-600 group-hover:text-slate-600 transition duration-200 font-marker"
+        >
+          View Upcoming Workshops &rarr;
+        </span>
+      </a>
+    </div>
+
+    <!-- Features -->
+    <Features />
+  </div>
+
+  <!-- Highlights -->
+  <Highlights />
+
+  <!-- Mixtape Book -->
+  <MixtapeBook />
+</Layout>

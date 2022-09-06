@@ -1,0 +1,48 @@
+---
+import { Date } from "../../public/data/sessions";
+import SvgCd from "./svg/SvgCd.astro";
+export interface Props {
+  date: Date;
+}
+const { date } = Astro.props;
+---
+
+<section class="mt-36 py-4 border-t-4 border-slate-400">
+  <h2
+    class="text-[2.5rem] font-semibold tracking-tight leading-normal text-transparent bg-clip-text bg-gradient-to-r from-picton-blue-700 to-picton-blue-500 mb-4"
+  >
+    Our workshop will bring you to the <i>cutting edge</i>
+  </h2>
+
+  <!-- Days -->
+  <div class="grid grid-cols-1 gap-y-12 gap-x-12 pt-10 lg:grid-cols-2">
+    {
+      date.calendar.map((day, i) => {
+        return (
+          <div>
+            <div>
+              <p class="text-2xl font-semibold leading-normal tracking-tight text-picton-blue-900">
+                {day.day}
+              </p>
+              <h3 class="text-md font-light inline-block tracking-wider text-slate-900">
+                Day {i + 1} <span class="mx-1">•</span> {day.time}
+              </h3>
+              
+            </div>
+
+            <ol class="mt-8 space-y-8">
+              {day.topics.map((topic, j) => {
+                return (
+                  <li class="flex items-center text-lg md:text-xl text-slate-600">
+                    <SvgCd svgClass="h-8 w-8 mr-4 text-gray-400 flex-shrink-0" />
+                    {topic}
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+        );
+      })
+    }
+  </div>
+</section>

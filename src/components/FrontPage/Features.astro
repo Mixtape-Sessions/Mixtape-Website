@@ -1,0 +1,46 @@
+---
+import SvgCoin from "../../components/svg/SvgCoin.astro";
+import SvgKeyboard from "../../components/svg/SvgKeyboard.astro";
+import SvgMic from "../../components/svg/SvgMic.astro";
+---
+
+<div class="block max-w-6xl mx-auto my-36">
+  <div
+    class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-8 gap-y-4 lg:gap-y-0 relative px-4 lg:px-0"
+  >
+    <div
+      class="bg-slate-50 border border-slate-200 rounded-xl px-8 py-8 flex flex-col"
+    >
+      <SvgMic svgClass="h-16 w-16 mb-4" />
+
+      <h2 class="text-left text-2xl font-marker">Expert Hosts</h2>
+      <p class="text-left text-lg py-2">
+        The sessions will be led by researchers at the
+        <span class="italic font-normal">frontier</span> of causal-inference methods.
+      </p>
+    </div>
+    <div
+      class="bg-slate-50 border border-slate-200 rounded-xl px-8 py-8 flex flex-col"
+    >
+      <SvgKeyboard svgClass="h-16 w-16 mb-4" />
+
+      <h2 class="text-left text-2xl font-marker">Hands-on Approach</h2>
+      <p class="text-left text-lg py-2">
+        Our workshops feature exercises to teach
+        <span class="italic font-normal">practical</span>
+        skills that are ready to generate value for your research or company.
+      </p>
+    </div>
+    <div
+      class="bg-slate-50 border border-slate-200 rounded-xl px-8 py-8 flex flex-col"
+    >
+      <SvgCoin svgClass="h-16 w-16 mb-4" />
+      <h2 class="text-left text-2xl font-marker">Affordable</h2>
+      <p class="text-left text-lg py-2">
+        Attending our workshop won't
+        <span class="italic font-normal">break the bank</span>. We even offer
+        student pricing!
+      </p>
+    </div>
+  </div>
+</div>

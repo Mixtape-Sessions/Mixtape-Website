@@ -1,0 +1,23 @@
+{
+  "name": "@example/minimal",
+  "version": "0.0.1",
+  "private": true,
+  "prettier": {
+    "proseWrap": "preserve"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^0.2.4",
+    "@tailwindcss/typography": "^0.5.4",
+    "astro": "^1.0.1",
+    "astro-fonts": "^0.2.6"
+  },
+  "dependencies": {
+    "astro-icon": "^0.7.1"
+  }
+}
