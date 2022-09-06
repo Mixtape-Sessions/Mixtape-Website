@@ -108,7 +108,7 @@ const sessions: Session[] = [
 		type: "Mixtape Session",
 		gradientClass: "sm:did-gradient",
 		buttonGradient: "did-gradient",
-		about: `Causal inference Part II is a 4-day workshop in design based causal inference series.  It will cover three contemporary research designs in causal inference -- difference-in-differences, synthetic control and matching/weighting methods -- as well as introduce participants to causal graphs developed by Judea Pearl and others.  Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch.  We will review the theory behind each design, go into detail on the intuition of the estimation strategies and identification itself, as well as explore code in R and Stata and applications using these methods.  The goal as always is that participants leave the workshop with competency and confidence. This class will be a sequel to the 4-day workshop on Causal Inference Part I.`,
+		about: `Causal inference Part II is a 4-day workshop in design based causal inference series. It will cover two contemporary research designs in causal inference -- difference-in-differences (including with covariates) and  synthetic control. Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch. We will review the theory behind each design, go into detail on the intuition of the estimation strategies and identification itself, as well as explore code in R and Stata and applications using these methods. The goal as always is that participants leave the workshop with competency and confidence. This class will be a sequel to the 4-day workshop on Causal Inference Part I.`,
 		dates: [
 			{
 				date: "October 8th",
@@ -122,7 +122,6 @@ const sessions: Session[] = [
 							"Introduction to DID",
 							"Parallel trends and the DID equation",
 							"OLS, TWFE, Triple difference",
-							"Synthetic control (Abadie, Diamond and Hainmueller 2010)",
 						],
 					},
 					{
@@ -148,6 +147,7 @@ const sessions: Session[] = [
 						topics: [
 							"Time-varying Covariates and Imputation (Caetano et al 2021)",
 							"Continuous Treatment (Callaway, Goodman-Bacon and Sant'Anna 2020)",
+              "Synthetic control (Abadie, Diamond and Hainmueller 2010)",
 						],
 					},
 				],
