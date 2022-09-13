@@ -367,7 +367,7 @@ const sessions: Session[] = [
 			{
 				date: "October 28th",
 				url: "ml_oct28",
-				eventbrite: "https://www.eventbrite.com/e/XXXXXXXXXXXX",
+				eventbrite: "https://www.eventbrite.com/e/418946057937",
 				calendar: [
 					{
 						day: "October 28th",
