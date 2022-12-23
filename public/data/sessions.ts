@@ -214,6 +214,7 @@ const sessions: Session[] = [
         img: `dan_rees.jpg`,
         reviews: [
           "As an econ grad student early in my research career, this workshop answered every question I had about how research actually gets done and how to deal with the inevitable issues, tradeoffs, and challenges of writing papers. In fact, it answered questions I didn't even know I had and delivered the hidden curriculum of research in an organized, encouraging fashion.",
+          "A must attend for any aspiring researchers to learn the (unwritten) rules of applied research and the publishing process.",
           "The instructor's approach to showcasing examples of papers, review and publication process, and steps to better prepare for the job market was invaluable.",
           "Both the professors were extremely resourceful. The workshop was well-organized and allowed attendees sufficient insight into how to write an applied paper, what the publication process entails and how important conferences and networking is for graduate students.",
         ],
