@@ -272,25 +272,21 @@ const sessions: Session[] = [
     about: ``,
     dates: [
       {
-      	date: "April 27th",
-      	url: "synth_and_clust_apr27",
-      	eventbrite: "https://www.eventbrite.com/e/",
-      	calendar: [
-      		{
-      			day: "April 27th",
-      			time: "5pm-9pm EST",
-      			topics: [
-      				"Synthetic Control",
-      			],
-      		},
-      		{
-      			day: "April 28th",
-      			time: "5pm-9pm EST",
-      			topics: [
-      				"Clustering",
-      			],
-      		},
-      	],
+        date: "April 27th",
+        url: "synth_and_clust_apr27",
+        eventbrite: "https://www.eventbrite.com/e/",
+        calendar: [
+          {
+            day: "April 27th",
+            time: "5pm-9pm EST",
+            topics: ["Synthetic Control"],
+          },
+          {
+            day: "April 28th",
+            time: "5pm-9pm EST",
+            topics: ["Clustering"],
+          },
+        ],
       },
     ],
     instructors: [
@@ -355,31 +351,29 @@ const sessions: Session[] = [
         img: `brigham_frandsen.jpeg`,
         reviews: [
           "Insightful, well-explained and hands-on workshop that taught me a lot. Dr Frandsen was super helpful and explained concepts clearly. It was a great mix of interactive, practical exercises and theoretical explanations!",
-          "Outstanding selection of content and case studies. Excellent instructor. You will come out of this workshop with a very decent overview of Machine Learning methods and their applications in causal inference."
-        ]
+          "Outstanding selection of content and case studies. Excellent instructor. You will come out of this workshop with a very decent overview of Machine Learning methods and their applications in causal inference.",
+        ],
       },
     ],
   },
-  // Machine Learning and CI II (Brigham Frandsen)
+  // Machine Learning and Heterogeneous Effects (Brigham Frandsen)
   {
     id: "ml_het_effects",
     title: "Machine Learning and Heterogeneous Effects",
     type: "Mixtape Track",
     gradientClass: "sm:ml-het-effects-gradient",
     buttonGradient: "ml-het-effects-gradient",
-    about: ``,
+    about: `The holy grail of causal inference is the individual-level treatment effect: how would a particular patient respond to a drug? Which users  will respond most to a targeted ad? Would a given student be helped or harmed by a classroom intervention? This session introduces machine learning tools for estimating heterogeneous treatment effects like random causal forests. The course goes over the theory and concepts as well as the nitty-gritty of coding the methods up in python, R, and Stata using real-world examples. This course can be taken as a follow-up to the Machine Learning and Causal Inference mixtape session, or as a stand-alone course.`,
     dates: [
       {
         date: "May 15th",
         url: "ml_het_effects_may15",
-        eventbrite: "https://www.eventbrite.com/e/",
+        eventbrite: "https://www.eventbrite.com/e/496348962107",
         calendar: [
           {
             day: "May 15th",
             time: "6pm-9pm EST",
-            topics: [
-              "Machine Learning and Heterogeneous Effects"
-            ],
+            topics: ["Machine Learning and Heterogeneous Effects"],
           },
         ],
       },
@@ -391,9 +385,9 @@ const sessions: Session[] = [
         about: `<a href="https://economics.byu.edu/faculty-and-staff/frandsen" class="text-violet-red-500 hover:text-violet-red-600">Brigham Frandsen</a> is an associate professor at Brigham Young University after completing his Ph.D. in Economics at MIT, where his dissertation focused on econometric methodology and labor economics. After his Ph.D., Dr. Frandsen was selected as a Robert Wood Johnson Scholar in Health Policy Research at Harvard University where he spent two years in residence furthering his research in econometrics and labor economics, as well as adding health policy to his research agenda. Dr. Frandsen's methodological research focuses on causal inference on distributional effects. He applies these methodologies to questions about the impact of labor market institutions and interventions on education and earnings outcomes. His health policy research deals with the consequences of fragmentation in the U.S. health care system. In addition to research, Dr. Frandsen enjoys hiking and mountain biking with his wife, Christine, and their four children.`,
         img: `brigham_frandsen.jpeg`,
         reviews: [
-    "Insightful, well-explained and hands-on workshop that taught me a lot. Dr Frandsen was super helpful and explained concepts clearly. It was a great mix of interactive, practical exercises and theoretical explanations!",
-    "Outstanding selection of content and case studies. Excellent instructor. You will come out of this workshop with a very decent overview of Machine Learning methods and their applications in causal inference."
-  ]
+          "Insightful, well-explained and hands-on workshop that taught me a lot. Dr Frandsen was super helpful and explained concepts clearly. It was a great mix of interactive, practical exercises and theoretical explanations!",
+          "Outstanding selection of content and case studies. Excellent instructor. You will come out of this workshop with a very decent overview of Machine Learning methods and their applications in causal inference.",
+        ],
       },
     ],
   },
