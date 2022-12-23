@@ -3,12 +3,23 @@ import Layout from "../layouts/Layout.astro";
 import sessions from "../../public/data/sessions";
 import SessionHeader from "../components/SessionHeader.astro";
 
-let tracks = sessions.filter((session) => {
-  return !session.id.includes("ci_");
-});
+let tracks = sessions
+  .filter((session) => {
+    return !session.id.includes("ci_");
+  })
+  .filter((session) => {
+    return session.dates.length > 0
+  })
+  .sort((a, b) => {
+    let aDate = new Date(a.dates[0].date.replace(/th|st|rd/, "") + ", 2022");
+    let bDate = new Date(b.dates[0].date.replace(/th|st|rd/, "") + ", 2022");
+    return Number(aDate) - Number(bDate);
+  });
+
 let ci1 = sessions.filter((session) => {
   return session.id === "ci_I";
 })[0];
+
 let ci2 = sessions.filter((session) => {
   return session.id === "ci_II";
 })[0];
@@ -227,11 +238,7 @@ let ci2 = sessions.filter((session) => {
         {
           tracks.map((track) => {
             return (
-              <SessionHeader
-                session={track}
-                includeAbstract
-                includeArrow
-              />
+              <SessionHeader session={track} includeAbstract includeArrow />
             );
           })
         }

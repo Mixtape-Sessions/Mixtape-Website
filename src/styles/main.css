@@ -28,6 +28,14 @@
 .ml-gradient {
   background: linear-gradient(to right, #61055c, #0b8793);
 }
+/* https://uigradients.com/#Lush */
+.synth-and-clust-gradient {
+  background: linear-gradient(to right, #56ab2f, #a8e063);
+}
+/* https://uigradients.com/#Turquoiseflow */
+.ml-het-effects-gradient {
+  background: linear-gradient(to right, #136a8a, #267871);
+}
 .text-gradient {
   background-clip: text;
   color: transparent;
