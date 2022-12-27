@@ -3,7 +3,14 @@ import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/main.css";
 
-const { title } = Astro.props;
+// og-image by slug
+const { 
+  title = "Mixtape Sessions", 
+  description = "Causal Inference Workshops",
+  slug = "banner",
+} = Astro.props
+
+let ogImage = `https://mixtapesessions.io/img/og-images/${slug}-OG.png`
 ---
 
 <html lang="en">
@@ -12,6 +19,12 @@ const { title } = Astro.props;
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>{title}</title>
+  <meta name="description" content="Mixtape Sessions" />
+  <meta property="og:image" content={ogImage} />
+  <meta property="twitter:image" content={ogImage} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
 </head>
 
 <body>

@@ -1,23 +1,28 @@
-import { createSignal, For } from "solid-js";
-import * as htmlToImage from 'html-to-image';
+import { createComputed, createSignal, For } from "solid-js";
+import * as htmlToImage from "html-to-image";
 import sessions from "../../../public/data/sessions";
 
-function ReactiveExample() {
+function Slides() {
   const formats = [
+    {
+      name: "2/1",
+      width: "1080px",
+      height: "540px",
+    },
     {
       name: "16/9",
       width: "1080px",
       height: "607.5px",
     },
     {
+      name: "OG",
+      width: "900px", 
+      height: "600px",
+    },
+    {
       name: "4/3",
       width: "1080px",
       height: "810px",
-    },
-    {
-      name: "2/1",
-      width: "1080px",
-      height: "540px",
     },
   ];
 
@@ -25,21 +30,32 @@ function ReactiveExample() {
   const [format, setFormat] = createSignal(formats[0]);
   const [subtitle, setSubtitle] = createSignal("Mixtape Session");
   const readSubtitleInput = (e) => setSubtitle(e.currentTarget.value);
+  const instructors = () => {
+    let namesArray = selected().instructors.map(
+      (instructor) => instructor.name
+    );
+    let names =
+      namesArray.length == 2
+        ? namesArray[0] + " and " + namesArray[1]
+        : namesArray[0];
+
+    return names;
+  };
 
   const downloadImage = () => {
-    const graphic = document.getElementById('graphic');
+    const graphic = document.getElementById("graphic");
     htmlToImage
       .toPng(graphic, {
         width: parseInt(format().width),
         height: parseInt(format().height),
       })
       .then(function (dataUrl) {
-        var link = document.createElement("a")
-        link.download = `${selected().id}.png`
-        link.href = dataUrl
-        link.click()
-      })
-  }
+        var link = document.createElement("a");
+        link.download = `${selected().id}-${format().name}.png`;
+        link.href = dataUrl;
+        link.click();
+      });
+  };
 
   return (
     <>
@@ -91,19 +107,20 @@ function ReactiveExample() {
         id="graphic"
       >
         <div class={`h-3 ${selected().buttonGradient}`}></div>
-        <div class="h-full pt-16 pb-12 flex flex-col justify-between">
+        <div class="h-full pt-8 pb-8 flex flex-col justify-between">
           <div class="">
             <div class="text-center">
               <h2
-                class={`inline-block tracking-tight font-extrabold text-gray-900 text-[4.5rem] px-8 leading-[5.5rem] text-gradient ${
+                class={`inline-block tracking-tight font-extrabold text-gray-900 text-[4.5rem] px-8 leading-[5.7rem] text-gradient ${
                   selected().buttonGradient
                 }`}
               >
                 {selected().title}
               </h2>
-              <h3 class="mt-2 text-[3rem] text-slate-800 font-marker">
+              <h3 class="text-[3rem] text-slate-800 font-marker">
                 {subtitle()}
               </h3>
+              <p class="mt-6 text-[1.75rem] text-slate-600 font-light">{instructors()}</p>
             </div>
           </div>
 
@@ -221,4 +238,4 @@ function ReactiveExample() {
   );
 }
 
-export default ReactiveExample;
+export default Slides;

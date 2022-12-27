@@ -10,10 +10,10 @@ import SessionFAQ from "../../components/SessionFAQ.astro";
 export async function getStaticPaths() {
   const slugs = sessions.flatMap((session) => {
     const dates = session.dates.map((date) => {
-      return { 
+      return {
         id: date.url,
-        date: date
-      }
+        date: date,
+      };
     });
 
     return dates.map((date) => {
@@ -28,17 +28,27 @@ export async function getStaticPaths() {
 
 const { params } = Astro.params;
 const { session, date } = Astro.props;
+
+let namesArray = session.instructors.map((instructor) => instructor.name);
+let names =
+  namesArray.length == 2
+    ? namesArray[0] + " and " + namesArray[1]
+    : namesArray[0];
+const description = `Workshop taught by ${names} starting on ${session.dates[0].date}.`;
 ---
 
-<Layout title={session.title}>
+<Layout title={session.title} slug={session.id} description={description}>
   <div class="relative pb-48 pt-12">
     <div class="w-full max-w-6xl mx-auto px-4 md:px-12 xl:px-0">
-      <SessionHeader session={session} includeAbstract currentDate={date.date} />
+      <SessionHeader
+        session={session}
+        includeAbstract
+        currentDate={date.date}
+      />
       <CallToAction session={session} date={date} />
       <SessionCalendar date={date} />
-      <SessionHost instructors={session.instructors}/>
+      <SessionHost instructors={session.instructors} />
       <SessionFAQ instructor={session.instructors[0]} />
     </div>
   </div>
 </Layout>
-
