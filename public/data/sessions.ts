@@ -269,21 +269,21 @@ const sessions: Session[] = [
     type: "Mixtape Track",
     gradientClass: "sm:synth-and-clust-gradient",
     buttonGradient: "synth-and-clust-gradient",
-    about: ``,
+    about: `In this course, we will cover the fundamentals of synthetic control estimation and inference, with special emphasis on actionable guidance for applied research. We will discuss seven crucial guiding principles for empirical studies using synthetic controls and how these principles are applied in practice. Towards the end of the course, we will change topics to address “the” FAQ of econometrics office hours: When and how should we cluster standard errors?`,
     dates: [
       {
         date: "April 27th",
         url: "synth_and_clust_apr27",
-        eventbrite: "https://www.eventbrite.com/e/",
+        eventbrite: "https://www.eventbrite.com/e/498685209887",
         calendar: [
           {
             day: "April 27th",
-            time: "5pm-9pm EST",
+            time: "6pm-9pm EST",
             topics: ["Synthetic Control"],
           },
           {
             day: "April 28th",
-            time: "5pm-9pm EST",
+            time: "6pm-9pm EST",
             topics: ["Clustering"],
           },
         ],
