@@ -35,7 +35,7 @@ const sessions: Session[] = [
     type: "Mixtape Session",
     gradientClass: "sm:ci-gradient",
     buttonGradient: "ci-gradient",
-    about: `Causal Inference Part I kickstarts a new 4-day series on design-based causal inference series.  It covers the foundations of causal inference grounded in a counterfactual theory of causality built on the Neyman-Rubin model of potential outcomes. It will also cover randomization inference, independence, matching, regression discontinuity and instrumental variables.  We will review the theory behind each of these designs in detail with the aim being comprehension, competency and confidence.  Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch.  To help accomplish this, we will hold ongoing discussions via Discourse, work through assignments and exercises together, and have detailed walk-throughs of code in R and Stata.  This is the prequel to the Part II course that covers difference-in-differences and synthetic control.`,
+    about: `Causal Inference Part I kickstarts a new 4-day series on design-based causal inference series.  It covers the foundations of causal inference grounded in a counterfactual theory of causality built on the Neyman-Rubin model of potential outcomes. It will also cover randomization inference, independence, matching, regression discontinuity and instrumental variables.  We will review the theory behind each of these designs in detail with the aim being comprehension, competency and confidence.  Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch.  To help accomplish this, we will hold ongoing discussions via Discourse, work through assignments and exercises together, and have detailed walk-throughs of code in R and Stata. This is the prequel to the Part II course that covers difference-in-differences and synthetic control.`,
     dates: [
       {
         date: "February 4th",
@@ -146,9 +146,9 @@ const sessions: Session[] = [
             day: "March 26th",
             time: "8am-5pm CST",
             topics: [
-              "Time-varying Covariates and Imputation (Caetano et al 2021)",
               "Continuous Treatment (Callaway, Goodman-Bacon and Sant'Anna 2020)",
               "Synthetic control (Abadie, Diamond and Hainmueller 2010)",
+              "Augmented synthetic control (Ben-Michael, Feller, Rothstein 2022)"
             ],
           },
         ],
@@ -234,7 +234,7 @@ const sessions: Session[] = [
     type: "Mixtape Track",
     gradientClass: "sm:advanced-did-gradient",
     buttonGradient: "advanced-did-gradient",
-    about: `This one-day workshop will cover advanced topics from the recent difference-in-differences literature. One question of particular focus will be, <i>"what should I do if I'm not 100% sure about the validity of the parallel trends assumption?"</i> We will cover a variety of relaxations to the parallel trends assumption, and new tools for power calculations and sensitivity analysis. The workshop will focus not just on the theory, but also on practical implementation in statistical software such as R and Stata. `,
+    about: `This one-day workshop will cover advanced topics from the recent difference-in-differences literature. One question of particular focus will be, <i>"what should I do if I'm not 100% sure about the validity of the parallel trends assumption?"</i> We will cover a variety of relaxations to the parallel trends assumption, and new tools for power calculations and sensitivity analysis. The workshop will focus not just on the theory, but also on practical implementation in statistical software such as R and Stata.`,
     dates: [
       {
         date: "April 21st",
