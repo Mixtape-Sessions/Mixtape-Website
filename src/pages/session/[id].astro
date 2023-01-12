@@ -16,17 +16,20 @@ export async function getStaticPaths() {
       };
     });
 
-    return dates.map((date) => {
+    // URLS like /session/ci_i_feb4
+    const dateSlugs = dates.map((date) => {
       return {
         params: { id: date.id },
         props: { session: session, date: date.date },
       };
     });
+
+    return dateSlugs;
   });
+
   return slugs;
 }
 
-const { params } = Astro.params;
 const { session, date } = Astro.props;
 
 let namesArray = session.instructors.map((instructor) => instructor.name);
@@ -34,6 +37,7 @@ let names =
   namesArray.length == 2
     ? namesArray[0] + " and " + namesArray[1]
     : namesArray[0];
+
 const description = `Workshop taught by ${names} starting on ${session.dates[0].date}.`;
 ---
 
