@@ -5,6 +5,7 @@ let isScott = instructor.name == "Prof. Scott Cunningham"
 
 let faqs = [
   {
+    id: "discounts",
     q: "Are discounts available?",
     a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
     scottOnly: false,
@@ -75,7 +76,7 @@ faqs = faqs.filter((faq) => !faq.scottOnly || isScott);
     <dl class="divide-y divide-slate-200">
       {
         faqs.map((faq) => (
-          <div class="pt-6 pb-8 md:grid md:grid-cols-12 md:gap-8">
+          <div class="pt-6 pb-8 md:grid md:grid-cols-12 md:gap-8" id={faq.id ? faq.id : null}>
             <dt class="text-lg font-medium text-slate-700 md:col-span-4">
               {faq.q}
             </dt>
