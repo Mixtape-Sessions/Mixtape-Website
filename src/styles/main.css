@@ -36,6 +36,10 @@
 .ml-het-effects-gradient {
   background: linear-gradient(to right, #136a8a, #267871);
 }
+/* https://uigradients.com/#SteelGrey */
+.rdd-gradient {
+  background: linear-gradient(to right, #1F1C2C, #928DAB);
+}
 .text-gradient {
   background-clip: text;
   color: transparent;
@@ -70,6 +74,10 @@
   /* https://uigradients.com/#PurpleBliss */
   .sm\:ml-gradient {
     background: linear-gradient(to right, #61055c, #0b8793);
+  }
+  /* https://uigradients.com/#SteelGrey */
+  .sm\:rdd-gradient {
+    background: linear-gradient(to right, #1F1C2C, #928DAB);
   }
   .sm\:text-gradient {
     background-clip: text;

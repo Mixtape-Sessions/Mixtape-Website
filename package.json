@@ -1,6 +1,6 @@
 {
-  "name": "@example/minimal",
-  "version": "0.0.1",
+  "name": "mixtapesessions",
+  "version": "1.0.0",
   "private": true,
   "prettier": {
     "proseWrap": "preserve"
@@ -12,19 +12,19 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^0.2.4",
-    "@tailwindcss/typography": "^0.5.4",
-    "astro": "^1.7.2",
+    "@astrojs/tailwind": "^3.0.1",
+    "@tailwindcss/typography": "^0.5.9",
+    "astro": "^2.0.15",
     "astro-fonts": "^0.2.6",
-    "astro-icon": "^0.7.1",
+    "astro-icon": "^0.8.0",
     "solid": "^0.2.1"
   },
   "dependencies": {
-    "@astrojs/solid-js": "^1.2.3",
+    "@astrojs/solid-js": "^2.0.2",
     "@thisbeyond/solid-select": "^0.13.0",
-    "html-to-image": "^1.11.3",
-    "solid-headless": "^0.13.0",
-    "solid-js": "^1.6.6",
+    "html-to-image": "^1.11.11",
+    "solid-headless": "^0.13.1",
+    "solid-js": "^1.6.11",
     "text-balancer": "^1.0.5"
   }
 }
