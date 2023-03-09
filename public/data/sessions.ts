@@ -468,6 +468,53 @@ const sessions: Session[] = [
         img: `alberto_abadie.jpeg`,
       },
     ],
+    faqs: [
+      {
+        id: "discounts",
+        q: "Are discounts available?",
+        a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      },
+      {
+        q: "How do I access the material I need for the course?",
+        a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700 underline decoration-2'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+      },
+      {
+        q: "How long will it take me to master this?",
+        a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+      },
+      {
+        q: "Will there be breaks?",
+        a: "Yes, we will have 15 min breaks on the hour, plus a one hour break mid-day for lunch.",
+      },
+      {
+        q: "Will we practice programming?",
+        a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      },
+      {
+        q: "Will there be recordings?",
+        a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+      },
+      {
+        q: "How will I communicate to you during the workshop?",
+        a: "We will use Discord to communicate with one another. I will have a second monitor open so that I can see what you say. My experience has been positive with this kind of setup. Many people seem willing to talk by chat in ways they wouldn't verbally. Also participants tend to not think they are interrupting the speaker when they ask questions.",
+      },
+      {
+        q: "I'm nervous that I can't handle the difficulty of the class.",
+        a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
+      },
+      {
+        q: "How should I prepare?",
+        a: "I encourage you to read my book, Causal Inference: The Mixtape which is available online for free <a href='https://mixtape.scunning.com' class='text-violet-600 hover:text-violet-700 underline decoration-2'>here</a>. Whenever possible, then read the underlying articles that interest you to go deeper.",
+      },
+      {
+        q: "I don't have a Stata license. It's too expensive. What do I do?",
+        a: "No worries! Stata has graciously provided a temporary license for all participants. Before the workshop starts, I will distribute to all of you your license so that you can have it.",
+      },
+      {
+        q: "Are there office hours?",
+        a: "If you are paying the full price, you get 30 minutes of office hours per workshop. So if someone paid for the bundled workshops, you would get 1 hour. I will be creating a calendy app with times so that you can sign up for office hours over the semester. We can talk about whatever you want.",
+      },
+    ],
   },
   // Regression Discontinuity Design (Rocío Titunik)
   {
