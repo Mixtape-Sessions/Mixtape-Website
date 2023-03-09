@@ -3,6 +3,11 @@ interface CalendarDay {
   time: string;
   topics: string[];
 }
+export interface FAQ {
+  id?: string;
+  q: string;
+  a: string;
+}
 export interface Date {
   date: string;
   url: string;
@@ -24,6 +29,7 @@ export interface Session {
   buttonGradient: string;
   about: string;
   dates: Date[];
+  faqs: FAQ[];
   instructors: Instructor[];
 }
 
@@ -94,11 +100,54 @@ const sessions: Session[] = [
         about: `<a href="https://www.scunning.com" class="text-violet-red-500 hover:text-violet-red-600">Scott Cunningham</a> is a professor of economics at Baylor University. Scott studies a number of topics including mental healthcare, sex work, abortion and drug policy. He loves his family, friends, colleagues, students, HBO, Ted Lasso, Keanu Reeves, Mister Rogers, my kittens Betty and Veronica, causal inference, and hip hop.`,
         img: `scott_cunningham.png`,
         reviews: [
-          "I can’t endorse these workshops highly enough. The ambitious syllabus is covered in great detail, interlaced with tangible examples and useful economic history lessons in addition to personal anecdotes. Anybody interested in gaining a deeper understanding in the science (art?) of causal inference and its recent developments will not regret investing a few hours (and a few dollars) in Scott’s workshops",
+          "I can't endorse these workshops highly enough. The ambitious syllabus is covered in great detail, interlaced with tangible examples and useful economic history lessons in addition to personal anecdotes. Anybody interested in gaining a deeper understanding in the science (art?) of causal inference and its recent developments will not regret investing a few hours (and a few dollars) in Scott's workshops",
           "Your effort to explain complex contents in such a practical way and your patience, please keep doing what you do, because it's excellent and so much needed in a difficult and sometimes not very inclusive field such economics.",
           "The course is taught in such a pedagogical manor, and communicates a lot of complex material in a short amount of time. It is a huge bonus how attentive Scott was to our questions and comments. This course would be super useful anyone working with causal inference (or hoping to) whether you are advanced or just a beginner. Only nice words to say - such an amazing week. I kind of want to do it again already.",
           "Scott's ability to explain fairly complex methods and concepts in an intuitive way, plus his complete openness and availability to answer questions as they come around, and his commitment to democratize causal inference (truly admirable and very rare within economics) make this a wonderful workshop that I would highly recommend to anyone wanting to learn more about the topic and methods.",
         ],
+      },
+    ],
+    faqs: [
+      {
+        id: "discounts",
+        q: "Are discounts available?",
+        a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
+      },
+      {
+        q: "How do I access the material I need for the course?",
+        a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700 underline decoration-2'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+      },
+      {
+        q: "How long will it take me to master this?",
+        a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+      },
+      {
+        q: "Will there be breaks?",
+        a: "Yes, we will have 15 min breaks on the hour, plus a one hour break mid-day for lunch.",
+      },
+      {
+        q: "Will we practice programming?",
+        a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      },
+      {
+        q: "Will there be recordings?",
+        a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+      },
+      {
+        q: "I'm nervous that I can't handle the difficulty of the class.",
+        a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
+      },
+      {
+        q: "How should I prepare?",
+        a: "I encourage you to read my book, Causal Inference: The Mixtape which is available online for free <a href='https://mixtape.scunning.com' class='text-violet-600 hover:text-violet-700 underline decoration-2'>here</a>. Whenever possible, then read the underlying articles that interest you to go deeper.",
+      },
+      {
+        q: "I don't have a Stata license. It's too expensive. What do I do?",
+        a: "No worries! Stata has graciously provided a temporary license for all participants. Before the workshop starts, I will distribute to all of you your license so that you can have it.",
+      },
+      {
+        q: "Are there office hours?",
+        a: "If you are paying the full price, you get 30 minutes of office hours per workshop. So if someone paid for the bundled workshops, you would get 1 hour. I will be creating a calendy app with times so that you can sign up for office hours over the semester. We can talk about whatever you want.",
       },
     ],
   },
@@ -148,7 +197,7 @@ const sessions: Session[] = [
             topics: [
               "Continuous Treatment (Callaway, Goodman-Bacon and Sant'Anna 2020)",
               "Synthetic control (Abadie, Diamond and Hainmueller 2010)",
-              "Augmented synthetic control (Ben-Michael, Feller, Rothstein 2022)"
+              "Augmented synthetic control (Ben-Michael, Feller, Rothstein 2022)",
             ],
           },
         ],
@@ -160,12 +209,59 @@ const sessions: Session[] = [
         url: "http://scunning.com/",
         about: `<a href="https://www.scunning.com" class="text-violet-red-500 hover:text-violet-red-600">Scott Cunningham</a> is a professor of economics at Baylor University. Scott studies a number of topics including mental healthcare, sex work, abortion and drug policy. He loves his family, friends, colleagues, students, HBO, Ted Lasso, Keanu Reeves, Mister Rogers, my kittens Betty and Veronica, causal inference, and hip hop.`,
         reviews: [
-          "I can’t endorse these workshops highly enough. The ambitious syllabus is covered in great detail, interlaced with tangible examples and useful economic history lessons in addition to personal anecdotes. Anybody interested in gaining a deeper understanding in the science (art?) of causal inference and its recent developments will not regret investing a few hours (and a few dollars) in Scott’s workshops",
+          "I can't endorse these workshops highly enough. The ambitious syllabus is covered in great detail, interlaced with tangible examples and useful economic history lessons in addition to personal anecdotes. Anybody interested in gaining a deeper understanding in the science (art?) of causal inference and its recent developments will not regret investing a few hours (and a few dollars) in Scott's workshops",
           "Your effort to explain complex contents in such a practical way and your patience, please keep doing what you do, because it's excellent and so much needed in a difficult and sometimes not very inclusive field such economics.",
           "The course is taught in such a pedagogical manor, and communicates a lot of complex material in a short amount of time. It is a huge bonus how attentive Scott was to our questions and comments. This course would be super useful anyone working with causal inference (or hoping to) whether you are advanced or just a beginner. Only nice words to say - such an amazing week. I kind of want to do it again already.",
           "Scott's ability to explain fairly complex methods and concepts in an intuitive way, plus his complete openness and availability to answer questions as they come around, and his commitment to democratize causal inference (truly admirable and very rare within economics) make this a wonderful workshop that I would highly recommend to anyone wanting to learn more about the topic and methods.",
         ],
         img: `scott_cunningham.png`,
+      },
+    ],
+    faqs: [
+      {
+        id: "discounts",
+        q: "Are discounts available?",
+        a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      },
+      {
+        q: "How do I access the material I need for the course?",
+        a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700 underline decoration-2'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+      },
+      {
+        q: "How long will it take me to master this?",
+        a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+      },
+      {
+        q: "Will there be breaks?",
+        a: "Yes, we will have 15 min breaks on the hour, plus a one hour break mid-day for lunch.",
+      },
+      {
+        q: "Will we practice programming?",
+        a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      },
+      {
+        q: "Will there be recordings?",
+        a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+      },
+      {
+        q: "How will I communicate to you during the workshop?",
+        a: "We will use Discord to communicate with one another. I will have a second monitor open so that I can see what you say. My experience has been positive with this kind of setup. Many people seem willing to talk by chat in ways they wouldn't verbally. Also participants tend to not think they are interrupting the speaker when they ask questions.",
+      },
+      {
+        q: "I'm nervous that I can't handle the difficulty of the class.",
+        a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
+      },
+      {
+        q: "How should I prepare?",
+        a: "I encourage you to read my book, Causal Inference: The Mixtape which is available online for free <a href='https://mixtape.scunning.com' class='text-violet-600 hover:text-violet-700 underline decoration-2'>here</a>. Whenever possible, then read the underlying articles that interest you to go deeper.",
+      },
+      {
+        q: "I don't have a Stata license. It's too expensive. What do I do?",
+        a: "No worries! Stata has graciously provided a temporary license for all participants. Before the workshop starts, I will distribute to all of you your license so that you can have it.",
+      },
+      {
+        q: "Are there office hours?",
+        a: "If you are paying the full price, you get 30 minutes of office hours per workshop. So if someone paid for the bundled workshops, you would get 1 hour. I will be creating a calendy app with times so that you can sign up for office hours over the semester. We can talk about whatever you want.",
       },
     ],
   },
@@ -226,6 +322,32 @@ const sessions: Session[] = [
         img: `mark_anderson.jpg`,
       },
     ],
+    faqs: [
+      {
+        q: "How do I access the material I need for the course?",
+        a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700 underline decoration-2'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+      },
+      {
+        q: "How long will it take me to master this?",
+        a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+      },
+      {
+        q: "Will there be breaks?",
+        a: "Yes, we will have 15 min breaks on the hour, plus a one hour break mid-day for lunch.",
+      },
+      {
+        q: "Will we practice programming?",
+        a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      },
+      {
+        q: "Will there be recordings?",
+        a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+      },
+      {
+        q: "I'm nervous that I can't handle the difficulty of the class.",
+        a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
+      },
+    ],
   },
   // Advanced DID (Jonathan Roth)
   {
@@ -259,6 +381,53 @@ const sessions: Session[] = [
         url: "https://jonathandroth.github.io/",
         about: `<a href="https://jonathandroth.github.io/" class="text-violet-red-500 hover:text-violet-red-600">Jonathan Roth</a> is an assistant professor in the economics department at Brown University. His primary research interests are in econometrics, with a focus on causal inference. He has also worked on topics in labor economics, machine learning, and algorithmic fairness. He was previously a senior researcher in the Office of the Chief Economist at Microsoft. He received my PhD in economics in 2020 from Harvard, where He was awarded the David A. Wells prize for best dissertation. He obtained a BA summa cum laude in mathematics and economics from the University of Pennsylvania.`,
         img: `jonathan_roth.jpeg`,
+      },
+    ],
+    faqs: [
+      {
+        id: "discounts",
+        q: "Are discounts available?",
+        a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      },
+      {
+        q: "How do I access the material I need for the course?",
+        a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700 underline decoration-2'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+      },
+      {
+        q: "How long will it take me to master this?",
+        a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+      },
+      {
+        q: "Will there be breaks?",
+        a: "Yes, we will have 15 min breaks on the hour, plus a one hour break mid-day for lunch.",
+      },
+      {
+        q: "Will we practice programming?",
+        a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      },
+      {
+        q: "Will there be recordings?",
+        a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+      },
+      {
+        q: "How will I communicate to you during the workshop?",
+        a: "We will use Discord to communicate with one another. I will have a second monitor open so that I can see what you say. My experience has been positive with this kind of setup. Many people seem willing to talk by chat in ways they wouldn't verbally. Also participants tend to not think they are interrupting the speaker when they ask questions.",
+      },
+      {
+        q: "I'm nervous that I can't handle the difficulty of the class.",
+        a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
+      },
+      {
+        q: "How should I prepare?",
+        a: "I encourage you to read my book, Causal Inference: The Mixtape which is available online for free <a href='https://mixtape.scunning.com' class='text-violet-600 hover:text-violet-700 underline decoration-2'>here</a>. Whenever possible, then read the underlying articles that interest you to go deeper.",
+      },
+      {
+        q: "I don't have a Stata license. It's too expensive. What do I do?",
+        a: "No worries! Stata has graciously provided a temporary license for all participants. Before the workshop starts, I will distribute to all of you your license so that you can have it.",
+      },
+      {
+        q: "Are there office hours?",
+        a: "If you are paying the full price, you get 30 minutes of office hours per workshop. So if someone paid for the bundled workshops, you would get 1 hour. I will be creating a calendy app with times so that you can sign up for office hours over the semester. We can talk about whatever you want.",
       },
     ],
   },
@@ -295,8 +464,95 @@ const sessions: Session[] = [
         url: "https://economics.mit.edu/people/faculty/alberto-abadie",
         about: `<a href="https://economics.mit.edu/people/faculty/alberto-abadie" class="text-violet-red-500 hover:text-violet-red-600">Alberto Abadie</a> is an econometrician and empirical microeconomist with broad disciplinary interests. Professor Abadie received his Ph.D. in Economics from MIT in 1999. Upon graduating, he joined the faculty at the Harvard Kennedy School, where he was promoted to full professor in 2005. He returned to MIT in 2016, where he is Professor of Economics and Associate Director of the Institute for Data, Systems, and Society (IDSS).
         <br /><br />
-        His research areas are econometrics, statistics, causal inference, and program evaluation. Professor Abadie’s methodological research focuses on econometric methods to estimate causal effects and, in particular, the effects of public policies, such as labor market, education, and health policy interventions. He is Associate Editor of AER: Insights, and has previously served as Editor of the Review of Economics and Statistics and Associate Editor of Econometrica and the Journal of Business and Economic Statistics. He is a Fellow of the Econometric Society and a Member of the American Academy of Arts and Sciences.`,
+        His research areas are econometrics, statistics, causal inference, and program evaluation. Professor Abadie's methodological research focuses on econometric methods to estimate causal effects and, in particular, the effects of public policies, such as labor market, education, and health policy interventions. He is Associate Editor of AER: Insights, and has previously served as Editor of the Review of Economics and Statistics and Associate Editor of Econometrica and the Journal of Business and Economic Statistics. He is a Fellow of the Econometric Society and a Member of the American Academy of Arts and Sciences.`,
         img: `alberto_abadie.jpeg`,
+      },
+    ],
+  },
+  // Regression Discontinuity Design (Rocío Titunik)
+  {
+    id: "rdd",
+    title: "Regression Discontinuity Design",
+    type: "Mixtape Track",
+    gradientClass: "sm:rdd-gradient",
+    buttonGradient: "rdd-gradient",
+    about: `This course covers methods for the analysis and interpretation of the Regression Discontinuity (RD) design, a non-experimental strategy to study treatment effects that can be used when units receive a treatment based on a score and a cutoff. The course covers methods for estimation, inference, and falsification of RD treatment effects using two different approaches: the continuity-based framework, implemented with local polynomials, and the local randomization framework, implemented with standard tools from the analysis of experiments. The focus is on conceptual understanding of the underlying methodological issues and effective empirical implementation. Every topic is illustrated with the analysis of RD examples using real-world data, walking through R and Stata codes that fully implement all the methods discussed. At the end of the course, participants will have acquired the necessary skills to rigorously interpret, visualize, validate, estimate, and characterize the uncertainty of RD treatment effects.`,
+    dates: [
+      {
+        date: "May 17th",
+        url: "rdd_may17",
+        eventbrite: "https://www.eventbrite.com/e/579511102307",
+        calendar: [
+          {
+            day: "May 17th",
+            time: "6pm-9pm EST",
+            topics: [
+              "Sharp RD design: introduction and graphical illustration with RD plots",
+              "Continuity based RD analysis",
+              "Estimation of RD effects with local polynomials",
+              "Optimal bandwidth selection",
+            ],
+          },
+          {
+            day: "May 18th",
+            time: "6pm-9pm EST",
+            topics: [
+              "Continuity based RD analysis, continued",
+              "Robust confidence intervals based on local polynomials",
+              "Local Randomization RD analysis",
+              "Inferences based on Fisherian methods",
+              "Window selection based on covariates",
+              "Inferences based on large-sample methods",
+            ],
+          },
+          {
+            day: "May 19th",
+            time: "6pm-9pm EST",
+            topics: [
+              "Falsification of RD assumptions: density and covariate balance tests",
+              "Imperfect compliance: The Fuzzy RD design",
+            ],
+          },
+        ],
+      },
+    ],
+    instructors: [
+      {
+        name: "Prof. Rocío Titunik",
+        url: "https://titiunik.scholar.princeton.edu",
+        about: `<a href="https://titiunik.scholar.princeton.edu" class="text-violet-red-500 hover:text-violet-red-600">Rocío Titunik</a> is Professor of Politics at Princeton University, where she is also an associated faculty with the Department of Operations Research and Financial Engineering, the Center for Statistics and Machine Learning, the Program in Latin American Studies, the Center for the Study of Democratic Politics, and the Research Program in Political Economy. She specializes in quantitative methodology for the social and behavioral sciences, with emphasis on quasi-experimental methods for causal inference and program evaluation. Her research interests lie at the intersection of political economy, political science, statistics, and data science, particularly on the development and application of quantitative methods to the study of political institutions. Her recent methodological research includes the development of statistical methods for regression discontinuity (RD) designs. Her recent substantive research centers on democratic accountability and the role of party systems in developing democracies.`,
+        img: `rocio_titiunik.jpeg`,
+      },
+    ],
+    faqs: [
+      {
+        id: "discounts",
+        q: "Are discounts available?",
+        a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      },
+      {
+        q: "How do I access the material I need for the course?",
+        a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700 underline decoration-2'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+      },
+      {
+        q: "How long will it take me to master this?",
+        a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+      },
+      {
+        q: "Will there be breaks?",
+        a: "Yes, we will have 15 min breaks on the hour, plus a one hour break mid-day for lunch.",
+      },
+      {
+        q: "Will we practice programming?",
+        a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      },
+      {
+        q: "Will there be recordings?",
+        a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+      },
+      {
+        q: "I'm nervous that I can't handle the difficulty of the class.",
+        a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
       },
     ],
   },
@@ -355,6 +611,37 @@ const sessions: Session[] = [
         ],
       },
     ],
+    faqs: [
+      {
+        id: "discounts",
+        q: "Are discounts available?",
+        a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      },
+      {
+        q: "How do I access the material I need for the course?",
+        a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700 underline decoration-2'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+      },
+      {
+        q: "How long will it take me to master this?",
+        a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+      },
+      {
+        q: "Will there be breaks?",
+        a: "Yes, we will have 15 min breaks on the hour, plus a one hour break mid-day for lunch.",
+      },
+      {
+        q: "Will we practice programming?",
+        a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      },
+      {
+        q: "Will there be recordings?",
+        a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+      },
+      {
+        q: "I'm nervous that I can't handle the difficulty of the class.",
+        a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
+      },
+    ],
   },
   // Machine Learning and Heterogeneous Effects (Brigham Frandsen)
   {
@@ -388,6 +675,37 @@ const sessions: Session[] = [
           "Insightful, well-explained and hands-on workshop that taught me a lot. Dr Frandsen was super helpful and explained concepts clearly. It was a great mix of interactive, practical exercises and theoretical explanations!",
           "Outstanding selection of content and case studies. Excellent instructor. You will come out of this workshop with a very decent overview of Machine Learning methods and their applications in causal inference.",
         ],
+      },
+    ],
+    faqs: [
+      {
+        id: "discounts",
+        q: "Are discounts available?",
+        a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      },
+      {
+        q: "How do I access the material I need for the course?",
+        a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700 underline decoration-2'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+      },
+      {
+        q: "How long will it take me to master this?",
+        a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+      },
+      {
+        q: "Will there be breaks?",
+        a: "Yes, we will have 15 min breaks on the hour, plus a one hour break mid-day for lunch.",
+      },
+      {
+        q: "Will we practice programming?",
+        a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      },
+      {
+        q: "Will there be recordings?",
+        a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+      },
+      {
+        q: "I'm nervous that I can't handle the difficulty of the class.",
+        a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
       },
     ],
   },
@@ -440,6 +758,37 @@ const sessions: Session[] = [
         img: `peter_hull.png`,
       },
     ],
+    faqs: [
+      {
+        id: "discounts",
+        q: "Are discounts available?",
+        a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      },
+      {
+        q: "How do I access the material I need for the course?",
+        a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700 underline decoration-2'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+      },
+      {
+        q: "How long will it take me to master this?",
+        a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+      },
+      {
+        q: "Will there be breaks?",
+        a: "Yes, we will have 15 min breaks on the hour, plus a one hour break mid-day for lunch.",
+      },
+      {
+        q: "Will we practice programming?",
+        a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      },
+      {
+        q: "Will there be recordings?",
+        a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+      },
+      {
+        q: "I'm nervous that I can't handle the difficulty of the class.",
+        a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
+      },
+    ],
   },
   // Instrumental Variables (Peter Hull)
   {
@@ -488,6 +837,37 @@ const sessions: Session[] = [
           "This workshop was expertly run. The exposure to a really amazing instructor in Peter Hull was valuable in and of itself. The lectures were well prepared, lots of helpful readings and lecture notes were provided. I came away having learning more about IV and feel more confident about how IV works, in theory and practice.",
         ],
         img: `peter_hull.png`,
+      },
+    ],
+    faqs: [
+      {
+        id: "discounts",
+        q: "Are discounts available?",
+        a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
+      },
+      {
+        q: "How do I access the material I need for the course?",
+        a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+      },
+      {
+        q: "How long will it take me to master this?",
+        a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+      },
+      {
+        q: "Will there be breaks?",
+        a: "Yes, we will have 15 min breaks on the hour, plus a one hour break mid-day for lunch.",
+      },
+      {
+        q: "Will we practice programming?",
+        a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      },
+      {
+        q: "Will there be recordings?",
+        a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+      },
+      {
+        q: "I'm nervous that I can't handle the difficulty of the class.",
+        a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
       },
     ],
   },

@@ -52,7 +52,7 @@ const description = `Workshop taught by ${names} starting on ${session.dates[0].
       <CallToAction session={session} date={date} />
       <SessionCalendar date={date} />
       <SessionHost instructors={session.instructors} />
-      <SessionFAQ instructor={session.instructors[0]} />
+      <SessionFAQ faqs={session.faqs} />
     </div>
   </div>
 </Layout>
