@@ -306,6 +306,9 @@ let applied: Session = {
         "A must attend for any aspiring researchers to learn the (unwritten) rules of applied research and the publishing process.",
         "The instructor's approach to showcasing examples of papers, review and publication process, and steps to better prepare for the job market was invaluable.",
         "Both the professors were extremely resourceful. The workshop was well-organized and allowed attendees sufficient insight into how to write an applied paper, what the publication process entails and how important conferences and networking is for graduate students.",
+        "I thought the workshop was excellent.  As an incoming 3rd year PhD student, I received valuable insight into the publication process, as well as what the dos and don'ts are.",
+        "Most of the information is generally not available to grad students easily and it's a learning process for everyone that takes a lot time.  This helps bridge the gap, which I'm really grateful for.",
+        "Mark and Dan bring such great energy to accompany their expertise and knowledge and kept the material engaging all day."
       ],
     },
     {
