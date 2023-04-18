@@ -328,16 +328,12 @@ let applied: Session = {
       a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
     },
     {
-      q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
-    },
-    {
       q: "Will there be recordings?",
       a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
     },
     {
       q: "I'm nervous that I can't handle the difficulty of the class.",
-      a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
+      a: "Don't be. We are good teachers. If we can learn this, so can you.",
     },
   ],
 };
