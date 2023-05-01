@@ -42,14 +42,63 @@ let ci_I: Session = {
   buttonGradient: "ci-gradient",
   about: `Causal Inference Part I kickstarts a new 4-day series on design-based causal inference series.  It covers the foundations of causal inference grounded in a counterfactual theory of causality built on the Neyman-Rubin model of potential outcomes. It will also cover randomization inference, independence, matching, regression discontinuity and instrumental variables.  We will review the theory behind each of these designs in detail with the aim being comprehension, competency and confidence.  Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch.  To help accomplish this, we will hold ongoing discussions via Discourse, work through assignments and exercises together, and have detailed walk-throughs of code in R and Stata. This is the prequel to the Part II course that covers difference-in-differences and synthetic control.`,
   dates: [
+    // {
+    //   date: "February 4th",
+    //   url: "ci_I_feb4",
+    //   eventbrite: "https://eventbrite.com/e/495858685677",
+    //   calendar: [
+    //     {
+    //       day: "February 4th",
+    //       time: "8am-5pm CST",
+    //       topics: [
+    //         "Introduction to causal inference",
+    //         "Potential outcomes and counterfactuals",
+    //         "Randomization, selection bias",
+    //         "Randomization inference ",
+    //       ],
+    //     },
+    //     {
+    //       day: "February 5th",
+    //       time: "8am-5pm CST",
+    //       topics: [
+    //         "Introduction to causal graphs",
+    //         "Propensity score matching",
+    //         "Nearest neighbor covariate matching",
+    //       ],
+    //     },
+    //     {
+    //       day: "February 11th",
+    //       time: "8am-5pm CST",
+    //       topics: [
+    //         "Instrumental variables",
+    //         "Canonical estimators (2SLS, Wald)",
+    //         "Intuition and assumptions ",
+    //         "Weak instruments and 2SLS bias",
+    //         "Heterogenous treatment effects",
+    //         "Local average treatment effect",
+    //       ],
+    //     },
+    //     {
+    //       day: "February 12th",
+    //       time: "8am-5pm CST",
+    //       topics: [
+    //         "Introduction to regression discontinuity ",
+    //         "Regression discontinuity identification",
+    //         "Nonlinearities and estimation ",
+    //         "Nonparametric estimation ",
+    //         "General tips (data visualization, density tests, etc)",
+    //       ],
+    //     },
+    //   ],
+    // },
     {
-      date: "February 4th",
-      url: "ci_I_feb4",
-      eventbrite: "https://eventbrite.com/e/495858685677",
+      date: "June 17th (starts 7am Beijing; 9am Tokyo)",
+      url: "ci_I_june17",
+      eventbrite: "https://eventbrite.com/e/591917429967",
       calendar: [
         {
-          day: "February 4th",
-          time: "8am-5pm CST",
+          day: "June 16th",
+          time: "6pm-3am CST",
           topics: [
             "Introduction to causal inference",
             "Potential outcomes and counterfactuals",
@@ -58,8 +107,8 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "February 5th",
-          time: "8am-5pm CST",
+          day: "June 17th",
+          time: "6pm-3am CST",
           topics: [
             "Introduction to causal graphs",
             "Propensity score matching",
@@ -67,8 +116,8 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "February 11th",
-          time: "8am-5pm CST",
+          day: "June 23rd",
+          time: "6pm-3am CST",
           topics: [
             "Instrumental variables",
             "Canonical estimators (2SLS, Wald)",
@@ -79,8 +128,8 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "February 12th",
-          time: "8am-5pm CST",
+          day: "June 24th",
+          time: "6pm-3am CST",
           topics: [
             "Introduction to regression discontinuity ",
             "Regression discontinuity identification",
@@ -156,14 +205,56 @@ let ci_II: Session = {
   buttonGradient: "did-gradient",
   about: `Causal inference Part II is a 4-day workshop in design based causal inference series. It will cover two contemporary research designs in causal inference -- difference-in-differences (including with covariates) and  synthetic control. Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch. We will review the theory behind each design, go into detail on the intuition of the estimation strategies and identification itself, as well as explore code in R and Stata and applications using these methods. The goal as always is that participants leave the workshop with competency and confidence. This class will be a sequel to the 4-day workshop on Causal Inference Part I.`,
   dates: [
+    // {
+    //   date: "March 18th",
+    //   url: "ci_II_mar18",
+    //   eventbrite: "https://eventbrite.com/e/495859688677",
+    //   calendar: [
+    //     {
+    //       day: "March 18th",
+    //       time: "8am-5pm CST",
+    //       topics: [
+    //         "Introduction to DID",
+    //         "Parallel trends and the DID equation",
+    //         "OLS, TWFE, Triple difference",
+    //       ],
+    //     },
+    //     {
+    //       day: "March 19th",
+    //       time: "8am-5pm CST",
+    //       topics: [
+    //         "DID with Covariates (Sant'Anna and Zhao 2020; Abadie 2005)",
+    //         "Differential timing and Bacon decomposition (Goodman-Bacon 2021)",
+    //         "Aggregating group-time average treatment effects (Callaway and SantAnna 2020)",
+    //       ],
+    //     },
+    //     {
+    //       day: "March 25th",
+    //       time: "8am-5pm CST",
+    //       topics: [
+    //         "Analyzing event studies (Sun and Abraham 2020)",
+    //         "Imputation Estimators (Gardner 2021 and Borusyal et al 2021)",
+    //       ],
+    //     },
+    //     {
+    //       day: "March 26th",
+    //       time: "8am-5pm CST",
+    //       topics: [
+    //         "Continuous Treatment (Callaway, Goodman-Bacon and Sant'Anna 2020)",
+    //         "Synthetic control (Abadie, Diamond and Hainmueller 2010)",
+    //         "Augmented synthetic control (Ben-Michael, Feller, Rothstein 2022)",
+    //       ],
+    //     },
+    //   ],
+    // },
     {
-      date: "March 18th",
-      url: "ci_II_mar18",
-      eventbrite: "https://www.eventbrite.com/e/495859688677",
+      date: "July 15th (starts 7am Beijing; 9am Tokyo)",
+      url: "ci_II_july15",
+      eventbrite: "https://eventbrite.com/e/591920408877",
       calendar: [
         {
-          day: "March 18th",
-          time: "8am-5pm CST",
+          day: "July 15th",
+          time: "6pm-3am CST",
           topics: [
             "Introduction to DID",
             "Parallel trends and the DID equation",
@@ -171,8 +262,8 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "March 19th",
-          time: "8am-5pm CST",
+          day: "July 16th",
+          time: "6pm-3am CST",
           topics: [
             "DID with Covariates (Sant'Anna and Zhao 2020; Abadie 2005)",
             "Differential timing and Bacon decomposition (Goodman-Bacon 2021)",
@@ -180,16 +271,16 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "March 25th",
-          time: "8am-5pm CST",
+          day: "July 22nd",
+          time: "6pm-3am CST",
           topics: [
             "Analyzing event studies (Sun and Abraham 2020)",
             "Imputation Estimators (Gardner 2021 and Borusyal et al 2021)",
           ],
         },
         {
-          day: "March 26th",
-          time: "8am-5pm CST",
+          day: "July 23rd",
+          time: "6pm-3am CST",
           topics: [
             "Continuous Treatment (Callaway, Goodman-Bacon and Sant'Anna 2020)",
             "Synthetic control (Abadie, Diamond and Hainmueller 2010)",
@@ -350,7 +441,7 @@ let advanced_did: Session = {
     {
       date: "April 21st",
       url: "advanced_did_apr21",
-      eventbrite: "https://www.eventbrite.com/e/495860049757",
+      eventbrite: "https://eventbrite.com/e/495860049757",
       calendar: [
         {
           day: "April 21st",
@@ -429,7 +520,7 @@ let synth_and_clust: Session = {
     {
       date: "April 27th",
       url: "synth_and_clust_apr27",
-      eventbrite: "https://www.eventbrite.com/e/498685209887",
+      eventbrite: "https://eventbrite.com/e/498685209887",
       calendar: [
         {
           day: "April 27th",
@@ -511,7 +602,7 @@ let rdd: Session = {
     {
       date: "May 17th",
       url: "rdd_may17",
-      eventbrite: "https://www.eventbrite.com/e/579511102307",
+      eventbrite: "https://eventbrite.com/e/579511102307",
       calendar: [
         {
           day: "May 17th",
@@ -595,7 +686,7 @@ let ml: Session = {
     {
       date: "February 23rd",
       url: "ml_feb23",
-      eventbrite: "https://www.eventbrite.com/e/495868896217",
+      eventbrite: "https://eventbrite.com/e/495868896217",
       calendar: [
         {
           day: "February 23rd",
@@ -679,7 +770,7 @@ let ml_het_effects: Session = {
     {
       date: "May 15th",
       url: "ml_het_effects_may15",
-      eventbrite: "https://www.eventbrite.com/e/496348962107",
+      eventbrite: "https://eventbrite.com/e/496348962107",
       calendar: [
         {
           day: "May 15th",
@@ -742,7 +833,7 @@ let shift_share: Session = {
     // {
     // 	date: "Nov 2nd",
     // 	url: "shift_share_nov2",
-    // 	eventbrite: "https://www.eventbrite.com/e/",
+    // 	eventbrite: "https://eventbrite.com/e/",
     // 	calendar: [
     // 		{
     // 			day: "Nov 2nd",
@@ -820,7 +911,7 @@ let iv: Session = {
     // {
     // 	date: "September 27th",
     // 	url: "iv_sept27",
-    // 	eventbrite: "https://www.eventbrite.com/e/",
+    // 	eventbrite: "https://eventbrite.com/e/",
     // 	calendar: [
     // 		{
     // 			day: "September 27th",
