@@ -98,7 +98,7 @@ let ci_I: Session = {
       calendar: [
         {
           day: "June 16th",
-          time: "6pm-3am CST",
+          time: "7am-4pm GMT+8",
           topics: [
             "Introduction to causal inference",
             "Potential outcomes and counterfactuals",
@@ -108,7 +108,7 @@ let ci_I: Session = {
         },
         {
           day: "June 17th",
-          time: "6pm-3am CST",
+          time: "7am-4pm GMT+8",
           topics: [
             "Introduction to causal graphs",
             "Propensity score matching",
@@ -117,7 +117,7 @@ let ci_I: Session = {
         },
         {
           day: "June 23rd",
-          time: "6pm-3am CST",
+          time: "7am-4pm GMT+8",
           topics: [
             "Instrumental variables",
             "Canonical estimators (2SLS, Wald)",
@@ -129,7 +129,7 @@ let ci_I: Session = {
         },
         {
           day: "June 24th",
-          time: "6pm-3am CST",
+          time: "7am-4pm GMT+8",
           topics: [
             "Introduction to regression discontinuity ",
             "Regression discontinuity identification",
@@ -254,7 +254,7 @@ let ci_II: Session = {
       calendar: [
         {
           day: "July 15th",
-          time: "6pm-3am CST",
+          time: "7am-4pm GMT+8",
           topics: [
             "Introduction to DID",
             "Parallel trends and the DID equation",
@@ -263,7 +263,7 @@ let ci_II: Session = {
         },
         {
           day: "July 16th",
-          time: "6pm-3am CST",
+          time: "7am-4pm GMT+8",
           topics: [
             "DID with Covariates (Sant'Anna and Zhao 2020; Abadie 2005)",
             "Differential timing and Bacon decomposition (Goodman-Bacon 2021)",
@@ -272,7 +272,7 @@ let ci_II: Session = {
         },
         {
           day: "July 22nd",
-          time: "6pm-3am CST",
+          time: "7am-4pm GMT+8",
           topics: [
             "Analyzing event studies (Sun and Abraham 2020)",
             "Imputation Estimators (Gardner 2021 and Borusyal et al 2021)",
@@ -280,7 +280,7 @@ let ci_II: Session = {
         },
         {
           day: "July 23rd",
-          time: "6pm-3am CST",
+          time: "7am-4pm GMT+8",
           topics: [
             "Continuous Treatment (Callaway, Goodman-Bacon and Sant'Anna 2020)",
             "Synthetic control (Abadie, Diamond and Hainmueller 2010)",
