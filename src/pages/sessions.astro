@@ -10,6 +10,16 @@ let tracks = sessions
   .filter((session) => {
     return session.dates.length > 0
   })
+  // filter out sessions that have already happened
+  .filter((session) => {
+    let today = new Date();
+    // subtract 9 days to make sure we don't filter out sessions that are ongoing
+    today = new Date(today.setDate(today.getDate() - 9));
+
+    let sessionDate = new Date(session.dates[0].date.replace(/th|st|rd/, "") + ", " + today.getFullYear());
+
+    return sessionDate > today;
+  })
   .sort((a, b) => {
     let aDate = new Date(a.dates[0].date.replace(/th|st|rd/, "") + ", 2022");
     let bDate = new Date(b.dates[0].date.replace(/th|st|rd/, "") + ", 2022");

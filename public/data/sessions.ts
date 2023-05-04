@@ -438,22 +438,22 @@ let advanced_did: Session = {
   buttonGradient: "advanced-did-gradient",
   about: `This one-day workshop will cover advanced topics from the recent difference-in-differences literature. One question of particular focus will be, <i>"what should I do if I'm not 100% sure about the validity of the parallel trends assumption?"</i> We will cover a variety of relaxations to the parallel trends assumption, and new tools for power calculations and sensitivity analysis. The workshop will focus not just on the theory, but also on practical implementation in statistical software such as R and Stata.`,
   dates: [
-    // {
-    //   date: "April 21st",
-    //   url: "advanced_did_apr21",
-    //   eventbrite: "https://eventbrite.com/e/495860049757",
-    //   calendar: [
-    //     {
-    //       day: "April 21st",
-    //       time: "9am-5pm EST",
-    //       topics: [
-    //         "Canonical Difference-in-Differences",
-    //         "Staggered Treatment Timing",
-    //         "Violations of Pre-Trends",
-    //       ],
-    //     },
-    //   ],
-    // },
+    {
+      date: "April 21st",
+      url: "advanced_did_apr21",
+      eventbrite: "https://eventbrite.com/e/495860049757",
+      calendar: [
+        {
+          day: "April 21st",
+          time: "9am-5pm EST",
+          topics: [
+            "Canonical Difference-in-Differences",
+            "Staggered Treatment Timing",
+            "Violations of Pre-Trends",
+          ],
+        },
+      ],
+    },
   ],
   instructors: [
     {
@@ -517,23 +517,23 @@ let synth_and_clust: Session = {
   buttonGradient: "synth-and-clust-gradient",
   about: `In this course, we will cover the fundamentals of synthetic control estimation and inference, with special emphasis on actionable guidance for applied research. We will discuss seven crucial guiding principles for empirical studies using synthetic controls and how these principles are applied in practice. Towards the end of the course, we will change topics to address “the” FAQ of econometrics office hours: When and how should we cluster standard errors?`,
   dates: [
-    // {
-    //   date: "April 27th",
-    //   url: "synth_and_clust_apr27",
-    //   eventbrite: "https://eventbrite.com/e/498685209887",
-    //   calendar: [
-    //     {
-    //       day: "April 27th",
-    //       time: "6pm-9pm EST",
-    //       topics: ["Synthetic Control"],
-    //     },
-    //     {
-    //       day: "April 28th",
-    //       time: "6pm-9pm EST",
-    //       topics: ["Clustering"],
-    //     },
-    //   ],
-    // },
+    {
+      date: "April 27th",
+      url: "synth_and_clust_apr27",
+      eventbrite: "https://eventbrite.com/e/498685209887",
+      calendar: [
+        {
+          day: "April 27th",
+          time: "6pm-9pm EST",
+          topics: ["Synthetic Control"],
+        },
+        {
+          day: "April 28th",
+          time: "6pm-9pm EST",
+          topics: ["Clustering"],
+        },
+      ],
+    },
   ],
   instructors: [
     {
@@ -683,39 +683,39 @@ let ml: Session = {
   buttonGradient: "ml-gradient",
   about: `Machine Learning's wheelhouse is out-of-sample prediction, but these powerful methods can be deployed in service of causal inference. This two-session workshop will introduce the basics of machine learning prediction methods, including lasso and random forests and how they feature in causal inference methods like double machine learning (DML) and post-double selection lasso (PDS lasso). The course covers the conceptual and theoretical basis for the methods and also gets into the nuts and bolts of implementation in python and Stata using real-world data.`,
   dates: [
-    // {
-    //   date: "February 23rd",
-    //   url: "ml_feb23",
-    //   eventbrite: "https://eventbrite.com/e/495868896217",
-    //   calendar: [
-    //     {
-    //       day: "February 23rd",
-    //       time: "6pm-9pm EST",
-    //       topics: [
-    //         "Question your questions (are you asking a predictive or a causal question?)",
-    //         "What is causality?",
-    //         "What is prediction and how does it differ from causality?",
-    //         "Review standard tools of causal inference (concepts + python/Stata)",
-    //         "RCT gold standard",
-    //         "Multiple regression",
-    //         "Introduce ML prediction tools (concepts + python/Stata)",
-    //         "Prediction objective",
-    //         "Bias-variance tradeoff",
-    //         "Lasso",
-    //         "Random forest",
-    //       ],
-    //     },
-    //     {
-    //       day: "February 24th",
-    //       time: "6pm-9pm EST",
-    //       topics: [
-    //         "Put ML to work in service of causality (concepts + python/Stata)",
-    //         "Post-double selection lasso (PDS)",
-    //         "Double/de-biased machine learning (DML)",
-    //       ],
-    //     },
-    //   ],
-    // },
+    {
+      date: "February 23rd",
+      url: "ml_feb23",
+      eventbrite: "https://eventbrite.com/e/495868896217",
+      calendar: [
+        {
+          day: "February 23rd",
+          time: "6pm-9pm EST",
+          topics: [
+            "Question your questions (are you asking a predictive or a causal question?)",
+            "What is causality?",
+            "What is prediction and how does it differ from causality?",
+            "Review standard tools of causal inference (concepts + python/Stata)",
+            "RCT gold standard",
+            "Multiple regression",
+            "Introduce ML prediction tools (concepts + python/Stata)",
+            "Prediction objective",
+            "Bias-variance tradeoff",
+            "Lasso",
+            "Random forest",
+          ],
+        },
+        {
+          day: "February 24th",
+          time: "6pm-9pm EST",
+          topics: [
+            "Put ML to work in service of causality (concepts + python/Stata)",
+            "Post-double selection lasso (PDS)",
+            "Double/de-biased machine learning (DML)",
+          ],
+        },
+      ],
+    },
   ],
   instructors: [
     {
@@ -830,32 +830,32 @@ let shift_share: Session = {
   buttonGradient: "shift-share-gradient",
   about: `Shift-Share Instrumental Variables (SSIV) are used to address endogeneity and selection challenges in many economic settings. This half-day workshop will introduce the basics of SSIV and cover the recent literature on its econometric foundations. Special focus will be paid on the different assumptions underlying the "exogenous shares" and "exogenous shocks" approaches to SSIV identification, and their practical implications. We will also cover a more general class of instrumental variable strategies combining exogenous shocks and non-random exposure. Group programming exercises will be used to illustrate various theoretical concepts in real-world applications.`,
   dates: [
-    // {
-    // 	date: "Nov 2nd",
-    // 	url: "shift_share_nov2",
-    // 	eventbrite: "https://eventbrite.com/e/",
-    // 	calendar: [
-    // 		{
-    // 			day: "Nov 2nd",
-    // 			time: "6pm-9pm EST",
-    // 			topics: [
-    // 				"Introducing Shift-Share IV: Recent Applications",
-    // 				"The 'Exogenous Shares' Approach (Goldsmith-Pinkham et al. 2020)",
-    // 				"The 'Exogenous Shocks' Approach (Borusyak et al., 2022)",
-    // 			],
-    // 		},
-    //     {
-    // 			day: "Nov 3rd",
-    // 			time: "6pm-9pm EST",
-    // 			topics: [
-    // 				"The 'Exogenous Shocks' Approach (Borusyak et al., 2022)",
-    // 				"Practical Implications from Exogenous Shares vs. Shocks",
-    // 				"Beyond SSIV: Non-Random Exposure to Exogenous Shocks (Borusyak and Hull, 2022)",
-    // 				"Coding Lab",
-    // 			],
-    // 		},
-    // 	],
-    // },
+    {
+    	date: "Nov 2nd",
+    	url: "shift_share_nov2",
+    	eventbrite: "https://eventbrite.com/e/",
+    	calendar: [
+    		{
+    			day: "Nov 2nd",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"Introducing Shift-Share IV: Recent Applications",
+    				"The 'Exogenous Shares' Approach (Goldsmith-Pinkham et al. 2020)",
+    				"The 'Exogenous Shocks' Approach (Borusyak et al., 2022)",
+    			],
+    		},
+        {
+    			day: "Nov 3rd",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"The 'Exogenous Shocks' Approach (Borusyak et al., 2022)",
+    				"Practical Implications from Exogenous Shares vs. Shocks",
+    				"Beyond SSIV: Non-Random Exposure to Exogenous Shocks (Borusyak and Hull, 2022)",
+    				"Coding Lab",
+    			],
+    		},
+    	],
+    },
   ],
   instructors: [
     {
@@ -908,32 +908,32 @@ let iv: Session = {
   buttonGradient: "iv-gradient",
   about: `Instrumental variables (IV) is a powerful tool for leveraging external ("exogenous") variation to estimate the causal effects of otherwise confounded ("endogenous") variables. This two-day workshop will introduce the basics of IV through different practical examples, formalize the requirements of a valid and powerful IV, and discuss the mechanics of the two-stage least squares (2SLS) estimator. Special focus will be paid on interpreting linear IV under heterogeneous treatment effects and recent advances in judge leniency designs. The course will include substantial group programming exercises, where different IV techniques will be illustrated in real-world applications.`,
   dates: [
-    // {
-    // 	date: "September 27th",
-    // 	url: "iv_sept27",
-    // 	eventbrite: "https://eventbrite.com/e/",
-    // 	calendar: [
-    // 		{
-    // 			day: "September 27th",
-    // 			time: "6pm-9pm EST",
-    // 			topics: [
-    // 				"Regression Review and Regression Endogeneity",
-    // 				"Introduction to IV",
-    // 				"Understanding Instrument Validity; 2SLS Mechanics; Applications",
-    // 				"Coding Lab",
-    // 			],
-    // 		},
-    // 		{
-    // 			day: "September 28th",
-    // 			time: "6pm-9pm EST",
-    // 			topics: [
-    // 				"Heterogeneous Treatment Effects; Characterizing Compliers; MTEs",
-    // 				"Judge Leniency Designs",
-    // 				"Coding Lab",
-    // 			],
-    // 		},
-    // 	],
-    // },
+    {
+    	date: "September 27th",
+    	url: "iv_sept27",
+    	eventbrite: "https://eventbrite.com/e/",
+    	calendar: [
+    		{
+    			day: "September 27th",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"Regression Review and Regression Endogeneity",
+    				"Introduction to IV",
+    				"Understanding Instrument Validity; 2SLS Mechanics; Applications",
+    				"Coding Lab",
+    			],
+    		},
+    		{
+    			day: "September 28th",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"Heterogeneous Treatment Effects; Characterizing Compliers; MTEs",
+    				"Judge Leniency Designs",
+    				"Coding Lab",
+    			],
+    		},
+    	],
+    },
   ],
   instructors: [
     {
