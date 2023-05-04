@@ -92,7 +92,7 @@ let ci_I: Session = {
     //   ],
     // },
     {
-      date: "June 17th (starts 7am Beijing; 9am Tokyo)",
+      date: "June 17th (starts 8am Beijing; 9am Tokyo)",
       url: "ci_I_june17",
       eventbrite: "https://eventbrite.com/e/591917429967",
       calendar: [
@@ -248,7 +248,7 @@ let ci_II: Session = {
     //   ],
     // },
     {
-      date: "July 15th (starts 7am Beijing; 9am Tokyo)",
+      date: "July 15th (starts 8am Beijing; 9am Tokyo)",
       url: "ci_II_july15",
       eventbrite: "https://eventbrite.com/e/591920408877",
       calendar: [
