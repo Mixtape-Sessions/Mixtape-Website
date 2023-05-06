@@ -908,32 +908,32 @@ let iv: Session = {
   buttonGradient: "iv-gradient",
   about: `Instrumental variables (IV) is a powerful tool for leveraging external ("exogenous") variation to estimate the causal effects of otherwise confounded ("endogenous") variables. This two-day workshop will introduce the basics of IV through different practical examples, formalize the requirements of a valid and powerful IV, and discuss the mechanics of the two-stage least squares (2SLS) estimator. Special focus will be paid on interpreting linear IV under heterogeneous treatment effects and recent advances in judge leniency designs. The course will include substantial group programming exercises, where different IV techniques will be illustrated in real-world applications.`,
   dates: [
-    {
-    	date: "September 27th",
-    	url: "iv_sept27",
-    	eventbrite: "https://eventbrite.com/e/",
-    	calendar: [
-    		{
-    			day: "September 27th",
-    			time: "6pm-9pm EST",
-    			topics: [
-    				"Regression Review and Regression Endogeneity",
-    				"Introduction to IV",
-    				"Understanding Instrument Validity; 2SLS Mechanics; Applications",
-    				"Coding Lab",
-    			],
-    		},
-    		{
-    			day: "September 28th",
-    			time: "6pm-9pm EST",
-    			topics: [
-    				"Heterogeneous Treatment Effects; Characterizing Compliers; MTEs",
-    				"Judge Leniency Designs",
-    				"Coding Lab",
-    			],
-    		},
-    	],
-    },
+    // {
+    // 	date: "September 27th",
+    // 	url: "iv_sept27",
+    // 	eventbrite: "https://eventbrite.com/e/",
+    // 	calendar: [
+    // 		{
+    // 			day: "September 27th",
+    // 			time: "6pm-9pm EST",
+    // 			topics: [
+    // 				"Regression Review and Regression Endogeneity",
+    // 				"Introduction to IV",
+    // 				"Understanding Instrument Validity; 2SLS Mechanics; Applications",
+    // 				"Coding Lab",
+    // 			],
+    // 		},
+    // 		{
+    // 			day: "September 28th",
+    // 			time: "6pm-9pm EST",
+    // 			topics: [
+    // 				"Heterogeneous Treatment Effects; Characterizing Compliers; MTEs",
+    // 				"Judge Leniency Designs",
+    // 				"Coding Lab",
+    // 			],
+    // 		},
+    // 	],
+    // },
   ],
   instructors: [
     {
