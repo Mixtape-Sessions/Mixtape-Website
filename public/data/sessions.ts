@@ -590,7 +590,7 @@ let synth_and_clust: Session = {
   ],
 };
 
-// Regression Discontinuity Design (Rocío Titunik)
+// Regression Discontinuity Design (Rocío Titiunik)
 let rdd: Session = {
   id: "rdd",
   title: "Regression Discontinuity Design",
@@ -639,9 +639,9 @@ let rdd: Session = {
   ],
   instructors: [
     {
-      name: "Prof. Rocío Titunik",
+      name: "Prof. Rocío Titiunik",
       url: "https://titiunik.scholar.princeton.edu",
-      about: `<a href="https://titiunik.scholar.princeton.edu" class="text-violet-red-500 hover:text-violet-red-600">Rocío Titunik</a> is Professor of Politics at Princeton University, where she is also an associated faculty with the Department of Operations Research and Financial Engineering, the Center for Statistics and Machine Learning, the Program in Latin American Studies, the Center for the Study of Democratic Politics, and the Research Program in Political Economy. She specializes in quantitative methodology for the social and behavioral sciences, with emphasis on quasi-experimental methods for causal inference and program evaluation. Her research interests lie at the intersection of political economy, political science, statistics, and data science, particularly on the development and application of quantitative methods to the study of political institutions. Her recent methodological research includes the development of statistical methods for regression discontinuity (RD) designs. Her recent substantive research centers on democratic accountability and the role of party systems in developing democracies.`,
+      about: `<a href="https://titiunik.scholar.princeton.edu" class="text-violet-red-500 hover:text-violet-red-600">Rocío Titiunik</a> is Professor of Politics at Princeton University, where she is also an associated faculty with the Department of Operations Research and Financial Engineering, the Center for Statistics and Machine Learning, the Program in Latin American Studies, the Center for the Study of Democratic Politics, and the Research Program in Political Economy. She specializes in quantitative methodology for the social and behavioral sciences, with emphasis on quasi-experimental methods for causal inference and program evaluation. Her research interests lie at the intersection of political economy, political science, statistics, and data science, particularly on the development and application of quantitative methods to the study of political institutions. Her recent methodological research includes the development of statistical methods for regression discontinuity (RD) designs. Her recent substantive research centers on democratic accountability and the role of party systems in developing democracies.`,
       img: `rocio_titiunik.jpeg`,
     },
   ],
