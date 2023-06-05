@@ -97,7 +97,7 @@ let ci_I: Session = {
       eventbrite: "https://eventbrite.com/e/591917429967",
       calendar: [
         {
-          day: "June 16th",
+          day: "June 17th",
           time: "7am-4pm GMT+8",
           topics: [
             "Introduction to causal inference",
@@ -107,7 +107,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "June 17th",
+          day: "June 18th",
           time: "7am-4pm GMT+8",
           topics: [
             "Introduction to causal graphs",
@@ -116,7 +116,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "June 23rd",
+          day: "June 24th",
           time: "7am-4pm GMT+8",
           topics: [
             "Instrumental variables",
@@ -128,7 +128,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "June 24th",
+          day: "June 25th",
           time: "7am-4pm GMT+8",
           topics: [
             "Introduction to regression discontinuity ",
