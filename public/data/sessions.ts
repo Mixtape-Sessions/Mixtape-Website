@@ -10,6 +10,7 @@ export interface FAQ {
 }
 export interface Date {
   date: string;
+  dateComputer: string;
   url: string;
   eventbrite: string;
   calendar: CalendarDay[];
@@ -24,23 +25,25 @@ export interface Instructor {
 export interface Session {
   id: string;
   title: string;
-  type: "Mixtape Session" | "Mixtape Track";
+  type: "The Classics" | "The Singles" | "The Deep Cuts";
   gradientClass: string;
   buttonGradient: string;
   about: string;
   dates: Date[];
   faqs: FAQ[];
   instructors: Instructor[];
+  repo?: string;
 }
 
 // Causal Inference I (Scott Cunningham)
 let ci_I: Session = {
   id: "ci_I",
   title: "Causal Inference I",
-  type: "Mixtape Session",
+  type: "The Classics",
   gradientClass: "sm:ci-gradient",
   buttonGradient: "ci-gradient",
   about: `Causal Inference Part I kickstarts a new 4-day series on design-based causal inference series.  It covers the foundations of causal inference grounded in a counterfactual theory of causality built on the Neyman-Rubin model of potential outcomes. It will also cover randomization inference, independence, matching, regression discontinuity and instrumental variables.  We will review the theory behind each of these designs in detail with the aim being comprehension, competency and confidence.  Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch.  To help accomplish this, we will hold ongoing discussions via Discourse, work through assignments and exercises together, and have detailed walk-throughs of code in R and Stata. This is the prequel to the Part II course that covers difference-in-differences and synthetic control.`,
+  repo: "https://github.com/Mixtape-Sessions/Causal-Inference-1/",
   dates: [
     // {
     //   date: "February 4th",
@@ -93,6 +96,7 @@ let ci_I: Session = {
     // },
     {
       date: "June 17th (starts 7am Beijing; 8am Tokyo)",
+      dateComputer: "2023-06-17",
       url: "ci_I_june17",
       eventbrite: "https://eventbrite.com/e/591917429967",
       calendar: [
@@ -200,10 +204,11 @@ let ci_I: Session = {
 let ci_II: Session = {
   id: "ci_II",
   title: "Causal Inference II",
-  type: "Mixtape Session",
+  type: "The Classics",
   gradientClass: "sm:did-gradient",
   buttonGradient: "did-gradient",
   about: `Causal inference Part II is a 4-day workshop in design based causal inference series. It will cover two contemporary research designs in causal inference -- difference-in-differences (including with covariates) and  synthetic control. Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch. We will review the theory behind each design, go into detail on the intuition of the estimation strategies and identification itself, as well as explore code in R and Stata and applications using these methods. The goal as always is that participants leave the workshop with competency and confidence. This class will be a sequel to the 4-day workshop on Causal Inference Part I.`,
+  repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
   dates: [
     // {
     //   date: "March 18th",
@@ -249,6 +254,7 @@ let ci_II: Session = {
     // },
     {
       date: "July 15th (starts 7am Beijing; 8am Tokyo)",
+      dateComputer: "2023-07-15",
       url: "ci_II_july15",
       eventbrite: "https://eventbrite.com/e/591920408877",
       calendar: [
@@ -353,13 +359,15 @@ let ci_II: Session = {
 let applied: Session = {
   id: "applied",
   title: "Doing Applied Research",
-  type: "Mixtape Track",
+  type: "The Singles",
   gradientClass: "sm:applied-gradient",
   buttonGradient: "applied-gradient",
   about: `This course is intended to be a practical guide for graduate students and early career economists doing applied research. The nuts and bolts of writing, publishing, and service to the profession are covered in two half-day sessions, each lasting roughly four hours (including short breaks). We begin by providing tips on how to start a research project, when to switch topics, and how to effectively manage multiple projects at once. Next, we provide practical advice on how to write an applied economics paper, from structing the introduction to crafting the conclusion. The second half of the course takes participants through the publication process.  In addition, we discuss networking, refereeing for economics journals, getting the most out of conferences, and how to successfully navigate the academic job market.`,
+  repo: "https://github.com/Mixtape-Sessions/Doing-Applied-Research/",
   dates: [
     {
-      date: "May 4th",
+      date: "May 4th, 2023",
+      dateComputer: "2023-05-04",
       url: "applied_may4",
       eventbrite: "https://eventbrite.com/e/495868133937",
       calendar: [
@@ -433,13 +441,15 @@ let applied: Session = {
 let advanced_did: Session = {
   id: "advanced_did",
   title: "Advanced DID",
-  type: "Mixtape Track",
+  type: "The Deep Cuts",
   gradientClass: "sm:advanced-did-gradient",
   buttonGradient: "advanced-did-gradient",
   about: `This one-day workshop will cover advanced topics from the recent difference-in-differences literature. One question of particular focus will be, <i>"what should I do if I'm not 100% sure about the validity of the parallel trends assumption?"</i> We will cover a variety of relaxations to the parallel trends assumption, and new tools for power calculations and sensitivity analysis. The workshop will focus not just on the theory, but also on practical implementation in statistical software such as R and Stata.`,
+  repo: "https://github.com/Mixtape-Sessions/Advanced-DID/",
   dates: [
     {
-      date: "April 21st",
+      date: "April 21st, 2023",
+      dateComputer: "2023-04-21",
       url: "advanced_did_apr21",
       eventbrite: "https://eventbrite.com/e/495860049757",
       calendar: [
@@ -512,13 +522,15 @@ let advanced_did: Session = {
 let synth_and_clust: Session = {
   id: "synth_and_clust",
   title: "Synthetic Control and Clustering",
-  type: "Mixtape Track",
+  type: "The Singles",
   gradientClass: "sm:synth-and-clust-gradient",
   buttonGradient: "synth-and-clust-gradient",
   about: `In this course, we will cover the fundamentals of synthetic control estimation and inference, with special emphasis on actionable guidance for applied research. We will discuss seven crucial guiding principles for empirical studies using synthetic controls and how these principles are applied in practice. Towards the end of the course, we will change topics to address “the” FAQ of econometrics office hours: When and how should we cluster standard errors?`,
+  repo: "https://github.com/Mixtape-Sessions/Synthetic-Control-And-Clustering/",
   dates: [
     {
-      date: "April 27th",
+      date: "April 27th, 2023",
+      dateComputer: "2023-04-27",
       url: "synth_and_clust_apr27",
       eventbrite: "https://eventbrite.com/e/498685209887",
       calendar: [
@@ -594,13 +606,15 @@ let synth_and_clust: Session = {
 let rdd: Session = {
   id: "rdd",
   title: "Regression Discontinuity Design",
-  type: "Mixtape Track",
+  type: "The Singles",
   gradientClass: "sm:rdd-gradient",
   buttonGradient: "rdd-gradient",
   about: `This course covers methods for the analysis and interpretation of the Regression Discontinuity (RD) design, a non-experimental strategy to study treatment effects that can be used when units receive a treatment based on a score and a cutoff. The course covers methods for estimation, inference, and falsification of RD treatment effects using two different approaches: the continuity-based framework, implemented with local polynomials, and the local randomization framework, implemented with standard tools from the analysis of experiments. The focus is on conceptual understanding of the underlying methodological issues and effective empirical implementation. Every topic is illustrated with the analysis of RD examples using real-world data, walking through R and Stata codes that fully implement all the methods discussed. At the end of the course, participants will have acquired the necessary skills to rigorously interpret, visualize, validate, estimate, and characterize the uncertainty of RD treatment effects.`,
+  repo: "https://github.com/Mixtape-Sessions/Regression-Discontinuity/",
   dates: [
     {
-      date: "May 17th",
+      date: "May 17th, 2023",
+      dateComputer: "2023-05-17",
       url: "rdd_may17",
       eventbrite: "https://eventbrite.com/e/579511102307",
       calendar: [
@@ -678,13 +692,15 @@ let rdd: Session = {
 let ml: Session = {
   id: "ml",
   title: "Machine Learning and Causal Inference",
-  type: "Mixtape Track",
+  type: "The Singles",
   gradientClass: "sm:ml-gradient",
   buttonGradient: "ml-gradient",
   about: `Machine Learning's wheelhouse is out-of-sample prediction, but these powerful methods can be deployed in service of causal inference. This two-session workshop will introduce the basics of machine learning prediction methods, including lasso and random forests and how they feature in causal inference methods like double machine learning (DML) and post-double selection lasso (PDS lasso). The course covers the conceptual and theoretical basis for the methods and also gets into the nuts and bolts of implementation in python and Stata using real-world data.`,
+  repo: "https://github.com/Mixtape-Sessions/Machine-Learning/",
   dates: [
     {
-      date: "February 23rd",
+      date: "February 23rd, 2023",
+      dateComputer: "2023-02-23",
       url: "ml_feb23",
       eventbrite: "https://eventbrite.com/e/495868896217",
       calendar: [
@@ -762,13 +778,15 @@ let ml: Session = {
 let ml_het_effects: Session = {
   id: "ml_het_effects",
   title: "Machine Learning and Heterogeneous Effects",
-  type: "Mixtape Track",
+  type: "The Deep Cuts",
   gradientClass: "sm:ml-het-effects-gradient",
   buttonGradient: "ml-het-effects-gradient",
   about: `The holy grail of causal inference is the individual-level treatment effect: how would a particular patient respond to a drug? Which users  will respond most to a targeted ad? Would a given student be helped or harmed by a classroom intervention? This session introduces machine learning tools for estimating heterogeneous treatment effects like random causal forests. The course goes over the theory and concepts as well as the nitty-gritty of coding the methods up in python, R, and Stata using real-world examples. This course can be taken as a follow-up to the Machine Learning and Causal Inference mixtape session, or as a stand-alone course.`,
+  repo: "https://github.com/Mixtape-Sessions/Heterogeneous-Effects/",
   dates: [
     {
       date: "May 15th",
+      dateComputer: "2023-05-15",
       url: "ml_het_effects_may15",
       eventbrite: "https://eventbrite.com/e/496348962107",
       calendar: [
@@ -825,13 +843,15 @@ let ml_het_effects: Session = {
 let shift_share: Session = {
   id: "shift_share",
   title: "Shift-Share IV",
-  type: "Mixtape Track",
+  type: "The Deep Cuts",
   gradientClass: "sm:shift-share-gradient",
   buttonGradient: "shift-share-gradient",
   about: `Shift-Share Instrumental Variables (SSIV) are used to address endogeneity and selection challenges in many economic settings. This half-day workshop will introduce the basics of SSIV and cover the recent literature on its econometric foundations. Special focus will be paid on the different assumptions underlying the "exogenous shares" and "exogenous shocks" approaches to SSIV identification, and their practical implications. We will also cover a more general class of instrumental variable strategies combining exogenous shocks and non-random exposure. Group programming exercises will be used to illustrate various theoretical concepts in real-world applications.`,
+  repo: "https://github.com/Mixtape-Sessions/Shift-Share/",
   dates: [
     {
-    	date: "Nov 2nd",
+    	date: "November 2nd, 2022",
+      dateComputer: "2022-11-02",
     	url: "shift_share_nov2",
     	eventbrite: "https://eventbrite.com/e/",
     	calendar: [
@@ -903,37 +923,39 @@ let shift_share: Session = {
 let iv: Session = {
   id: "iv",
   title: "Instrumental Variables",
-  type: "Mixtape Track",
+  type: "The Singles",
   gradientClass: "sm:iv-gradient",
   buttonGradient: "iv-gradient",
   about: `Instrumental variables (IV) is a powerful tool for leveraging external ("exogenous") variation to estimate the causal effects of otherwise confounded ("endogenous") variables. This two-day workshop will introduce the basics of IV through different practical examples, formalize the requirements of a valid and powerful IV, and discuss the mechanics of the two-stage least squares (2SLS) estimator. Special focus will be paid on interpreting linear IV under heterogeneous treatment effects and recent advances in judge leniency designs. The course will include substantial group programming exercises, where different IV techniques will be illustrated in real-world applications.`,
+  repo: "https://github.com/Mixtape-Sessions/Instrumental-Variables/",
   dates: [
-    // {
-    // 	date: "September 27th",
-    // 	url: "iv_sept27",
-    // 	eventbrite: "https://eventbrite.com/e/",
-    // 	calendar: [
-    // 		{
-    // 			day: "September 27th",
-    // 			time: "6pm-9pm EST",
-    // 			topics: [
-    // 				"Regression Review and Regression Endogeneity",
-    // 				"Introduction to IV",
-    // 				"Understanding Instrument Validity; 2SLS Mechanics; Applications",
-    // 				"Coding Lab",
-    // 			],
-    // 		},
-    // 		{
-    // 			day: "September 28th",
-    // 			time: "6pm-9pm EST",
-    // 			topics: [
-    // 				"Heterogeneous Treatment Effects; Characterizing Compliers; MTEs",
-    // 				"Judge Leniency Designs",
-    // 				"Coding Lab",
-    // 			],
-    // 		},
-    // 	],
-    // },
+    {
+    	date: "September 27th, 2022",
+      dateComputer: "2022-09-27",
+    	url: "iv_sept27",
+    	eventbrite: "https://eventbrite.com/e/",
+    	calendar: [
+    		{
+    			day: "September 27th",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"Regression Review and Regression Endogeneity",
+    				"Introduction to IV",
+    				"Understanding Instrument Validity; 2SLS Mechanics; Applications",
+    				"Coding Lab",
+    			],
+    		},
+    		{
+    			day: "September 28th",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"Heterogeneous Treatment Effects; Characterizing Compliers; MTEs",
+    				"Judge Leniency Designs",
+    				"Coding Lab",
+    			],
+    		},
+    	],
+    },
   ],
   instructors: [
     {

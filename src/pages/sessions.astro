@@ -3,28 +3,63 @@ import Layout from "../layouts/Layout.astro";
 import sessions from "../../public/data/sessions";
 import SessionHeader from "../components/SessionHeader.astro";
 
-let tracks = sessions
+let singles = sessions
   .filter((session) => {
-    return !session.id.includes("ci_");
+    return (session.type == "The Singles")
   })
   .filter((session) => {
-    return session.dates.length > 0
+    return session.dates.length > 0;
   })
-  // filter out sessions that have already happened
-  .filter((session) => {
+  // Change date to "Not currently scheduled" if the date has already passed
+  .map((session) => {
     let today = new Date();
     // subtract 9 days to make sure we don't filter out sessions that are ongoing
     today = new Date(today.setDate(today.getDate() - 9));
-
-    let sessionDate = new Date(session.dates[0].date.replace(/th|st|rd/, "") + ", " + today.getFullYear());
-
-    return sessionDate > today;
+  
+    let sessionDate = new Date(
+      session.dates[0].dateComputer
+    );
+  
+    if (sessionDate < today) {
+      session.dates[0].date = "Not currently scheduled"
+    }
+    return session
   })
   .sort((a, b) => {
-    let aDate = new Date(a.dates[0].date.replace(/th|st|rd/, "") + ", 2022");
-    let bDate = new Date(b.dates[0].date.replace(/th|st|rd/, "") + ", 2022");
-    return Number(aDate) - Number(bDate);
-  });
+    let aDate = Number(new Date(a.dates[0].dateComputer));
+    let bDate = Number(new Date(b.dates[0].dateComputer));
+
+    return bDate - aDate
+  })
+
+let deepCuts = sessions
+  .filter((session) => {
+    return (session.type == "The Deep Cuts")
+  })
+  .filter((session) => {
+    return session.dates.length > 0;
+  })
+  // Change date to "Not currently scheduled" if the date has already passed
+  .map((session) => {
+    let today = new Date();
+    // subtract 9 days to make sure we don't filter out sessions that are ongoing
+    today = new Date(today.setDate(today.getDate() - 9));
+  
+    let sessionDate = new Date(
+      session.dates[0].dateComputer
+    );
+  
+    if (sessionDate < today) {
+      session.dates[0].date = "Not currently scheduled"
+    }
+    return session
+  })
+  .sort((a, b) => {
+    let aDate = Number(new Date(a.dates[0].dateComputer));
+    let bDate = Number(new Date(b.dates[0].dateComputer));
+
+    return bDate - aDate
+  })
 
 let ci1 = sessions.filter((session) => {
   return session.id === "ci_I";
@@ -36,15 +71,15 @@ let ci2 = sessions.filter((session) => {
 ---
 
 <Layout title="Mixtape Sessions">
-  <!-- Mixtape Sessions -->
-  <div class="bg-slate-50 relative pb-48 pt-24">
+  <!-- The Classics -->
+  <div class="relative pb-48 pt-24">
     <div class="w-full max-w-6xl mx-auto px-4 md:px-12 xl:px-0">
       <div class="mb-12">
         <a class="cursor-pointer">
           <h1
-            class="text-lg font-semibold leading-7 text-picton-blue-400 font-marker"
+            class="text-xl font-semibold leading-7 text-picton-blue-400 font-marker"
           >
-            Mixtape Sessions
+            “The Classics”
           </h1>
         </a>
         <p
@@ -56,9 +91,7 @@ let ci2 = sessions.filter((session) => {
           This two-part series is designed to survey the large and complicated
           field of causal inference following the structure of Scott
           Cunninghams's book,
-          <a href="https://mixtape.scunning.com/"
-            >Causal Inference: The Mixtape
-          </a>. We will review the theory behind each of these research designs
+          <a href="https://mixtape.scunning.com/">Causal Inference: The Mixtape</a>. We will review the theory behind each of these research designs
           in detail with the aim being comprehension, competency and confidence.
         </p>
       </div>
@@ -224,29 +257,59 @@ let ci2 = sessions.filter((session) => {
     </div>
   </div>
 
-  <!-- Mixtape Tracks -->
-  <div class="relative pb-48 pt-24">
+  <!-- The Singles -->
+  <div class="bg-slate-50 relative pb-48 pt-24">
     <div class="w-full max-w-6xl mx-auto px-4 md:px-12 xl:px-0">
       <div class="mb-12">
         <h1
-          class="text-lg font-semibold leading-7 text-picton-blue-400 font-marker"
+          class="text-xl font-semibold leading-7 text-picton-blue-400 font-marker"
         >
-          Mixtape Tracks
+          “The Singles”
         </h1>
         <p
           class="mt-4 text-5xl font-extrabold tracking-tight text-slate-900 max-w-[25ch]"
         >
-          Courses MC'd by leading scholars.
+          Approachable Introductions to Specific Methods
         </p>
         <p class="text-2xl max-w-prose mt-8 leading-[1.5]">
-          These shorter courses are taught by a leading researcher focusing on
-          <i>specific topics</i>.
+          Discover the foundations of fascinating subjects with our highly accessible workshop series, "The Singles." Led by esteemed scholars, these workshops provide comprehensive introductions to specific topics and methods. Designed for beginners, each session starts from the basics, equipping you with a solid understanding of the subject matter. Embark on a transformative learning journey with our expert instructors, who will guide you through the essentials and ignite your passion for the subject.
         </p>
       </div>
 
       <div class="space-y-24">
         {
-          tracks.map((track) => {
+          singles.map((track) => {
+            return (
+              <SessionHeader session={track} includeAbstract includeArrow />
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Deep Cuts -->
+  <div class="relative pb-48 pt-24">
+    <div class="w-full max-w-6xl mx-auto px-4 md:px-12 xl:px-0">
+      <div class="mb-12">
+        <h1
+          class="text-xl font-semibold leading-7 text-picton-blue-400 font-marker"
+        >
+          “The Deep Cuts”
+        </h1>
+        <p
+          class="mt-4 text-5xl font-extrabold tracking-tight text-slate-900 max-w-[25ch]"
+        >
+          Advanced Courses Exploring the Frontiers of Causal Inference
+        </p>
+        <p class="text-2xl max-w-prose mt-8 leading-[1.5]">
+          Unleash the power of your existing knowledge with our advanced workshop series, "The Deep Cuts." Perfect for those well-versed in the basics of a methodology, these immersive courses take you on a captivating exploration into the cutting-edge of your chosen topic. Led by leading scholars, each session delves deep into the frontiers of a methodology. These courses are designed assuming a solid foundation in the basics of the methodology.
+        </p>
+      </div>
+
+      <div class="space-y-24">
+        {
+          deepCuts.map((track) => {
             return (
               <SessionHeader session={track} includeAbstract includeArrow />
             );
