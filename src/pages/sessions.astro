@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import sessions from "../../public/data/sessions";
 import SessionHeader from "../components/SessionHeader.astro";
+import { createHeadlessSelectRootSingleControlledProps } from "solid-headless";
 
 let singles = sessions
   .filter((session) => {
@@ -9,6 +10,20 @@ let singles = sessions
   })
   .filter((session) => {
     return session.dates.length > 0;
+  })
+  .sort((a, b) => {
+    let aDate = new Date(a.dates[0].dateComputer);
+    let bDate = new Date(b.dates[0].dateComputer);
+    let today = Date.now();
+
+    if (Number(aDate) < today) {
+      aDate = new Date(aDate.setDate(aDate.getDate() + (365 * 5)));
+    }
+    if (Number(bDate) < today) {
+      bDate = new Date(bDate.setDate(bDate.getDate() + (365 * 5)));
+    }
+
+    return Number(aDate) - Number(bDate);
   })
   // Change date to "Not currently scheduled" if the date has already passed
   .map((session) => {
@@ -22,12 +37,6 @@ let singles = sessions
       session.dates[0].date = "Not currently scheduled";
     }
     return session;
-  })
-  .sort((a, b) => {
-    let aDate = Number(new Date(a.dates[0].dateComputer));
-    let bDate = Number(new Date(b.dates[0].dateComputer));
-
-    return bDate - aDate;
   });
 
 let deepCuts = sessions
@@ -37,6 +46,20 @@ let deepCuts = sessions
   .filter((session) => {
     return session.dates.length > 0;
   })
+  .sort((a, b) => {
+    let aDate = new Date(a.dates[0].dateComputer);
+    let bDate = new Date(b.dates[0].dateComputer);
+    let today = Date.now();
+
+    if (Number(aDate) < today) {
+      aDate = new Date(aDate.setDate(aDate.getDate() + (365 * 5)));
+    }
+    if (Number(bDate) < today) {
+      bDate = new Date(bDate.setDate(bDate.getDate() + (365 * 5)));
+    }
+
+    return Number(aDate) - Number(bDate);
+  })
   // Change date to "Not currently scheduled" if the date has already passed
   .map((session) => {
     let today = new Date();
@@ -49,12 +72,6 @@ let deepCuts = sessions
       session.dates[0].date = "Not currently scheduled";
     }
     return session;
-  })
-  .sort((a, b) => {
-    let aDate = Number(new Date(a.dates[0].dateComputer));
-    let bDate = Number(new Date(b.dates[0].dateComputer));
-
-    return bDate - aDate;
   });
 
 let ci1 = sessions.filter((session) => {
@@ -102,7 +119,10 @@ let ci3 = sessions.filter((session) => {
         <!-- Causal Inference 1 -->
         <SessionHeader session={ci1} includeArrow />
 
-        <ul class="mt-4 w-full flex flex-col md:flex-row flex-wrap gap-y-8 gap-x-8" role="list">
+        <ul
+          class="mt-4 w-full flex flex-col md:flex-row flex-wrap gap-y-8 gap-x-8"
+          role="list"
+        >
           <!-- Potential Outcome -->
           <li class="flex flex-row gap-x-4 items-center">
             <svg
@@ -193,7 +213,10 @@ let ci3 = sessions.filter((session) => {
         <!-- Causal Inference 2 -->
         <SessionHeader session={ci2} includeArrow />
 
-        <ul class="mt-4 w-full flex flex-col md:flex-row flex-wrap gap-y-8 gap-x-8" role="list">
+        <ul
+          class="mt-4 w-full flex flex-col md:flex-row flex-wrap gap-y-8 gap-x-8"
+          role="list"
+        >
           <!-- Difference-in-Differences -->
           <li class="flex flex-row gap-x-4 items-center">
             <svg
@@ -240,11 +263,25 @@ let ci3 = sessions.filter((session) => {
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 32 32"
             >
-              <path fill="currentColor" d="M 3.123 29.207 L 3.06 27.089 L 3.06 21.697 L 3.06 19.089 L 3.06 13.697 L 3.06 11.089 L 3.06 3.207 L 1.06 3.207 L 1.06 29.207 C 1.06 30.312 1.956 31.207 3.06 31.207 L 29.06 31.207 L 29.06 29.207 L 3.123 29.207 Z"></path>
-              <path stroke="currentColor" style="fill: none; stroke-width: 2px; stroke-dasharray: 4;" d="M 2.409 12.886 L 10.9 8.088 C 10.9 8.088 19.914 10.449 19.92 10.449 C 19.926 10.449 26.918 7.719 26.918 7.719"></path>
-              <path stroke="currentColor" style="fill: none; stroke-width: 2px; stroke-dasharray: 5;" d="M 2.296 19.615 L 10.787 14.817 C 10.787 14.817 19.801 17.178 19.807 17.178 C 19.813 17.178 26.805 14.448 26.805 14.448"></path>
-              <path stroke="currentColor" style="fill: none; stroke-width: 2px; stroke-dasharray: 4;" d="M 2.386 25.472 L 10.877 20.674 C 10.877 20.674 19.891 23.035 19.897 23.035 C 19.903 23.035 26.895 20.305 26.895 20.305"></path>
-
+              <path
+                fill="currentColor"
+                d="M 3.123 29.207 L 3.06 27.089 L 3.06 21.697 L 3.06 19.089 L 3.06 13.697 L 3.06 11.089 L 3.06 3.207 L 1.06 3.207 L 1.06 29.207 C 1.06 30.312 1.956 31.207 3.06 31.207 L 29.06 31.207 L 29.06 29.207 L 3.123 29.207 Z"
+              ></path>
+              <path
+                stroke="currentColor"
+                style="fill: none; stroke-width: 2px; stroke-dasharray: 4;"
+                d="M 2.409 12.886 L 10.9 8.088 C 10.9 8.088 19.914 10.449 19.92 10.449 C 19.926 10.449 26.918 7.719 26.918 7.719"
+              ></path>
+              <path
+                stroke="currentColor"
+                style="fill: none; stroke-width: 2px; stroke-dasharray: 5;"
+                d="M 2.296 19.615 L 10.787 14.817 C 10.787 14.817 19.801 17.178 19.807 17.178 C 19.813 17.178 26.805 14.448 26.805 14.448"
+              ></path>
+              <path
+                stroke="currentColor"
+                style="fill: none; stroke-width: 2px; stroke-dasharray: 4;"
+                d="M 2.386 25.472 L 10.877 20.674 C 10.877 20.674 19.891 23.035 19.897 23.035 C 19.903 23.035 26.895 20.305 26.895 20.305"
+              ></path>
             </svg>
             <h3 class="text-lg lg:text-xl">Fuzzy Diff-in-Diff</h3>
           </li>
@@ -255,7 +292,10 @@ let ci3 = sessions.filter((session) => {
         <!-- Causal Inference 3 -->
         <SessionHeader session={ci3} includeArrow />
 
-        <ul class="mt-4 w-full flex flex-col md:flex-row flex-wrap gap-y-8 gap-x-8" role="list">
+        <ul
+          class="mt-4 w-full flex flex-col md:flex-row flex-wrap gap-y-8 gap-x-8"
+          role="list"
+        >
           <!-- Synthetic Control -->
           <li class="flex flex-row gap-x-4 items-center">
             <svg
@@ -332,75 +372,79 @@ let ci3 = sessions.filter((session) => {
       </div>
     </div>
   </div>
+
+  <!-- The Singles -->
+  <div class="bg-slate-50 relative pb-48 pt-24">
+    <div class="w-full max-w-6xl mx-auto px-4 md:px-12 xl:px-0">
+      <div class="mb-12">
+        <h1
+          class="text-xl font-semibold leading-7 text-picton-blue-400 font-marker"
+        >
+          “The Singles”
+        </h1>
+        <p
+          class="mt-4 text-5xl font-extrabold tracking-tight text-slate-900 max-w-[25ch]"
+        >
+          Approachable Introductions to Specific Methods
+        </p>
+        <p class="text-2xl max-w-prose mt-8 leading-[1.5]">
+          Discover the foundations of fascinating subjects with our highly
+          accessible workshop series, "The Singles." Led by esteemed scholars,
+          these workshops provide comprehensive introductions to specific topics
+          and methods. Designed for beginners, each session starts from the
+          basics, equipping you with a solid understanding of the subject
+          matter. Embark on a transformative learning journey with our expert
+          instructors, who will guide you through the essentials and ignite your
+          passion for the subject.
+        </p>
+      </div>
+
+      <div class="space-y-24">
+        {
+          singles.map((track) => {
+            return (
+              <SessionHeader session={track} includeAbstract includeArrow />
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Deep Cuts -->
+  <div class="relative pb-48 pt-24">
+    <div class="w-full max-w-6xl mx-auto px-4 md:px-12 xl:px-0">
+      <div class="mb-12">
+        <h1
+          class="text-xl font-semibold leading-7 text-picton-blue-400 font-marker"
+        >
+          “The Deep Cuts”
+        </h1>
+        <p
+          class="mt-4 text-5xl font-extrabold tracking-tight text-slate-900 max-w-[25ch]"
+        >
+          Advanced Courses Exploring the Frontiers of Causal Inference
+        </p>
+        <p class="text-2xl max-w-prose mt-8 leading-[1.5]">
+          Unleash the power of your existing knowledge with our advanced
+          workshop series, "The Deep Cuts." Perfect for those well-versed in the
+          basics of a methodology, these immersive courses take you on a
+          captivating exploration into the cutting-edge of your chosen topic.
+          Led by leading scholars, each session delves deep into the frontiers
+          of a methodology. These courses are designed assuming a solid
+          foundation in the basics of the methodology.
+        </p>
+      </div>
+
+      <div class="space-y-24">
+        {
+          deepCuts.map((track) => {
+            return (
+              <SessionHeader session={track} includeAbstract includeArrow />
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
 </Layout>
-
-<!-- The Singles -->
-<div class="bg-slate-50 relative pb-48 pt-24">
-  <div class="w-full max-w-6xl mx-auto px-4 md:px-12 xl:px-0">
-    <div class="mb-12">
-      <h1
-        class="text-xl font-semibold leading-7 text-picton-blue-400 font-marker"
-      >
-        “The Singles”
-      </h1>
-      <p
-        class="mt-4 text-5xl font-extrabold tracking-tight text-slate-900 max-w-[25ch]"
-      >
-        Approachable Introductions to Specific Methods
-      </p>
-      <p class="text-2xl max-w-prose mt-8 leading-[1.5]">
-        Discover the foundations of fascinating subjects with our highly
-        accessible workshop series, "The Singles." Led by esteemed scholars,
-        these workshops provide comprehensive introductions to specific topics
-        and methods. Designed for beginners, each session starts from the
-        basics, equipping you with a solid understanding of the subject matter.
-        Embark on a transformative learning journey with our expert instructors,
-        who will guide you through the essentials and ignite your passion for
-        the subject.
-      </p>
-    </div>
-
-    <div class="space-y-24">
-      {
-        singles.map((track) => {
-          return <SessionHeader session={track} includeAbstract includeArrow />;
-        })
-      }
-    </div>
-  </div>
-</div>
-
-<!-- Deep Cuts -->
-<div class="relative pb-48 pt-24">
-  <div class="w-full max-w-6xl mx-auto px-4 md:px-12 xl:px-0">
-    <div class="mb-12">
-      <h1
-        class="text-xl font-semibold leading-7 text-picton-blue-400 font-marker"
-      >
-        “The Deep Cuts”
-      </h1>
-      <p
-        class="mt-4 text-5xl font-extrabold tracking-tight text-slate-900 max-w-[25ch]"
-      >
-        Advanced Courses Exploring the Frontiers of Causal Inference
-      </p>
-      <p class="text-2xl max-w-prose mt-8 leading-[1.5]">
-        Unleash the power of your existing knowledge with our advanced workshop
-        series, "The Deep Cuts." Perfect for those well-versed in the basics of
-        a methodology, these immersive courses take you on a captivating
-        exploration into the cutting-edge of your chosen topic. Led by leading
-        scholars, each session delves deep into the frontiers of a methodology.
-        These courses are designed assuming a solid foundation in the basics of
-        the methodology.
-      </p>
-    </div>
-
-    <div class="space-y-24">
-      {
-        deepCuts.map((track) => {
-          return <SessionHeader session={track} includeAbstract includeArrow />;
-        })
-      }
-    </div>
-  </div>
-</div>
