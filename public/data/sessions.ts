@@ -40,69 +40,20 @@ let ci_I: Session = {
   id: "ci_I",
   title: "Causal Inference I",
   type: "The Classics",
-  gradientClass: "sm:ci-gradient",
-  buttonGradient: "ci-gradient",
+  gradientClass: "sm:ci1-gradient",
+  buttonGradient: "ci1-gradient",
   about: `Causal Inference Part I kickstarts a new 4-day series on design-based causal inference series.  It covers the foundations of causal inference grounded in a counterfactual theory of causality built on the Neyman-Rubin model of potential outcomes. It will also cover randomization inference, independence, matching, regression discontinuity and instrumental variables.  We will review the theory behind each of these designs in detail with the aim being comprehension, competency and confidence.  Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch.  To help accomplish this, we will hold ongoing discussions via Discourse, work through assignments and exercises together, and have detailed walk-throughs of code in R and Stata. This is the prequel to the Part II course that covers difference-in-differences and synthetic control.`,
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-1/",
   dates: [
-    // {
-    //   date: "February 4th",
-    //   url: "ci_I_feb4",
-    //   eventbrite: "https://eventbrite.com/e/495858685677",
-    //   calendar: [
-    //     {
-    //       day: "February 4th",
-    //       time: "8am-5pm CST",
-    //       topics: [
-    //         "Introduction to causal inference",
-    //         "Potential outcomes and counterfactuals",
-    //         "Randomization, selection bias",
-    //         "Randomization inference ",
-    //       ],
-    //     },
-    //     {
-    //       day: "February 5th",
-    //       time: "8am-5pm CST",
-    //       topics: [
-    //         "Introduction to causal graphs",
-    //         "Propensity score matching",
-    //         "Nearest neighbor covariate matching",
-    //       ],
-    //     },
-    //     {
-    //       day: "February 11th",
-    //       time: "8am-5pm CST",
-    //       topics: [
-    //         "Instrumental variables",
-    //         "Canonical estimators (2SLS, Wald)",
-    //         "Intuition and assumptions ",
-    //         "Weak instruments and 2SLS bias",
-    //         "Heterogenous treatment effects",
-    //         "Local average treatment effect",
-    //       ],
-    //     },
-    //     {
-    //       day: "February 12th",
-    //       time: "8am-5pm CST",
-    //       topics: [
-    //         "Introduction to regression discontinuity ",
-    //         "Regression discontinuity identification",
-    //         "Nonlinearities and estimation ",
-    //         "Nonparametric estimation ",
-    //         "General tips (data visualization, density tests, etc)",
-    //       ],
-    //     },
-    //   ],
-    // },
     {
-      date: "June 17th (starts 7am Beijing; 8am Tokyo)",
-      dateComputer: "2023-06-17",
-      url: "ci_I_june17",
-      eventbrite: "https://eventbrite.com/e/591917429967",
+      date: "September 9th",
+      dateComputer: "2023-09-09",
+      url: "ci_I_sept9",
+      eventbrite: "https://eventbrite.com/e/682636633547",
       calendar: [
         {
-          day: "June 17th",
-          time: "7am-4pm GMT+8",
+          day: "September 9th",
+          time: "9am-5pm CST",
           topics: [
             "Introduction to causal inference",
             "Potential outcomes and counterfactuals",
@@ -111,8 +62,8 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "June 18th",
-          time: "7am-4pm GMT+8",
+          day: "September 10th",
+          time: "9am-5pm CST",
           topics: [
             "Introduction to causal graphs",
             "Propensity score matching",
@@ -120,8 +71,8 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "June 24th",
-          time: "7am-4pm GMT+8",
+          day: "September 16th",
+          time: "9am-5pm CST",
           topics: [
             "Instrumental variables",
             "Canonical estimators (2SLS, Wald)",
@@ -132,8 +83,8 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "June 25th",
-          time: "7am-4pm GMT+8",
+          day: "February 17th",
+          time: "9am-5pm CST",
           topics: [
             "Introduction to regression discontinuity ",
             "Regression discontinuity identification",
@@ -205,94 +156,151 @@ let ci_II: Session = {
   id: "ci_II",
   title: "Causal Inference II",
   type: "The Classics",
-  gradientClass: "sm:did-gradient",
-  buttonGradient: "did-gradient",
-  about: `Causal inference Part II is a 4-day workshop in design based causal inference series. It will cover two contemporary research designs in causal inference -- difference-in-differences (including with covariates) and  synthetic control. Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch. We will review the theory behind each design, go into detail on the intuition of the estimation strategies and identification itself, as well as explore code in R and Stata and applications using these methods. The goal as always is that participants leave the workshop with competency and confidence. This class will be a sequel to the 4-day workshop on Causal Inference Part I.`,
+  gradientClass: "sm:ci2-gradient",
+  buttonGradient: "ci2-gradient",
+  about: `Causal inference Part II is a 4-day workshop in design based causal inference series. It will cover difference-in-differences starting from the basics and taking readers into more contemporary design elements with staggered adoption and the incorporation of covariates. Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch. We will review the theory behind each design, go into detail on the intuition of the estimation strategies and identification itself, as well as explore code in R and Stata and applications using these methods. The goal as always is that participants leave the workshop with competency and confidence. This class will be a sequel to the 4-day workshop on Causal Inference Part I and is followed by Causal Inference Part III.`,
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
   dates: [
-    // {
-    //   date: "March 18th",
-    //   url: "ci_II_mar18",
-    //   eventbrite: "https://eventbrite.com/e/495859688677",
-    //   calendar: [
-    //     {
-    //       day: "March 18th",
-    //       time: "8am-5pm CST",
-    //       topics: [
-    //         "Introduction to DID",
-    //         "Parallel trends and the DID equation",
-    //         "OLS, TWFE, Triple difference",
-    //       ],
-    //     },
-    //     {
-    //       day: "March 19th",
-    //       time: "8am-5pm CST",
-    //       topics: [
-    //         "DID with Covariates (Sant'Anna and Zhao 2020; Abadie 2005)",
-    //         "Differential timing and Bacon decomposition (Goodman-Bacon 2021)",
-    //         "Aggregating group-time average treatment effects (Callaway and SantAnna 2020)",
-    //       ],
-    //     },
-    //     {
-    //       day: "March 25th",
-    //       time: "8am-5pm CST",
-    //       topics: [
-    //         "Analyzing event studies (Sun and Abraham 2020)",
-    //         "Imputation Estimators (Gardner 2021 and Borusyal et al 2021)",
-    //       ],
-    //     },
-    //     {
-    //       day: "March 26th",
-    //       time: "8am-5pm CST",
-    //       topics: [
-    //         "Continuous Treatment (Callaway, Goodman-Bacon and Sant'Anna 2020)",
-    //         "Synthetic control (Abadie, Diamond and Hainmueller 2010)",
-    //         "Augmented synthetic control (Ben-Michael, Feller, Rothstein 2022)",
-    //       ],
-    //     },
-    //   ],
-    // },
     {
-      date: "July 15th (starts 7am Beijing; 8am Tokyo)",
-      dateComputer: "2023-07-15",
-      url: "ci_II_july15",
-      eventbrite: "https://eventbrite.com/e/591920408877",
+      date: "October 14th",
+      dateComputer: "2023-10-14",
+      url: "ci_II_oct14",
+      eventbrite: "https://eventbrite.com/e/682635921417",
       calendar: [
         {
-          day: "July 15th",
-          time: "7am-4pm GMT+8",
+          day: "October 14th",
+          time: "9am-5pm CST",
           topics: [
             "Introduction to DID",
-            "Parallel trends and the DID equation",
-            "OLS, TWFE, Triple difference",
+            "ATT, DID equation and Parallel Trends",
+            "OLS, Triple difference and Falsifications",
           ],
         },
         {
-          day: "July 16th",
-          time: "7am-4pm GMT+8",
+          day: "October 15th",
+          time: "9am-5pm CST",
           topics: [
-            "DID with Covariates (Sant'Anna and Zhao 2020; Abadie 2005)",
+            "DID with Covariates (Sant'Anna and Zhao 2020; Abadie 2005; Heckman, Ichimura and Todd 1997)",
+            "Two-way Fixed Effects (TWFE)",
             "Differential timing and Bacon decomposition (Goodman-Bacon 2021)",
-            "Aggregating group-time average treatment effects (Callaway and SantAnna 2020)",
           ],
         },
         {
-          day: "July 22nd",
-          time: "7am-4pm GMT+8",
+          day: "October 21st",
+          time: "9am-5pm CST",
           topics: [
+            "Pathologies in TWFE and alternative estimator (deChaisemartin and D'Haultfœille 2020)",
+            "Aggregating group-time average treatment effects (Callaway and Sant'Anna 2020)",
             "Analyzing event studies (Sun and Abraham 2020)",
-            "Imputation Estimators (Gardner 2021 and Borusyal et al 2021)",
           ],
         },
         {
-          day: "July 23rd",
-          time: "7am-4pm GMT+8",
+          day: "October 22nd",
+          time: "9am-5pm CST",
           topics: [
-            "Continuous Treatment (Callaway, Goodman-Bacon and Sant'Anna 2020)",
-            "Synthetic control (Abadie, Diamond and Hainmueller 2010)",
-            "Augmented synthetic control (Ben-Michael, Feller, Rothstein 2022)",
+            "Imputation Estimators (Gardner 2021 and Borusyal et al 2021)",
+            "Mundlak Estimator (Wooldridge 2022)",
+            "Fuzzy Difference-in-differences (deChaisemartin and D'Haultfœille 2017)",
           ],
         },
+      ],
+    },
+  ],
+  instructors: [
+    {
+      name: "Prof. Scott Cunningham",
+      url: "http://scunning.com/",
+      about: `<a href="https://www.scunning.com" class="text-violet-red-500 hover:text-violet-red-600">Scott Cunningham</a> is a professor of economics at Baylor University. Scott studies a number of topics including mental healthcare, sex work, abortion and drug policy. He loves his family, friends, colleagues, students, HBO, Ted Lasso, Keanu Reeves, Mister Rogers, my kittens Betty and Veronica, causal inference, and hip hop.`,
+      reviews: [
+        "I can't endorse these workshops highly enough. The ambitious syllabus is covered in great detail, interlaced with tangible examples and useful economic history lessons in addition to personal anecdotes. Anybody interested in gaining a deeper understanding in the science (art?) of causal inference and its recent developments will not regret investing a few hours (and a few dollars) in Scott's workshops",
+        "Your effort to explain complex contents in such a practical way and your patience, please keep doing what you do, because it's excellent and so much needed in a difficult and sometimes not very inclusive field such economics.",
+        "The course is taught in such a pedagogical manor, and communicates a lot of complex material in a short amount of time. It is a huge bonus how attentive Scott was to our questions and comments. This course would be super useful anyone working with causal inference (or hoping to) whether you are advanced or just a beginner. Only nice words to say - such an amazing week. I kind of want to do it again already.",
+        "Scott's ability to explain fairly complex methods and concepts in an intuitive way, plus his complete openness and availability to answer questions as they come around, and his commitment to democratize causal inference (truly admirable and very rare within economics) make this a wonderful workshop that I would highly recommend to anyone wanting to learn more about the topic and methods.",
+      ],
+      img: `scott_cunningham.png`,
+    },
+  ],
+  faqs: [
+    {
+      id: "discounts",
+      q: "Are discounts available?",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+    },
+    {
+      q: "How do I access the material I need for the course?",
+      a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700 underline decoration-2'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+    },
+    {
+      q: "How long will it take me to master this?",
+      a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+    },
+    {
+      q: "Will we practice programming?",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+    },
+    {
+      q: "Will there be recordings?",
+      a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+    },
+    {
+      q: "How will I communicate to you during the workshop?",
+      a: "We will use Discord to communicate with one another. I will have a second monitor open so that I can see what you say. My experience has been positive with this kind of setup. Many people seem willing to talk by chat in ways they wouldn't verbally. Also participants tend to not think they are interrupting the speaker when they ask questions.",
+    },
+    {
+      q: "I'm nervous that I can't handle the difficulty of the class.",
+      a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
+    },
+    {
+      q: "How should I prepare?",
+      a: "I encourage you to read my book, Causal Inference: The Mixtape which is available online for free <a href='https://mixtape.scunning.com' class='text-violet-600 hover:text-violet-700 underline decoration-2'>here</a>. Whenever possible, then read the underlying articles that interest you to go deeper.",
+    },
+    {
+      q: "I don't have a Stata license. It's too expensive. What do I do?",
+      a: "No worries! Stata has graciously provided a temporary license for all participants. Before the workshop starts, I will distribute to all of you your license so that you can have it.",
+    },
+    {
+      q: "Are there office hours?",
+      a: "If you are paying the full price, you get 30 minutes of office hours per workshop. So if someone paid for the bundled workshops, you would get 1 hour. I will be creating a calendy app with times so that you can sign up for office hours over the semester. We can talk about whatever you want.",
+    },
+  ],
+};
+
+// Causal Inference III (Scott Cunningham)
+let ci_III: Session = {
+  id: "ci_III",
+  title: "Causal Inference III",
+  type: "The Classics",
+  gradientClass: "sm:ci3-gradient",
+  buttonGradient: "ci3-gradient",
+  about: `Synthetic control has been called the most important innovation in causal inference of the last two decades (Athey and Imbens 2018). It's use has been seen across the social sciences but even industry and government agencies.  The method combines many design elements from unconfoundedness principles to difference-in-differences estimation to help find suitable estimates of counterfactuals in panel settings. Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch. We will review the theory behind several estimators, go into detail on the intuition of the estimation strategies and identification itself, as well as explore code in R and Stata and applications using these methods. The goal as always is that participants leave the workshop with competency and confidence. This class will be a sequel to the Causal Inference I and II.`,
+  repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
+  dates: [
+    {
+      date: "November 11th",
+      dateComputer: "2023-11-11",
+      url: "ci_III_nov11",
+      eventbrite: "https://eventbrite.com/e/685278003957",
+      calendar: [
+        {
+          day: "November 11th",
+          time: "9am-5pm CST",
+          topics: [
+            "Abadie's non-negative weighting method (Abadie, Diamond, and Hainmueller 2010)",
+            "Role of covariates (Botosaru and Ferman 2019; Kaul et al. 2021)",
+            "New forms of inference like conformal inference (Chernozhukov et al. 2021)",
+            "Bias with imperfect fit and demeaned alternatives (Ferman and Pinto 2021)",
+            "Ben-Michael, et al. (2021a) augmented synthetic control method and Powell (2021)"
+          ],
+        },
+        {
+          day: "November 12th",
+          time: "9am-5pm CST",
+          topics: [
+            "Matrix completion with nuclear norm regularization (Athey et al. 2021)",
+            "Augmented synthetic control with staggered rollout (Ben-Michael et al. 2021b)",
+            "Synthetic difference-in-differences (Arkhangelsky et al. 2021)"
+          ],
+        }
       ],
     },
   ],
@@ -444,18 +452,20 @@ let advanced_did: Session = {
   type: "The Deep Cuts",
   gradientClass: "sm:advanced-did-gradient",
   buttonGradient: "advanced-did-gradient",
-  about: `This one-day workshop will cover advanced topics from the recent difference-in-differences literature. One question of particular focus will be, <i>"what should I do if I'm not 100% sure about the validity of the parallel trends assumption?"</i> We will cover a variety of relaxations to the parallel trends assumption, and new tools for power calculations and sensitivity analysis. The workshop will focus not just on the theory, but also on practical implementation in statistical software such as R and Stata.`,
+  about: `This one-day workshop will cover advanced topics from the recent difference-in-differences literature. One question of particular focus will be, <i>"what should I do if I'm not 100% sure about the validity of the parallel trends assumption?"</i> We will cover a variety of relaxations to the parallel trends assumption, and new tools for power calculations and sensitivity analysis. The workshop will focus not just on the theory, but also on practical implementation in statistical software such as R and Stata.
+  <br/><br/>
+  This is one of our advanced courses. These courses are designed <strong>assuming a solid foundation in the basics of the difference-in-differences methodology</strong> and will cover the frontiers of the topic. A good review is: <a class="underline" href="https://github.com/Mixtape-Sessions/Causal-Inference-2">https://github.com/Mixtape-Sessions/Causal-Inference-2</a>.`,
   repo: "https://github.com/Mixtape-Sessions/Advanced-DID/",
   dates: [
     {
-      date: "April 21st, 2023",
-      dateComputer: "2023-04-21",
-      url: "advanced_did_apr21",
-      eventbrite: "https://eventbrite.com/e/495860049757",
+      date: "September 1st, 2023",
+      dateComputer: "2023-09-01",
+      url: "advanced_did_sept1",
+      eventbrite: "https://eventbrite.com/e/682649612367",
       calendar: [
         {
-          day: "April 21st",
-          time: "9am-5pm EST",
+          day: "September 1st",
+          time: "10am-5pm EST",
           topics: [
             "Canonical Difference-in-Differences",
             "Staggered Treatment Timing",
@@ -699,13 +709,13 @@ let ml: Session = {
   repo: "https://github.com/Mixtape-Sessions/Machine-Learning/",
   dates: [
     {
-      date: "February 23rd, 2023",
-      dateComputer: "2023-02-23",
-      url: "ml_feb23",
-      eventbrite: "https://eventbrite.com/e/495868896217",
+      date: "October 30th, 2023",
+      dateComputer: "2023-10-30",
+      url: "ml_oct30",
+      eventbrite: "https://eventbrite.com/e/682653132897",
       calendar: [
         {
-          day: "February 23rd",
+          day: "October 30th",
           time: "6pm-9pm EST",
           topics: [
             "Question your questions (are you asking a predictive or a causal question?)",
@@ -722,7 +732,7 @@ let ml: Session = {
           ],
         },
         {
-          day: "February 24th",
+          day: "November 1st",
           time: "6pm-9pm EST",
           topics: [
             "Put ML to work in service of causality (concepts + python/Stata)",
@@ -781,17 +791,19 @@ let ml_het_effects: Session = {
   type: "The Deep Cuts",
   gradientClass: "sm:ml-het-effects-gradient",
   buttonGradient: "ml-het-effects-gradient",
-  about: `The holy grail of causal inference is the individual-level treatment effect: how would a particular patient respond to a drug? Which users  will respond most to a targeted ad? Would a given student be helped or harmed by a classroom intervention? This session introduces machine learning tools for estimating heterogeneous treatment effects like random causal forests. The course goes over the theory and concepts as well as the nitty-gritty of coding the methods up in python, R, and Stata using real-world examples. This course can be taken as a follow-up to the Machine Learning and Causal Inference mixtape session, or as a stand-alone course.`,
+  about: `The holy grail of causal inference is the individual-level treatment effect: how would a particular patient respond to a drug? Which users  will respond most to a targeted ad? Would a given student be helped or harmed by a classroom intervention? This session introduces machine learning tools for estimating heterogeneous treatment effects like random causal forests. The course goes over the theory and concepts as well as the nitty-gritty of coding the methods up in python, R, and Stata using real-world examples. This course can be taken as a follow-up to the Machine Learning and Causal Inference mixtape session, or as a stand-alone course.
+  <br/><br/>
+  This is one of our advanced courses. These courses are designed <strong>assuming a solid foundation in the basics of machine learning and causal inference</strong> and will cover the frontiers of the topic. A good review is the intro course: <a class="underline" href="https://github.com/Mixtape-Sessions/Machine-Learning">https://github.com/Mixtape-Sessions/Machine-Learning</a>.`,
   repo: "https://github.com/Mixtape-Sessions/Heterogeneous-Effects/",
   dates: [
     {
-      date: "May 15th",
-      dateComputer: "2023-05-15",
-      url: "ml_het_effects_may15",
-      eventbrite: "https://eventbrite.com/e/496348962107",
+      date: "November 15th",
+      dateComputer: "2023-11-15",
+      url: "ml_het_effects_nov15",
+      eventbrite: "https://eventbrite.com/e/682651197107",
       calendar: [
         {
-          day: "May 15th",
+          day: "November 15th",
           time: "6pm-9pm EST",
           topics: ["Machine Learning and Heterogeneous Effects"],
         },
@@ -846,17 +858,19 @@ let shift_share: Session = {
   type: "The Deep Cuts",
   gradientClass: "sm:shift-share-gradient",
   buttonGradient: "shift-share-gradient",
-  about: `Shift-Share Instrumental Variables (SSIV) are used to address endogeneity and selection challenges in many economic settings. This half-day workshop will introduce the basics of SSIV and cover the recent literature on its econometric foundations. Special focus will be paid on the different assumptions underlying the "exogenous shares" and "exogenous shocks" approaches to SSIV identification, and their practical implications. We will also cover a more general class of instrumental variable strategies combining exogenous shocks and non-random exposure. Group programming exercises will be used to illustrate various theoretical concepts in real-world applications.`,
+  about: `Shift-Share Instrumental Variables (SSIV) are used to address endogeneity and selection challenges in many economic settings. This workshop will last two evenings and will introduce the basics of SSIV and cover the recent literature on its econometric foundations. Special focus will be paid on the different assumptions underlying the “exogenous shares” and “exogenous shocks” approaches to SSIV identification, and their practical implications. We will also cover a more general class of instrumental variable strategies combining exogenous shocks and non-random exposure. Group programming exercises will be used to illustrate various theoretical concepts in real-world applications.
+  <br/><br/>
+  This is one of our advanced courses. These courses are designed <strong>assuming a solid foundation in the basics of instrumental variables</strong> and will cover the frontiers of the topic. A good review is the intro course: <a class="underline" href="https://github.com/Mixtape-Sessions/Instrumental-Variables">https://github.com/Mixtape-Sessions/Instrumental-Variables</a>.`,
   repo: "https://github.com/Mixtape-Sessions/Shift-Share/",
   dates: [
     {
-    	date: "November 2nd, 2022",
-      dateComputer: "2022-11-02",
-    	url: "shift_share_nov2",
-    	eventbrite: "https://eventbrite.com/e/",
+    	date: "September 25th, 2022",
+      dateComputer: "2023-09-25",
+    	url: "shift_share_sept25",
+    	eventbrite: "https://eventbrite.com/e/682650565217",
     	calendar: [
     		{
-    			day: "Nov 2nd",
+    			day: "September 25th",
     			time: "6pm-9pm EST",
     			topics: [
     				"Introducing Shift-Share IV: Recent Applications",
@@ -865,7 +879,7 @@ let shift_share: Session = {
     			],
     		},
         {
-    			day: "Nov 3rd",
+    			day: "September 27th",
     			time: "6pm-9pm EST",
     			topics: [
     				"The 'Exogenous Shocks' Approach (Borusyak et al., 2022)",
@@ -999,9 +1013,245 @@ let iv: Session = {
   ],
 };
 
+// Design-Based Inference (Peter Hull)
+let design: Session = {
+  id: "design",
+  title: "Design-Based Inference",
+  type: "The Deep Cuts",
+  gradientClass: "sm:design-gradient",
+  buttonGradient: "design-gradient",
+  about: `TBD.
+  <br/><br/>
+  This is one of our advanced courses. These courses are designed <strong>assuming a solid foundation in the basics of causal inference</strong> and will cover advanced methods. A solid understanding of the material covered in the material from Scott's courses (<a class="underline" href="https://github.com/Mixtape-Sessions/Causal-Inference-1">Part 1</a> and <a class="underline" href="https://github.com/Mixtape-Sessions/Causal-Inference-2">Part 2</a>) will be assumed.`,
+  repo: "https://github.com/Mixtape-Sessions/Design-Based-Inference",
+  dates: [
+    {
+    	date: "November 27th, 2023",
+      dateComputer: "2023-11-27",
+    	url: "design_nov27",
+    	eventbrite: "https://eventbrite.com/e/",
+    	calendar: [
+    		{
+    			day: "November 27th",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"TBD Day 1"
+    			],
+    		},
+    		{
+    			day: "November 29th",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"TBD Day 2"
+    			],
+    		},
+        {
+    			day: "December 1st",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"TBD Day 3"
+    			],
+    		},
+    	],
+    },
+  ],
+  instructors: [
+    {
+      name: "Prof. Peter Hull",
+      url: "http://peterhull.net/",
+      about: `<a href="https://peterhull.net/" class="text-violet-red-500 hover:text-violet-red-600">Peter Hull</a> is the Groos Family Assistant Professor of Economics at Brown Univeristy and a Faculty Research Fellow at the National Bureau of Economic Research. He has published papers on topics in applied econometrics, education, healthcare, and criminal justice, in outlets such as the American Economic Review, the Quarterly Journal of Economics, the Review of Economic Studies, and the New England Journal of Medicine. His research is focused on developing and applying new instrumental variable methods to measure the quality of institutions, such as schools or hospitals, as well as discrimination and bias in human and algorithmic decision-making. Prior to Brown, Professor Hull taught at the Kenneth C. Griffin Department of Economics at the University of Chicago and worked at Microsoft Research and the Federal Reserve Bank of New York. He earned his PhD in economics from MIT in 2017, under 2021 Nobel Laureate Josh Angrist.`,
+      reviews: [
+        "Using your Saturday to get a world-class tutorial in instrumental variables that would cost many thousands of dollars (or hours of RA work) to get otherwise is a pretty good deal. Peter is super clear and clearly prepared really well for the workshop, with great materials and interesting simulations and applications.",
+        "The course is very organized and gives a comprehensive overview of IV designs and its recent advances. Peter is very kind and seems to be truly interested in making students understand the lessons.",
+        "This workshop was expertly run. The exposure to a really amazing instructor in Peter Hull was valuable in and of itself. The lectures were well prepared, lots of helpful readings and lecture notes were provided.",
+      ],
+      img: `peter_hull.png`,
+    },
+  ],
+  faqs: [
+    {
+      id: "discounts",
+      q: "Are discounts available?",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
+    },
+    {
+      q: "How do I access the material I need for the course?",
+      a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+    },
+    {
+      q: "How long will it take me to master this?",
+      a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+    },
+    {
+      q: "Will we practice programming?",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+    },
+    {
+      q: "Will there be recordings?",
+      a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+    },
+    {
+      q: "I'm nervous that I can't handle the difficulty of the class.",
+      a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
+    },
+  ],
+};
+
+// Experimentation (Rebecca Thornton)
+let experimentation: Session = {
+  id: "experiment",
+  title: "Experimentation",
+  type: "The Singles",
+  gradientClass: "sm:experiment-gradient",
+  buttonGradient: "experiment-gradient",
+  about: `TBD.`,
+  repo: "https://github.com/Mixtape-Sessions/Experimentation",
+  dates: [
+    {
+    	date: "September XX, 2023",
+      dateComputer: "2023-09-01",
+    	url: "experimental",
+    	eventbrite: "https://eventbrite.com/e/",
+    	calendar: [
+    		{
+    			day: "September 27th",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"TBD Day 1"
+    			],
+    		},
+    		{
+    			day: "September 29th",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"TBD Day 2"
+    			],
+    		},
+        {
+    			day: "September 1st",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"TBD Day 3"
+    			],
+    		},
+    	],
+    },
+  ],
+  instructors: [
+    {
+      name: "Prof. Rebecca Thornton",
+      url: "https://www.rebeccathornton.net/",
+      about: `<a href="https://www.rebeccathornton.net/" class="text-violet-red-500 hover:text-violet-red-600">Rebecca Thornton</a> is a Professor in the Department of Economics in the Hankamer School of Business at Baylor University. Prior to that she was an Associate Professor at the University of Illinois at Urbana-Champaign and an Assistant Professor at the University of Michigan in the Department of Economics and Population Studies Center. Dr. Thornton’s research focuses on health, education, and the status of women in developing countries. Across these topics, her work addresses core issues within Economics, including the role of subjective beliefs in decision-making and how social networks influence behavior and beliefs. Dr. Thornton has been the principal or co-investigator on studies in India, Jordan, Malawi, Nicaragua, Nepal, and Uganda. These studies have involved collecting longitudinal data and conducting field experiments to understand important development issues such as HIV prevention, family planning uptake, enrollment in health insurance, effects of merit-based scholarships, and effective ways to improve early grade literacy.`,
+      reviews: [],
+      img: `rebecca_thornton.jpg`,
+    },
+  ],
+  faqs: [
+    {
+      id: "discounts",
+      q: "Are discounts available?",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
+    },
+    {
+      q: "How do I access the material I need for the course?",
+      a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+    },
+    {
+      q: "How long will it take me to master this?",
+      a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+    },
+    {
+      q: "Will we practice programming?",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+    },
+    {
+      q: "Will there be recordings?",
+      a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+    },
+    {
+      q: "I'm nervous that I can't handle the difficulty of the class.",
+      a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
+    },
+  ],
+};
+
+// Frontiers in DID (Brantly Callaway)
+let frontiers_did: Session = {
+  id: "frontiers_did",
+  title: "Frontiers in DID",
+  type: "The Deep Cuts",
+  gradientClass: "sm:frontiers-gradient",
+  buttonGradient: "frontiers-gradient",
+  about: `TBD.
+  <br/></br>
+  This is one of our advanced courses. These courses are designed <strong>assuming a solid foundation in the basics of the difference-in-differences methodology</strong> and will cover the frontiers of the topic. A good review is: https://github.com/Mixtape-Sessions/Causal-Inference-2.`,
+  repo: "https://github.com/Mixtape-Sessions/Frontiers-in-DID",
+  dates: [
+    {
+    	date: "October 17th, 2023",
+      dateComputer: "2023-10-17",
+    	url: "experimental",
+    	eventbrite: "https://eventbrite.com/e/",
+    	calendar: [
+    		{
+    			day: "October 17th",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"TBD Day 1"
+    			],
+    		},
+    		{
+    			day: "October 19th",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"TBD Day 2"
+    			],
+    		}
+    	],
+    },
+  ],
+  instructors: [
+    {
+      name: "Prof. Brantly Callaway",
+      url: "https://bcallaway11.github.io/",
+      about: `<a href="https://bcallaway11.github.io/" class="text-violet-red-500 hover:text-violet-red-600">Brantly Callaway</a> is an Assistant Professor in the Economics Department at the University of Georgia. His primary research interests are Microeconometrics and Labor Economics. Most of his research has concerned how to use panel data (repeated observations on the same individual or firm over time) to think about causal effects of economic policies. He has been particularly interested in developing methods related to understanding how effects of policies vary across different individuals. He is also interested in applications in labor economics.`,
+      reviews: [],
+      img: `brantly_callaway.jpeg`,
+    },
+  ],
+  faqs: [
+    {
+      id: "discounts",
+      q: "Are discounts available?",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
+    },
+    {
+      q: "How do I access the material I need for the course?",
+      a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+    },
+    {
+      q: "How long will it take me to master this?",
+      a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+    },
+    {
+      q: "Will we practice programming?",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+    },
+    {
+      q: "Will there be recordings?",
+      a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+    },
+    {
+      q: "I'm nervous that I can't handle the difficulty of the class.",
+      a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
+    },
+  ],
+};
+
 const sessions: Session[] = [
   ci_I,
   ci_II,
+  ci_III,
   applied,
   advanced_did,
   synth_and_clust,
@@ -1010,6 +1260,9 @@ const sessions: Session[] = [
   ml_het_effects,
   shift_share,
   iv,
+  // design,
+  // experimentation,
+  // frontiers_did
 ];
 
 export default sessions;

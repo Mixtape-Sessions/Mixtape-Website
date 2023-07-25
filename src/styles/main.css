@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap");
 
 /* https://uigradients.com/#Mild */
-.ci-gradient {
+.ci1-gradient {
   background: linear-gradient(to right, #67b26f, #4ca2cd);
 }
 /* https://uigradients.com/#ViceCity */
-.did-gradient {
+.ci2-gradient {
   background: linear-gradient(to right, #3494e6, #ec6ead);
+}
+/* https://uigradients.com/#CrimsonTide */
+.ci3-gradient {
+  background: linear-gradient(to right, #642B73, #C6426E);
 }
 /* https://uigradients.com/#Dania */
 .iv-gradient {
@@ -40,6 +44,17 @@
 .rdd-gradient {
   background: linear-gradient(to right, #1F1C2C, #928DAB);
 }
+.design-gradient {
+  background: linear-gradient(to right, #108dc7, #60E9A7);
+}
+/* https://uigradients.com/#Delicate */
+.experiment-gradient {
+  background: linear-gradient(to right, #ff5e62, #ff9966);
+}
+/* https://uigradients.com/#UndertheLake */
+.frontiers-gradient {
+  background: linear-gradient(to right, #093028, #237A57);
+}
 .text-gradient {
   background-clip: text;
   color: transparent;
@@ -48,12 +63,16 @@
 
 @media (min-width: 640px) {
   /* https://uigradients.com/#Mild */
-  .sm\:ci-gradient {
+  .sm\:ci1-gradient {
     background: linear-gradient(to right, #67b26f, #4ca2cd);
   }
   /* https://uigradients.com/#ViceCity */
-  .sm\:did-gradient {
+  .sm\:ci2-gradient {
     background: linear-gradient(to right, #3494e6, #ec6ead);
+  }
+  /* https://uigradients.com/#CrimsonTide */
+  .sm\:ci3-gradient {
+    background: linear-gradient(to right, #642B73, #C6426E);
   }
   /* https://uigradients.com/#Dania */
   .sm\:iv-gradient {
@@ -78,6 +97,13 @@
   /* https://uigradients.com/#SteelGrey */
   .sm\:rdd-gradient {
     background: linear-gradient(to right, #1F1C2C, #928DAB);
+  }
+  /* https://uigradients.com/#PunYeta */
+  .sm\:design-gradient {
+    background: linear-gradient(to right, #108dc7, #60E9A7);
+  }
+  .sm\:experiment-gradient {
+    background: linear-gradient(to right, #ff5e62, #ff9966);
   }
   .sm\:text-gradient {
     background-clip: text;
