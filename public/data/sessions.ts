@@ -1020,7 +1020,14 @@ let design: Session = {
   type: "The Deep Cuts",
   gradientClass: "sm:design-gradient",
   buttonGradient: "design-gradient",
-  about: `TBD.
+  about: `This three-day workshop covers a wide range of practical results for regression and IV-based analyses of causal effects which leverage random or conditionally as-good-as-random shocks. Questions of particular focus include:
+  <ul class="list-disc list-inside">
+    <li>"What controls do I need to include to avoid omitted variables bias?"</li>
+    <li>"Do I need to worry about 'negative weighting' of heterogeneous effects?"</li>
+    <li>"How should I be clustering my standard errors?"</li>
+    <li>"What's the payoff to considering nonlinear/'structural' analyses?"</li>
+  </ul>
+  Results will be illustrated through several real-world applications.
   <br/><br/>
   This is one of our advanced courses. These courses are designed <strong>assuming a solid foundation in the basics of causal inference</strong> and will cover advanced methods. A solid understanding of the material covered in the material from Scott's courses (<a class="underline" href="https://github.com/Mixtape-Sessions/Causal-Inference-1">Part 1</a> and <a class="underline" href="https://github.com/Mixtape-Sessions/Causal-Inference-2">Part 2</a>) will be assumed.`,
   repo: "https://github.com/Mixtape-Sessions/Design-Based-Inference",
@@ -1029,27 +1036,33 @@ let design: Session = {
     	date: "November 27th, 2023",
       dateComputer: "2023-11-27",
     	url: "design_nov27",
-    	eventbrite: "https://eventbrite.com/e/",
+    	eventbrite: "https://eventbrite.com/e/686252659177",
     	calendar: [
     		{
     			day: "November 27th",
     			time: "6pm-9pm EST",
     			topics: [
-    				"TBD Day 1"
+    				"Lecture 1: Introduction; Regression Recap",
+            "Lecture 2: Selection on Observables",
+            "Take-home Application"
     			],
     		},
     		{
     			day: "November 29th",
     			time: "6pm-9pm EST",
     			topics: [
-    				"TBD Day 2"
+    				"Lecture 3: Negative Weights",
+            "Lecture 4: Clustering",
+            "Take-home Application"
     			],
     		},
         {
     			day: "December 1st",
     			time: "6pm-9pm EST",
     			topics: [
-    				"TBD Day 3"
+    				"Lecture 5: Recentered IV",
+            "Lecture 6: Nonlinear Models",
+            "Take-home Application"
     			],
     		},
     	],
@@ -1260,7 +1273,7 @@ const sessions: Session[] = [
   ml_het_effects,
   shift_share,
   iv,
-  // design,
+  design,
   // experimentation,
   // frontiers_did
 ];

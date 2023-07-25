@@ -76,10 +76,12 @@ let hasGithubRepo = session.repo != null;
   <!-- Abstract -->
   {
     includeAbstract && (
-      <p
+      <div
         class="text-slate-600 text-lg md:text-[1.375rem] max-w-[75ch] mt-8 mb-4 leading-normal"
-        set:html={session.about}
-      />
+        
+      >
+        <Fragment set:html={session.about}></Fragment>
+      </div>
     )
   }
 
