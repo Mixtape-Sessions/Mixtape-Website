@@ -83,7 +83,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "February 17th",
+          day: "September 17th",
           time: "9am-5pm CST",
           topics: [
             "Introduction to regression discontinuity ",
@@ -374,14 +374,14 @@ let applied: Session = {
   repo: "https://github.com/Mixtape-Sessions/Doing-Applied-Research/",
   dates: [
     {
-      date: "May 4th, 2023",
-      dateComputer: "2023-05-04",
-      url: "applied_may4",
-      eventbrite: "https://eventbrite.com/e/495868133937",
+      date: "October 26th, 2023",
+      dateComputer: "2023-10-26",
+      url: "applied_oct26",
+      eventbrite: "https://eventbrite.com/e/687409619677",
       calendar: [
         {
-          day: "May 4th",
-          time: "12pm-4:30pm EST",
+          day: "October 26th",
+          time: "11pm-3pm EST",
           topics: [
             "Starting Your Research Project",
             "Practical Tips for Writing Your Applied Paper",
@@ -389,8 +389,8 @@ let applied: Session = {
           ],
         },
         {
-          day: "May 5th",
-          time: "12pm-4pm EST",
+          day: "October 27th",
+          time: "11pm-3pm EST",
           topics: [
             "The Publication Process",
             "Refereeing",
@@ -623,13 +623,13 @@ let rdd: Session = {
   repo: "https://github.com/Mixtape-Sessions/Regression-Discontinuity/",
   dates: [
     {
-      date: "May 17th, 2023",
-      dateComputer: "2023-05-17",
-      url: "rdd_may17",
-      eventbrite: "https://eventbrite.com/e/579511102307",
+      date: "October 3rd, 2023",
+      dateComputer: "2023-10-03",
+      url: "rdd_oct3",
+      eventbrite: "https://eventbrite.com/e/687626378007",
       calendar: [
         {
-          day: "May 17th",
+          day: "October 3rd",
           time: "6pm-9pm EST",
           topics: [
             "Sharp RD design: introduction and graphical illustration with RD plots",
@@ -639,7 +639,7 @@ let rdd: Session = {
           ],
         },
         {
-          day: "May 18th",
+          day: "October 4th",
           time: "6pm-9pm EST",
           topics: [
             "Continuity based RD analysis, continued",
@@ -651,7 +651,7 @@ let rdd: Session = {
           ],
         },
         {
-          day: "May 19th",
+          day: "October 5th",
           time: "6pm-9pm EST",
           topics: [
             "Falsification of RD assumptions: density and covariate balance tests",
