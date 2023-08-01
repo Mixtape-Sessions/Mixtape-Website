@@ -797,7 +797,7 @@ let ml_het_effects: Session = {
   repo: "https://github.com/Mixtape-Sessions/Heterogeneous-Effects/",
   dates: [
     {
-      date: "November 15th",
+      date: "November 15th, 2023",
       dateComputer: "2023-11-15",
       url: "ml_het_effects_nov15",
       eventbrite: "https://eventbrite.com/e/682651197107",
@@ -864,7 +864,7 @@ let shift_share: Session = {
   repo: "https://github.com/Mixtape-Sessions/Shift-Share/",
   dates: [
     {
-    	date: "September 25th, 2022",
+    	date: "September 25th, 2023",
       dateComputer: "2023-09-25",
     	url: "shift_share_sept25",
     	eventbrite: "https://eventbrite.com/e/682650565217",
