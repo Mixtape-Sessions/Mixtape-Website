@@ -521,10 +521,6 @@ let advanced_did: Session = {
       q: "I don't have a Stata license. It's too expensive. What do I do?",
       a: "No worries! Stata has graciously provided a temporary license for all participants. Before the workshop starts, I will distribute to all of you your license so that you can have it.",
     },
-    {
-      q: "Are there office hours?",
-      a: "If you are paying the full price, you get 30 minutes of office hours per workshop. So if someone paid for the bundled workshops, you would get 1 hour. I will be creating a calendy app with times so that you can sign up for office hours over the semester. We can talk about whatever you want.",
-    },
   ],
 };
 
@@ -604,10 +600,6 @@ let synth_and_clust: Session = {
     {
       q: "I don't have a Stata license. It's too expensive. What do I do?",
       a: "No worries! Stata has graciously provided a temporary license for all participants. Before the workshop starts, I will distribute to all of you your license so that you can have it.",
-    },
-    {
-      q: "Are there office hours?",
-      a: "If you are paying the full price, you get 30 minutes of office hours per workshop. So if someone paid for the bundled workshops, you would get 1 hour. I will be creating a calendy app with times so that you can sign up for office hours over the semester. We can talk about whatever you want.",
     },
   ],
 };
