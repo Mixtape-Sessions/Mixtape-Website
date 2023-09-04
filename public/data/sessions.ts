@@ -1253,6 +1253,96 @@ let frontiers_did: Session = {
   ],
 };
 
+// Empirical Bayes (Brantly Callaway)
+let empirical_bayes: Session = {
+  id: "empirical_bayes",
+  title: "Empirical Bayes and Large-Scale Inference",
+  type: "The Singles",
+  gradientClass: "sm:empirical-bayes-gradient",
+  buttonGradient: "empirical-bayes-gradient",
+  about: `This mixtape session will cover Empirical Bayes methods for studying heterogeneity, estimating individual effects, and making decisions in settings with many unit-specific parameters. Examples include studies of school, teacher, and physician quality; neighborhood effects on economic mobility; firm effects on wages; employer-specific labor market discrimination; and individualized treatment effect predictions and policy recommendations. Topics will include methods for quantifying variation in effects, empirical Bayes shrinkage, connections to machine learning methods, and large-scale inference tools for multiple testing and decision-making. By the end of the course, participants will be equipped to utilize these methods in their own research or business applications.`,
+  repo: "https://github.com/Mixtape-Sessions/Empirical-Bayes",
+  dates: [
+    {
+    	date: "November 6th, 2023",
+      dateComputer: "2023-11-06",
+    	url: "empirical_bayes_nov6",
+    	eventbrite: "https://eventbrite.com/e/712710946627",
+    	calendar: [
+    		{
+    			day: "November 6th",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"Classic parametric empirical Bayes methods",
+            "Mechanics and justification for empirical Bayes shrinkage",
+            "Random and fixed effects perspectives", 
+            "Simple deconvolution methods",
+            "James/Stein Theorem",
+            "School value-added application"
+    			],
+    		},
+    		{
+    			day: "November 8th",
+    			time: "6pm-9pm EST",
+    			topics: [
+            "Bias-correction methods for variance estimation", 
+            "Flexible deconvolution approaches", 
+            "Comparisons of nonparametric and linear shrinkage posteriors",
+            "Connections to machine learning",
+            "Application to an experiment studying the distribution of labor market discrimination across large US employers"
+    			],
+    		},
+        {
+    			day: "November 10th",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"Partial identification of mixing distributions and posteriors",
+            "Connections to multiple testing (for example: how we decide which employers discriminate, or which subgroups benefit from an intervention?)", 
+            "Ranking problems (how do we use data to select the best neighborhoods or schools?)", 
+            "Application to experimental data to discern which large employers discriminate most on the basis of race and gender."
+    			],
+    		},
+    	],
+    },
+  ],
+  instructors: [
+    {
+      name: "Prof. Christopher Walters",
+      url: "https://eml.berkeley.edu/~crwalters/",
+      about: `<a href="https://eml.berkeley.edu/~crwalters/" class="text-violet-red-500 hover:text-violet-red-600">Cristopher Walters</a> is an Associate Professor in the Department of Economics at the University of California, Berkeley. He joined the Berkeley faculty in 2013 after completing a PhD in economics at MIT. Professor Walters is an applied microeconomist with expertise in labor economics, applied econometrics, causal inference, and the economics of education. His recent work includes studies using experiments to detect labor market discrimination, evaluations of school choice and early childhood programs, and empirical Bayes methods for summarizing heterogeneity in treatment effects.`,
+      reviews: [],
+      img: `chris_walters.jpg`,
+    },
+  ],
+  faqs: [
+    {
+      id: "discounts",
+      q: "Are discounts available?",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
+    },
+    {
+      q: "How do I access the material I need for the course?",
+      a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+    },
+    {
+      q: "How long will it take me to master this?",
+      a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+    },
+    {
+      q: "Will we practice programming?",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+    },
+    {
+      q: "Will there be recordings?",
+      a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+    },
+    {
+      q: "I'm nervous that I can't handle the difficulty of the class.",
+      a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
+    },
+  ],
+};
+
 const sessions: Session[] = [
   ci_I,
   ci_II,
@@ -1266,6 +1356,7 @@ const sessions: Session[] = [
   shift_share,
   iv,
   design,
+  empirical_bayes,
   // experimentation,
   // frontiers_did
 ];

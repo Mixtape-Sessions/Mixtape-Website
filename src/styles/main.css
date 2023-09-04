@@ -55,6 +55,10 @@
 .frontiers-gradient {
   background: linear-gradient(to right, #093028, #237A57);
 }
+/* https://uigradients.com/#PinotNoir */
+.empirical-bayes-gradient {
+  background: linear-gradient(to right, #4b6cb7, #182848);
+}
 .text-gradient {
   background-clip: text;
   color: transparent;
@@ -104,6 +108,10 @@
   }
   .sm\:experiment-gradient {
     background: linear-gradient(to right, #ff5e62, #ff9966);
+  }
+  /* https://uigradients.com/#PinotNoir */
+  .sm\:empirical-bayes-gradient {
+    background: linear-gradient(to right, #4b6cb7, #182848);
   }
   .sm\:text-gradient {
     background-clip: text;
