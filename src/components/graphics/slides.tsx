@@ -1,5 +1,5 @@
-import { createComputed, createSignal, For } from "solid-js";
-import * as htmlToImage from "html-to-image";
+import { createSignal, For } from "solid-js";
+import { domToPng } from "modern-screenshot";
 import sessions from "../../../public/data/sessions";
 
 function Slides() {
@@ -16,7 +16,7 @@ function Slides() {
     },
     {
       name: "OG",
-      width: "900px", 
+      width: "900px",
       height: "600px",
     },
     {
@@ -43,18 +43,20 @@ function Slides() {
   };
 
   const downloadImage = () => {
-    const graphic = document.getElementById("graphic");
-    htmlToImage
-      .toPng(graphic, {
+    domToPng(
+      document.getElementById("graphic"), 
+      {
         width: parseInt(format().width),
         height: parseInt(format().height),
-      })
-      .then(function (dataUrl) {
-        var link = document.createElement("a");
-        link.download = `${selected().id}-${format().name}.png`;
-        link.href = dataUrl;
-        link.click();
-      });
+        quality: 1
+      }
+    ).then(function (dataUrl) {
+      var link = document.createElement("a");
+      link.download = `${selected().id}-${format().name}.png`;
+      console.log(link);
+      link.href = dataUrl;
+      link.click();
+    });
   };
 
   return (
@@ -120,12 +122,13 @@ function Slides() {
               <h3 class="text-[3rem] text-slate-800 font-marker">
                 {subtitle()}
               </h3>
-              <p class="mt-6 text-[1.75rem] text-slate-600 font-light">{instructors()}</p>
+              <p class="mt-6 text-[1.75rem] text-slate-600 font-light">
+                {instructors()}
+              </p>
             </div>
           </div>
 
           <div class="flex flex-col space-y-2 items-center">
-            {/* <div class="mx-auto w-48 border-t-2 border-mine-shaft-400 mb-4"></div> */}
             <div class="flex flex-row items-center gap-x-4">
               <svg
                 class="flex-shrink-0 w-24"
@@ -227,9 +230,6 @@ function Slides() {
                   transform="matrix(1.21207 -1.21241 -.0009 -.0009 12048.549 -8360.184)"
                 ></path>
               </svg>
-              {/* <p class="text-3xl tracking-tight text-slate-700 font-marker">
-                Mixtape Sessions 
-              </p> */}
             </div>
           </div>
         </div>
