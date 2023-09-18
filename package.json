@@ -15,7 +15,7 @@
     "@astrojs/netlify": "^3.0.1",
     "@astrojs/tailwind": "^3.0.1",
     "@tailwindcss/typography": "^0.5.9",
-    "astro": "latest"
+    "astro": "^3.0.7"
   },
   "dependencies": {
     "@astrojs/solid-js": "^3.0.0",
