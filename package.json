@@ -21,8 +21,6 @@
   },
   "dependencies": {
     "@astrojs/solid-js": "^3.0.0",
-    "@thisbeyond/solid-select": "^0.13.0",
-    "html-to-image": "^1.11.11",
     "html2canvas": "^1.4.1",
     "modern-screenshot": "^4.4.31",
     "solid-js": "^1.7.11",
