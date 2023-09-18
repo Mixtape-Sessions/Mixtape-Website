@@ -19,3 +19,6 @@ pnpm-debug.log*
 .DS_Store
 bun.lockb
 package-lock.json
+
+# Local Netlify folder
+.netlify
