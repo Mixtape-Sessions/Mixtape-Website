@@ -126,7 +126,7 @@ let ci_I: Session = {
     },
     {
       q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
     },
     {
       q: "Will there be recordings?",
@@ -236,7 +236,7 @@ let ci_II: Session = {
     },
     {
       q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
     },
     {
       q: "Will there be recordings?",
@@ -334,7 +334,7 @@ let ci_III: Session = {
     },
     {
       q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
     },
     {
       q: "Will there be recordings?",
@@ -499,7 +499,7 @@ let advanced_did: Session = {
     },
     {
       q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
     },
     {
       q: "Will there be recordings?",
@@ -579,7 +579,7 @@ let synth_and_clust: Session = {
     },
     {
       q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
     },
     {
       q: "Will there be recordings?",
@@ -677,7 +677,7 @@ let rdd: Session = {
     },
     {
       q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
     },
     {
       q: "Will there be recordings?",
@@ -763,7 +763,7 @@ let ml: Session = {
     },
     {
       q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
     },
     {
       q: "Will there be recordings?",
@@ -830,7 +830,7 @@ let ml_het_effects: Session = {
     },
     {
       q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
     },
     {
       q: "Will there be recordings?",
@@ -912,7 +912,7 @@ let shift_share: Session = {
     },
     {
       q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
     },
     {
       q: "Will there be recordings?",
@@ -992,7 +992,7 @@ let iv: Session = {
     },
     {
       q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
     },
     {
       q: "Will there be recordings?",
@@ -1089,7 +1089,7 @@ let design: Session = {
     },
     {
       q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
     },
     {
       q: "Will there be recordings?",
@@ -1167,7 +1167,7 @@ let experimentation: Session = {
     },
     {
       q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
     },
     {
       q: "Will there be recordings?",
@@ -1187,7 +1187,7 @@ let frontiers_did: Session = {
   type: "The Deep Cuts",
   gradientClass: "sm:frontiers-gradient",
   buttonGradient: "frontiers-gradient",
-  about: `TBD.
+  about: `This course provides an in-depth introduction to panel data approaches to causal inference. The first part of the course reviews how new "heterogeneity-robust" estimation strategies address some important limitations of traditional two-way fixed effects regressions in difference-in-differences applications, and then provides an in-depth discussion/comparison of many of these approaches. This part also includes a number of practical extensions such as how to include covariates in the parallel trends assumption and dealing with "bad controls". The second part of the course discusses how the insights of recent work on difference-in-differences can apply in a number of other settings that frequently arise in empirical work. And, in particular, this part of the course provides connections between the difference-in-differences literature and alternative identification strategies (conditioning on lagged outcomes, change-in-changes, and interactive fixed effects models) and also how to deal with more complicated treatment regimes (continuous treatments or treatments that can change value over time).
   <br/></br>
   This is one of our advanced courses. These courses are designed <strong>assuming a solid foundation in the basics of the difference-in-differences methodology</strong> and will cover the frontiers of the topic. A good review is: https://github.com/Mixtape-Sessions/Causal-Inference-2.`,
   repo: "https://github.com/Mixtape-Sessions/Frontiers-in-DID",
@@ -1195,21 +1195,24 @@ let frontiers_did: Session = {
     {
     	date: "October 17th, 2023",
       dateComputer: "2023-10-17",
-    	url: "experimental",
-    	eventbrite: "https://eventbrite.com/e/",
+    	url: "frontiers_did_oct17",
+    	eventbrite: "https://eventbrite.com/e/719203335537",
     	calendar: [
     		{
     			day: "October 17th",
     			time: "6pm-9pm EST",
     			topics: [
-    				"TBD Day 1"
+    				"'Heterogeneity-robust' DID estimation",
+            "Including covariates in the parallel trends assumption", 
+            "Dealing with 'bad controls'",
     			],
     		},
     		{
     			day: "October 19th",
     			time: "6pm-9pm EST",
     			topics: [
-    				"TBD Day 2"
+    				"Alternative identification strategies (conditioning on lagged outcomes, change-in-changes, and interactive fixed effects models)",
+            "More complicated treatment regimes (continuous treatments or treatments that can change value over time)"
     			],
     		}
     	],
@@ -1219,7 +1222,7 @@ let frontiers_did: Session = {
     {
       name: "Prof. Brantly Callaway",
       url: "https://bcallaway11.github.io/",
-      about: `<a href="https://bcallaway11.github.io/" class="text-violet-red-500 hover:text-violet-red-600">Brantly Callaway</a> is an Assistant Professor in the Economics Department at the University of Georgia. His primary research interests are Microeconometrics and Labor Economics. Most of his research has concerned how to use panel data (repeated observations on the same individual or firm over time) to think about causal effects of economic policies. He has been particularly interested in developing methods related to understanding how effects of policies vary across different individuals. He is also interested in applications in labor economics.`,
+      about: `<a href="https://bcallaway11.github.io/" class="text-violet-red-500 hover:text-violet-red-600">Brantly Callaway</a> is an Associate Professor in the Department of Economics at the University of Georgia.  His main research interests lie in econometrics, and, in particular, developing methods to use panel data (that is, repeated observations on the same location, firm, or person over time) to evaluate the effects of economic policies.  He also has substantive research interests in labor economics and has studied intergenerational income mobility, job displacement, minimum wage policies, and unions.`,
       reviews: [],
       img: `brantly_callaway.jpeg`,
     },
@@ -1240,7 +1243,7 @@ let frontiers_did: Session = {
     },
     {
       q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
     },
     {
       q: "Will there be recordings?",
@@ -1330,7 +1333,7 @@ let empirical_bayes: Session = {
     },
     {
       q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will then do these together in a coding lab that lasts approximately 75 minutes. I will do the assignments too in real time coding so that you can see how I approach these things. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
+      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
     },
     {
       q: "Will there be recordings?",
@@ -1358,7 +1361,7 @@ const sessions: Session[] = [
   design,
   empirical_bayes,
   // experimentation,
-  // frontiers_did
+  frontiers_did
 ];
 
 export default sessions;
