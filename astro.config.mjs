@@ -1,11 +1,10 @@
 import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
-import solidJs from "@astrojs/solid-js";
-import netlify from "@astrojs/netlify";
+import solid from '@astrojs/solid-js';
+import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), solidJs(), netlify()],
+  integrations: [solid(), tailwind()],
   vite: {
     ssr: {
       external: ["svgo"]

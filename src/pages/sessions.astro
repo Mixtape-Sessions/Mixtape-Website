@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import sessions from "../../public/data/sessions";
 import SessionHeader from "../components/SessionHeader.astro";
-import { createHeadlessSelectRootSingleControlledProps } from "solid-headless";
 
 let singles = sessions
   .filter((session) => {
@@ -11,6 +10,23 @@ let singles = sessions
   .filter((session) => {
     return session.dates.length > 0;
   })
+  // Change date to "Not currently scheduled" if the date has already passed
+  .map((session) => {
+    let today = new Date();
+    // subtract 9 days to make sure we don't filter out sessions that are ongoing
+    today = new Date(today.setDate(today.getDate() - 9));
+
+    let sessionDate = new Date(session.dates[0].dateComputer);
+
+    if (sessionDate < today) {
+      session.dates[0].date = "Not currently scheduled";
+    }
+    return session;
+  })
+  // Filter out "Not currently scheduled"
+  .filter((session) => {
+    return session.dates[0].date != "Not currently scheduled";
+  })
   .sort((a, b) => {
     let aDate = new Date(a.dates[0].dateComputer);
     let bDate = new Date(b.dates[0].dateComputer);
@@ -25,19 +41,6 @@ let singles = sessions
 
     return Number(aDate) - Number(bDate);
   })
-  // Change date to "Not currently scheduled" if the date has already passed
-  .map((session) => {
-    let today = new Date();
-    // subtract 9 days to make sure we don't filter out sessions that are ongoing
-    today = new Date(today.setDate(today.getDate() - 9));
-
-    let sessionDate = new Date(session.dates[0].dateComputer);
-
-    if (sessionDate < today) {
-      session.dates[0].date = "Not currently scheduled";
-    }
-    return session;
-  });
 
 let deepCuts = sessions
   .filter((session) => {
@@ -46,6 +49,23 @@ let deepCuts = sessions
   .filter((session) => {
     return session.dates.length > 0;
   })
+  // Change date to "Not currently scheduled" if the date has already passed
+  .map((session) => {
+    let today = new Date();
+    // subtract 9 days to make sure we don't filter out sessions that are ongoing
+    today = new Date(today.setDate(today.getDate() - 9));
+
+    let sessionDate = new Date(session.dates[0].dateComputer);
+
+    if (sessionDate < today) {
+      session.dates[0].date = "Not currently scheduled";
+    }
+    return session;
+  })
+  // Filter out "Not currently scheduled"
+  .filter((session) => {
+    return session.dates[0].date != "Not currently scheduled";
+  })
   .sort((a, b) => {
     let aDate = new Date(a.dates[0].dateComputer);
     let bDate = new Date(b.dates[0].dateComputer);
@@ -59,20 +79,11 @@ let deepCuts = sessions
     }
 
     return Number(aDate) - Number(bDate);
-  })
-  // Change date to "Not currently scheduled" if the date has already passed
-  .map((session) => {
-    let today = new Date();
-    // subtract 9 days to make sure we don't filter out sessions that are ongoing
-    today = new Date(today.setDate(today.getDate() - 9));
-
-    let sessionDate = new Date(session.dates[0].dateComputer);
-
-    if (sessionDate < today) {
-      session.dates[0].date = "Not currently scheduled";
-    }
-    return session;
   });
+
+if (true) {
+  
+}
 
 let ci1 = sessions.filter((session) => {
   return session.id === "ci_I";
