@@ -1025,13 +1025,13 @@ let design: Session = {
   repo: "https://github.com/Mixtape-Sessions/Design-Based-Inference",
   dates: [
     {
-    	date: "November 27th, 2023",
-      dateComputer: "2023-11-27",
-    	url: "design_nov27",
-    	eventbrite: "https://eventbrite.com/e/686252659177",
+    	date: "April 22nd, 2024",
+      dateComputer: "2024-04-22",
+    	url: "design_apr22",
+    	eventbrite: "https://eventbrite.com/e/760204802027",
     	calendar: [
     		{
-    			day: "November 27th",
+    			day: "April 22nd",
     			time: "6pm-9pm EST",
     			topics: [
     				"Lecture 1: Introduction; Regression Recap",
@@ -1040,7 +1040,7 @@ let design: Session = {
     			],
     		},
     		{
-    			day: "November 29th",
+    			day: "April 24th",
     			time: "6pm-9pm EST",
     			topics: [
     				"Lecture 3: Negative Weights",
@@ -1049,7 +1049,7 @@ let design: Session = {
     			],
     		},
         {
-    			day: "December 1st",
+    			day: "April 26th",
     			time: "6pm-9pm EST",
     			topics: [
     				"Lecture 5: Recentered IV",
