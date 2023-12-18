@@ -1,11 +1,11 @@
 ---
 import sessions from "../../../public/data/sessions";
 import Layout from "../../layouts/Layout.astro";
-import SessionHeader from "../../components/SessionHeader.astro";
-import SessionCalendar from "../../components/SessionCalendar.astro";
-import SessionHost from "../../components/SessionHost.astro";
+import SessionHeader from "../../components/Session/SessionHeader.astro";
+import SessionCalendar from "../../components/Session/SessionCalendar.astro";
+import SessionHost from "../../components/Session/SessionHost.astro";
 import CallToAction from "../../components/CallToAction.astro";
-import SessionFAQ from "../../components/SessionFAQ.astro";
+import SessionFAQ from "../../components/Session/SessionFAQ.astro";
 
 export async function getStaticPaths() {
   const slugs = sessions.flatMap((session) => {
@@ -44,11 +44,7 @@ const description = `Workshop taught by ${names} starting on ${session.dates[0].
 <Layout title={session.title} slug={session.id} description={description}>
   <div class="relative pb-48 pt-12">
     <div class="w-full max-w-6xl mx-auto px-4 md:px-12 xl:px-0">
-      <SessionHeader
-        session={session}
-        includeAbstract
-        currentDate={date.date}
-      />
+      <SessionHeader session={session} />
       <CallToAction session={session} date={date} />
       <SessionCalendar date={date} />
       <SessionHost instructors={session.instructors} />

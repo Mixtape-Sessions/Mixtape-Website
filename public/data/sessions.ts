@@ -46,13 +46,13 @@ let ci_I: Session = {
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-1/",
   dates: [
     {
-      date: "September 9th",
-      dateComputer: "2023-09-09",
-      url: "ci_I_sept9",
-      eventbrite: "https://eventbrite.com/e/682636633547",
+      date: "February 3rd",
+      dateComputer: "2024-02-03",
+      url: "ci_I_feb3",
+      eventbrite: "https://eventbrite.com/e/779451479357",
       calendar: [
         {
-          day: "September 9th",
+          day: "February 3rd",
           time: "9am-5pm CST",
           topics: [
             "Introduction to causal inference",
@@ -62,7 +62,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "September 10th",
+          day: "February 4th",
           time: "9am-5pm CST",
           topics: [
             "Introduction to causal graphs",
@@ -71,7 +71,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "September 16th",
+          day: "February 10th",
           time: "9am-5pm CST",
           topics: [
             "Instrumental variables",
@@ -83,7 +83,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "September 17th",
+          day: "February 11th",
           time: "9am-5pm CST",
           topics: [
             "Introduction to regression discontinuity ",
@@ -162,13 +162,13 @@ let ci_II: Session = {
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
   dates: [
     {
-      date: "October 14th",
-      dateComputer: "2023-10-14",
-      url: "ci_II_oct14",
-      eventbrite: "https://eventbrite.com/e/682635921417",
+      date: "March 16th",
+      dateComputer: "2024-03-16",
+      url: "ci_II_mar16",
+      eventbrite: "https://eventbrite.com/e/779455110217",
       calendar: [
         {
-          day: "October 14th",
+          day: "March 16th",
           time: "9am-5pm CST",
           topics: [
             "Introduction to DID",
@@ -177,7 +177,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "October 15th",
+          day: "March 17th",
           time: "9am-5pm CST",
           topics: [
             "DID with Covariates (Sant'Anna and Zhao 2020; Abadie 2005; Heckman, Ichimura and Todd 1997)",
@@ -186,7 +186,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "October 21st",
+          day: "March 23rd",
           time: "9am-5pm CST",
           topics: [
             "Pathologies in TWFE and alternative estimator (deChaisemartin and D'Haultfœille 2020)",
@@ -195,7 +195,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "October 22nd",
+          day: "March 24th",
           time: "9am-5pm CST",
           topics: [
             "Imputation Estimators (Gardner 2021 and Borusyal et al 2021)",
@@ -276,13 +276,13 @@ let ci_III: Session = {
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
   dates: [
     {
-      date: "November 11th",
-      dateComputer: "2023-11-11",
-      url: "ci_III_nov11",
-      eventbrite: "https://eventbrite.com/e/685278003957",
+      date: "April 6th",
+      dateComputer: "2024-04-06",
+      url: "ci_III_apr6",
+      eventbrite: "https://eventbrite.com/e/779456373997",
       calendar: [
         {
-          day: "November 11th",
+          day: "April 6th",
           time: "9am-5pm CST",
           topics: [
             "Abadie's non-negative weighting method (Abadie, Diamond, and Hainmueller 2010)",
@@ -293,7 +293,7 @@ let ci_III: Session = {
           ],
         },
         {
-          day: "November 12th",
+          day: "April 7th",
           time: "9am-5pm CST",
           topics: [
             "Matrix completion with nuclear norm regularization (Athey et al. 2021)",

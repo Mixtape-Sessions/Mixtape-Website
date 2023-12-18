@@ -1,0 +1,27 @@
+---
+const { title, tagline, description, grey = false } = Astro.props;
+---
+
+<div class:list={["relative pb-48 pt-24", {'bg-slate-50': grey}]}>
+  <div class="w-full max-w-6xl mx-auto px-4 md:px-12 xl:px-0">
+    <div class="mb-12">
+      <h1
+        class="text-xl font-semibold leading-7 text-picton-blue-400 font-marker"
+      >
+        {title}
+      </h1>
+      <p
+        class="mt-4 text-5xl font-extrabold tracking-tight text-slate-900 max-w-[25ch]"
+      >
+        {tagline}
+      </p>
+      <p class="text-2xl max-w-prose mt-8 leading-[1.5]">
+        {description}
+      </p>
+    </div>
+
+    <div class="space-y-24">
+      <slot />
+    </div>
+  </div>
+</div>

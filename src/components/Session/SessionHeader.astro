@@ -1,14 +1,12 @@
 ---
-import HoverArrow from "./HoverArrow.astro";
-import { Session } from "../../public/data/sessions";
+import HoverArrow from "../HoverArrow.astro";
+import { type Session } from "../../../public/data/sessions";
 
 export interface Props {
   session: Session;
-  includeAbstract?: boolean;
-  includeArrow?: boolean;
 }
 
-const { session, includeAbstract = false, includeArrow = false } = Astro.props;
+const { session } = Astro.props;
 
 let futureEvent = session.dates[0].date != "Not currently scheduled";
 
@@ -17,6 +15,7 @@ let starting_string = futureEvent
   : session.dates[0].date;
 
 let hasGithubRepo = session.repo != null;
+const includeAbstract = true;
 ---
 
 <div class="py-4 sm:py-6 mt-4">
