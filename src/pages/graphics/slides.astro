@@ -1,8 +1,10 @@
 ---
-import Slides from "../../components/graphics/slides"
-import "../../styles/main.css"
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import ImageCreator from "../../components/graphics/ImageCreator.tsx"
 ---
 
-<div class="w-full mt-24 bg-white flex flex-col items-center justify-center">
-  <Slides client:load />
-</div>
+<BaseLayout>
+  <div class="w-full mt-24 bg-white flex flex-col items-center justify-center">
+    <ImageCreator client:load />
+  </div>
+</BaseLayout>

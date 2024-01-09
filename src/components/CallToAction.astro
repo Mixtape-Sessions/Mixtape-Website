@@ -1,9 +1,8 @@
 ---
 import SvgMixtape from "./svg/SvgMixtape.astro";
 import SvgMic from "./svg/SvgMic.astro";
-import SvgPdf from "./svg/SvgPdf.astro";
 import SvgKeyboard from "./svg/SvgKeyboard.astro";
-import { type Session, type Date } from "../../public/data/sessions";
+import { type Session, type Date } from "../data/sessions";
 
 export interface Props {
   session: Session;
@@ -92,7 +91,7 @@ let isHetEffects = session.id === "ml_het_effects";
       <div class="w-72 sm:w-96 px-8 mt-8 md:mt-12 mb-8">
         <div class="mr-auto relative group">
           <div
-            class={`absolute -inset-1 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse animation-delay-2000 ${session.buttonGradient}`}
+            class={`absolute -inset-1 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse animation-delay-2000 ${session.gradient}`}
           >
           </div>
           <a

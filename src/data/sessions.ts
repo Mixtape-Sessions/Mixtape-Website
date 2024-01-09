@@ -26,8 +26,7 @@ export interface Session {
   id: string;
   title: string;
   type: "The Classics" | "The Singles" | "The Deep Cuts";
-  gradientClass: string;
-  buttonGradient: string;
+  gradient: string;
   about: string;
   dates: Date[];
   faqs: FAQ[];
@@ -40,8 +39,7 @@ let ci_I: Session = {
   id: "ci_I",
   title: "Causal Inference I",
   type: "The Classics",
-  gradientClass: "sm:ci1-gradient",
-  buttonGradient: "ci1-gradient",
+  gradient: "bg-ci1",
   about: `Causal Inference Part I kickstarts a new 4-day series on design-based causal inference series.  It covers the foundations of causal inference grounded in a counterfactual theory of causality built on the Neyman-Rubin model of potential outcomes. It will also cover randomization inference, independence, matching, regression discontinuity and instrumental variables.  We will review the theory behind each of these designs in detail with the aim being comprehension, competency and confidence.  Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch.  To help accomplish this, we will hold ongoing discussions via Discourse, work through assignments and exercises together, and have detailed walk-throughs of code in R and Stata. This is the prequel to the Part II course that covers difference-in-differences and synthetic control.`,
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-1/",
   dates: [
@@ -156,8 +154,7 @@ let ci_II: Session = {
   id: "ci_II",
   title: "Causal Inference II",
   type: "The Classics",
-  gradientClass: "sm:ci2-gradient",
-  buttonGradient: "ci2-gradient",
+  gradient: "bg-ci2",
   about: `Causal inference Part II is a 4-day workshop in design based causal inference series. It will cover difference-in-differences starting from the basics and taking readers into more contemporary design elements with staggered adoption and the incorporation of covariates. Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch. We will review the theory behind each design, go into detail on the intuition of the estimation strategies and identification itself, as well as explore code in R and Stata and applications using these methods. The goal as always is that participants leave the workshop with competency and confidence. This class will be a sequel to the 4-day workshop on Causal Inference Part I and is followed by Causal Inference Part III.`,
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
   dates: [
@@ -270,8 +267,7 @@ let ci_III: Session = {
   id: "ci_III",
   title: "Causal Inference III",
   type: "The Classics",
-  gradientClass: "sm:ci3-gradient",
-  buttonGradient: "ci3-gradient",
+  gradient: "bg-ci3",
   about: `Synthetic control has been called the most important innovation in causal inference of the last two decades (Athey and Imbens 2018). It's use has been seen across the social sciences but even industry and government agencies.  The method combines many design elements from unconfoundedness principles to difference-in-differences estimation to help find suitable estimates of counterfactuals in panel settings. Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch. We will review the theory behind several estimators, go into detail on the intuition of the estimation strategies and identification itself, as well as explore code in R and Stata and applications using these methods. The goal as always is that participants leave the workshop with competency and confidence. This class will be a sequel to the Causal Inference I and II.`,
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
   dates: [
@@ -368,8 +364,7 @@ let applied: Session = {
   id: "applied",
   title: "Doing Applied Research",
   type: "The Singles",
-  gradientClass: "sm:applied-gradient",
-  buttonGradient: "applied-gradient",
+  gradient: "bg-applied",
   about: `This course is intended to be a practical guide for graduate students and early career economists doing applied research. The nuts and bolts of writing, publishing, and service to the profession are covered in two half-day sessions, each lasting roughly four hours (including short breaks). We begin by providing tips on how to start a research project, when to switch topics, and how to effectively manage multiple projects at once. Next, we provide practical advice on how to write an applied economics paper, from structing the introduction to crafting the conclusion. The second half of the course takes participants through the publication process.  In addition, we discuss networking, refereeing for economics journals, getting the most out of conferences, and how to successfully navigate the academic job market.`,
   repo: "https://github.com/Mixtape-Sessions/Doing-Applied-Research/",
   dates: [
@@ -407,7 +402,7 @@ let applied: Session = {
       name: "Prof. Daniel Rees",
       url: "https://danielrees.weebly.com/",
       about: `<a href="https://danielrees.weebly.com/" class="text-violet-red-500 hover:text-violet-red-600">Daniel Rees</a> professor in the department of economics at the Universidad Carlos III de Madrid. He serves as a coeditor at the <i>American Journal of Health Economics</i> and at the <i>Journal of Policy Analysis and Management</i>. He was a professor in the Department of Economics at the University of Colorado Denver from 1993-2021 and Editor-in-Chief of the <i>Economics of Education Review</i> from 2014-2019. <br/><br/> Dr. Rees is currently studying the mortality transition at the turn of the 20th century, the relationship between hospital desegregation and the Black-White infant mortality gap, and the long-term effects of smoking on health.  His research has appeared in the <i>American Economic Journal: Applied Economics</i>, <i>Economic Journal</i>, <i>Journal of Development Economics</i>, <i>Journal of Economic Literature</i>, <i>Journal of Human Resources</i>, <i>Journal of Political Economy</i>, and <i>Review of Economics and Statistics</i>.`,
-      img: `dan_rees.jpg`,
+      img: `dan_rees.jpeg`,
       reviews: [
         "As an econ grad student early in my research career, this workshop answered every question I had about how research actually gets done and how to deal with the inevitable issues, tradeoffs, and challenges of writing papers. In fact, it answered questions I didn't even know I had and delivered the hidden curriculum of research in an organized, encouraging fashion.",
         "A must attend for any aspiring researchers to learn the (unwritten) rules of applied research and the publishing process.",
@@ -422,7 +417,7 @@ let applied: Session = {
       name: "Prof. D. Mark Anderson",
       url: "http://www.dmarkanderson.com/",
       about: `<a href="http://www.dmarkanderson.com/" class="text-violet-red-500 hover:text-violet-red-600">D. Mark Anderson</a> is an Associate Professor in the Department of Agricultural Economics & Economics at Montana State University, a research associate at the National Bureau of Economic Research, and a co-editor of <i>Economic Inquiry</i>.  He received his Ph.D. in economics from the University of Washington in 2011. <br/><br/> Dr. Anderson is an applied microeconomist with research interests in health and economic history.  His research has appeared in the <i>American Economic Journal: Applied Economics</i>, <i>Economic Journal</i>, <i>Journal of Economic Literature</i>, <i>Journal of Law and Economics</i>, <i>Journal of Urban Economics</i>, <i>Journal of Political Economy</i>, and <i>Review of Economics and Statistics</i>.`,
-      img: `mark_anderson.jpg`,
+      img: `mark_anderson.jpeg`,
     },
   ],
   faqs: [
@@ -450,8 +445,7 @@ let advanced_did: Session = {
   id: "advanced_did",
   title: "Advanced DID",
   type: "The Deep Cuts",
-  gradientClass: "sm:advanced-did-gradient",
-  buttonGradient: "advanced-did-gradient",
+  gradient: "bg-advanced-did",
   about: `This one-day workshop will cover advanced topics from the recent difference-in-differences literature. One question of particular focus will be, <i>"what should I do if I'm not 100% sure about the validity of the parallel trends assumption?"</i> We will cover a variety of relaxations to the parallel trends assumption, and new tools for power calculations and sensitivity analysis. The workshop will focus not just on the theory, but also on practical implementation in statistical software such as R and Stata.
   <br/><br/>
   This is one of our advanced courses. These courses are designed <strong>assuming a solid foundation in the basics of the difference-in-differences methodology</strong> and will cover the frontiers of the topic. A good review is: <a class="underline" href="https://github.com/Mixtape-Sessions/Causal-Inference-2">https://github.com/Mixtape-Sessions/Causal-Inference-2</a>.`,
@@ -529,8 +523,7 @@ let synth_and_clust: Session = {
   id: "synth_and_clust",
   title: "Synthetic Control and Clustering",
   type: "The Singles",
-  gradientClass: "sm:synth-and-clust-gradient",
-  buttonGradient: "synth-and-clust-gradient",
+  gradient: "bg-synth-and-clust",
   about: `In this course, we will cover the fundamentals of synthetic control estimation and inference, with special emphasis on actionable guidance for applied research. We will discuss seven crucial guiding principles for empirical studies using synthetic controls and how these principles are applied in practice. Towards the end of the course, we will change topics to address “the” FAQ of econometrics office hours: When and how should we cluster standard errors?`,
   repo: "https://github.com/Mixtape-Sessions/Synthetic-Control-And-Clustering/",
   dates: [
@@ -609,8 +602,7 @@ let rdd: Session = {
   id: "rdd",
   title: "Regression Discontinuity Design",
   type: "The Singles",
-  gradientClass: "sm:rdd-gradient",
-  buttonGradient: "rdd-gradient",
+  gradient: "bg-rdd",
   about: `This course covers methods for the analysis and interpretation of the Regression Discontinuity (RD) design, a non-experimental strategy to study treatment effects that can be used when units receive a treatment based on a score and a cutoff. The course covers methods for estimation, inference, and falsification of RD treatment effects using two different approaches: the continuity-based framework, implemented with local polynomials, and the local randomization framework, implemented with standard tools from the analysis of experiments. The focus is on conceptual understanding of the underlying methodological issues and effective empirical implementation. Every topic is illustrated with the analysis of RD examples using real-world data, walking through R and Stata codes that fully implement all the methods discussed. At the end of the course, participants will have acquired the necessary skills to rigorously interpret, visualize, validate, estimate, and characterize the uncertainty of RD treatment effects.`,
   repo: "https://github.com/Mixtape-Sessions/Regression-Discontinuity/",
   dates: [
@@ -695,8 +687,7 @@ let ml: Session = {
   id: "ml",
   title: "Machine Learning and Causal Inference",
   type: "The Singles",
-  gradientClass: "sm:ml-gradient",
-  buttonGradient: "ml-gradient",
+  gradient: "bg-ml",
   about: `Machine Learning's wheelhouse is out-of-sample prediction, but these powerful methods can be deployed in service of causal inference. This two-session workshop will introduce the basics of machine learning prediction methods, including lasso and random forests and how they feature in causal inference methods like double machine learning (DML) and post-double selection lasso (PDS lasso). The course covers the conceptual and theoretical basis for the methods and also gets into the nuts and bolts of implementation in python and Stata using real-world data.`,
   repo: "https://github.com/Mixtape-Sessions/Machine-Learning/",
   dates: [
@@ -781,8 +772,7 @@ let ml_het_effects: Session = {
   id: "ml_het_effects",
   title: "Machine Learning and Heterogeneous Effects",
   type: "The Deep Cuts",
-  gradientClass: "sm:ml-het-effects-gradient",
-  buttonGradient: "ml-het-effects-gradient",
+  gradient: "bg-ml-het-effects",
   about: `The holy grail of causal inference is the individual-level treatment effect: how would a particular patient respond to a drug? Which users  will respond most to a targeted ad? Would a given student be helped or harmed by a classroom intervention? This session introduces machine learning tools for estimating heterogeneous treatment effects like random causal forests. The course goes over the theory and concepts as well as the nitty-gritty of coding the methods up in python, R, and Stata using real-world examples. This course can be taken as a follow-up to the Machine Learning and Causal Inference mixtape session, or as a stand-alone course.
   <br/><br/>
   This is one of our advanced courses. These courses are designed <strong>assuming a solid foundation in the basics of machine learning and causal inference</strong> and will cover the frontiers of the topic. A good review is the intro course: <a class="underline" href="https://github.com/Mixtape-Sessions/Machine-Learning">https://github.com/Mixtape-Sessions/Machine-Learning</a>.`,
@@ -848,8 +838,7 @@ let shift_share: Session = {
   id: "shift_share",
   title: "Shift-Share IV",
   type: "The Deep Cuts",
-  gradientClass: "sm:shift-share-gradient",
-  buttonGradient: "shift-share-gradient",
+  gradient: "bg-shift-share",
   about: `Shift-Share Instrumental Variables (SSIV) are used to address endogeneity and selection challenges in many economic settings. This workshop will last two evenings and will introduce the basics of SSIV and cover the recent literature on its econometric foundations. Special focus will be paid on the different assumptions underlying the “exogenous shares” and “exogenous shocks” approaches to SSIV identification, and their practical implications. We will also cover a more general class of instrumental variable strategies combining exogenous shocks and non-random exposure. Group programming exercises will be used to illustrate various theoretical concepts in real-world applications.
   <br/><br/>
   This is one of our advanced courses. These courses are designed <strong>assuming a solid foundation in the basics of instrumental variables</strong> and will cover the frontiers of the topic. A good review is the intro course: <a class="underline" href="https://github.com/Mixtape-Sessions/Instrumental-Variables">https://github.com/Mixtape-Sessions/Instrumental-Variables</a>.`,
@@ -930,8 +919,7 @@ let iv: Session = {
   id: "iv",
   title: "Instrumental Variables",
   type: "The Singles",
-  gradientClass: "sm:iv-gradient",
-  buttonGradient: "iv-gradient",
+  gradient: "bg-iv",
   about: `Instrumental variables (IV) is a powerful tool for leveraging external ("exogenous") variation to estimate the causal effects of otherwise confounded ("endogenous") variables. This two-day workshop will introduce the basics of IV through different practical examples, formalize the requirements of a valid and powerful IV, and discuss the mechanics of the two-stage least squares (2SLS) estimator. Special focus will be paid on interpreting linear IV under heterogeneous treatment effects and recent advances in judge leniency designs. The course will include substantial group programming exercises, where different IV techniques will be illustrated in real-world applications.`,
   repo: "https://github.com/Mixtape-Sessions/Instrumental-Variables/",
   dates: [
@@ -1010,8 +998,7 @@ let design: Session = {
   id: "design",
   title: "Design-Based Inference",
   type: "The Deep Cuts",
-  gradientClass: "sm:design-gradient",
-  buttonGradient: "design-gradient",
+  gradient: "bg-design",
   about: `This three-day workshop covers a wide range of practical results for regression and IV-based analyses of causal effects which leverage random or conditionally as-good-as-random shocks. Questions of particular focus include:
   <ul class="list-disc list-inside">
     <li>"What controls do I need to include to avoid omitted variables bias?"</li>
@@ -1107,8 +1094,7 @@ let experimentation: Session = {
   id: "experiment",
   title: "Experimentation",
   type: "The Singles",
-  gradientClass: "sm:experiment-gradient",
-  buttonGradient: "experiment-gradient",
+  gradient: "bg-experiment",
   about: `TBD.`,
   repo: "https://github.com/Mixtape-Sessions/Experimentation",
   dates: [
@@ -1148,7 +1134,7 @@ let experimentation: Session = {
       url: "https://www.rebeccathornton.net/",
       about: `<a href="https://www.rebeccathornton.net/" class="text-violet-red-500 hover:text-violet-red-600">Rebecca Thornton</a> is a Professor in the Department of Economics in the Hankamer School of Business at Baylor University. Prior to that she was an Associate Professor at the University of Illinois at Urbana-Champaign and an Assistant Professor at the University of Michigan in the Department of Economics and Population Studies Center. Dr. Thornton’s research focuses on health, education, and the status of women in developing countries. Across these topics, her work addresses core issues within Economics, including the role of subjective beliefs in decision-making and how social networks influence behavior and beliefs. Dr. Thornton has been the principal or co-investigator on studies in India, Jordan, Malawi, Nicaragua, Nepal, and Uganda. These studies have involved collecting longitudinal data and conducting field experiments to understand important development issues such as HIV prevention, family planning uptake, enrollment in health insurance, effects of merit-based scholarships, and effective ways to improve early grade literacy.`,
       reviews: [],
-      img: `rebecca_thornton.jpg`,
+      img: `rebecca_thornton.jpeg`,
     },
   ],
   faqs: [
@@ -1185,8 +1171,7 @@ let frontiers_did: Session = {
   id: "frontiers_did",
   title: "Frontiers in DID",
   type: "The Deep Cuts",
-  gradientClass: "sm:frontiers-gradient",
-  buttonGradient: "frontiers-gradient",
+  gradient: "bg-frontiers",
   about: `This course provides an in-depth introduction to panel data approaches to causal inference. The first part of the course reviews how new "heterogeneity-robust" estimation strategies address some important limitations of traditional two-way fixed effects regressions in difference-in-differences applications, and then provides an in-depth discussion/comparison of many of these approaches. This part also includes a number of practical extensions such as how to include covariates in the parallel trends assumption and dealing with "bad controls". The second part of the course discusses how the insights of recent work on difference-in-differences can apply in a number of other settings that frequently arise in empirical work. And, in particular, this part of the course provides connections between the difference-in-differences literature and alternative identification strategies (conditioning on lagged outcomes, change-in-changes, and interactive fixed effects models) and also how to deal with more complicated treatment regimes (continuous treatments or treatments that can change value over time).
   <br/></br>
   This is one of our advanced courses. These courses are designed <strong>assuming a solid foundation in the basics of the difference-in-differences methodology</strong> and will cover the frontiers of the topic. A good review is: https://github.com/Mixtape-Sessions/Causal-Inference-2.`,
@@ -1256,13 +1241,12 @@ let frontiers_did: Session = {
   ],
 };
 
-// Empirical Bayes (Brantly Callaway)
+// Empirical Bayes (Christopher Walters)
 let empirical_bayes: Session = {
   id: "empirical_bayes",
   title: "Empirical Bayes and Large-Scale Inference",
   type: "The Singles",
-  gradientClass: "sm:empirical-bayes-gradient",
-  buttonGradient: "empirical-bayes-gradient",
+  gradient: "bg-empirical-bayes",
   about: `This mixtape session will cover Empirical Bayes methods for studying heterogeneity, estimating individual effects, and making decisions in settings with many unit-specific parameters. Examples include studies of school, teacher, and physician quality; neighborhood effects on economic mobility; firm effects on wages; employer-specific labor market discrimination; and individualized treatment effect predictions and policy recommendations. Topics will include methods for quantifying variation in effects, empirical Bayes shrinkage, connections to machine learning methods, and large-scale inference tools for multiple testing and decision-making. By the end of the course, participants will be equipped to utilize these methods in their own research or business applications.`,
   repo: "https://github.com/Mixtape-Sessions/Empirical-Bayes",
   dates: [
@@ -1314,7 +1298,7 @@ let empirical_bayes: Session = {
       url: "https://eml.berkeley.edu/~crwalters/",
       about: `<a href="https://eml.berkeley.edu/~crwalters/" class="text-violet-red-500 hover:text-violet-red-600">Cristopher Walters</a> is an Associate Professor in the Department of Economics at the University of California, Berkeley. He joined the Berkeley faculty in 2013 after completing a PhD in economics at MIT. Professor Walters is an applied microeconomist with expertise in labor economics, applied econometrics, causal inference, and the economics of education. His recent work includes studies using experiments to detect labor market discrimination, evaluations of school choice and early childhood programs, and empirical Bayes methods for summarizing heterogeneity in treatment effects.`,
       reviews: [],
-      img: `chris_walters.jpg`,
+      img: `chris_walters.jpeg`,
     },
   ],
   faqs: [
@@ -1346,6 +1330,118 @@ let empirical_bayes: Session = {
   ],
 };
 
+// Demand Estimation (Arial Pakes and Jeff Gortmaker
+let demand: Session = {
+  id: "demand",
+  title: "Demand Estimation",
+  type: "The Singles",
+  gradient: "bg-demand",
+  about: `<p>This three-day workshop covers the Berry-Levinsohn-Pakes (BLP) approach to estimating the statistical relationship between product sales and product characteristics such as prices. As the foundational approach for differentiated products demand estimation in the industrial
+  organization literature, BLP is used by academics, antitrust regulators, and industry professionals to shed light on difficult questions.</p>
+
+  <ul class='list-disc list-inside my-4 px-2'>
+    <li>“What is the value of a new good?”</li>
+    <li>“Will a merger hurt consumers?”</li>
+    <li>“Should we change prices?”</li>
+  </ul>
+
+  <p>Through a running empirical example, the workshop will use a series of coding exercises to build up practical knowledge for studying these types of questions and more.</p>`,
+  repo: "https://github.com/Mixtape-Sessions/Demand-Estimation",
+  dates: [
+    {
+    	date: "February 26th, 2024",
+      dateComputer: "2024-02-26",
+    	url: "demand_feb26",
+    	eventbrite: "https://eventbrite.com/e/794374634917",
+    	calendar: [
+    		{
+    			day: "February 26th",
+    			time: "6pm-9pm EST",
+    			topics: [
+    				"History and motivation for BLP (by Arial Pakes)",
+            "The BLP model",
+            "Pure logit estimation",
+            "Dealing with price endogeneity",
+            "Exercise 1: Getting set up with PyBLP, estimating the pure logit model, and running a price cut counterfactual."
+    			],
+    		},
+    		{
+    			day: "February 28th",
+    			time: "6pm-9pm EST",
+    			topics: [
+            "Mixed logit estimation", 
+            "Differentiation instruments",
+            "Numerical best practices",
+            "Exercise 2: Adding random coefficients, incorporating consumer demographics, and evaluating improvements to the counterfactual"
+    			],
+    		},
+        {
+    			day: "March 1st",
+    			time: "6pm-9pm EST",
+    			topics: [
+            "Micro BLP estimation", 
+            "Incorporating consumer survey data", 
+            "An overview of other extensions to the BLP approach",
+            "Exercise 3: Adding micro moments, adding second choice moments, and evaluating improvements to the counterfactual"
+    			],
+    		},
+    	],
+    },
+  ],
+  instructors: [
+    {
+      name: "Jeff Gortmaker",
+      url: "https://jeffgortmaker.com/",
+      about: `<a href="https://jeffgortmaker.com/" class="text-violet-red-500 hover:text-violet-red-600">Jeff Gortmaker</a> is a fifth-year PhD candidate at Harvard University studying Business Economics. He has published academic research on best practices for differentiated products demand estimation and maintains a popular open-source Python package, PyBLP, that makes such techniques accessible to a wider range of researchers. In addition to teaching demand estimation, he has taught workshops at Harvard Business School that introduce Python to researchers. Prior to Harvard, Jeff worked at the Federal Reserve Bank of New York.`,
+      reviews: [],
+      img: `jeff_gortmaker.jpeg`,
+    },
+    {
+      name: "Arial Pakes",
+      url: "https://scholar.harvard.edu/pakes/home",
+      about: `<p><a href="https://scholar.harvard.edu/pakes/home" class="text-violet-red-500 hover:text-violet-red-600">Ariel Pakes</a> is the Thomas Professor of Economics in the Department of Economics at Harvard University, where he teaches courses in Industrial Organization and Econometrics. He received the Frisch Medal of the Econometric Society in 1986. He was elected as a fellow of that society in 1988, of the American Academy of Arts and Sciences in 2002, and of the National Academy of Sciences in 2017.  Ariel was the Distinguished Fellow of the Industrial Organization in 2007. In 2017 he received the Jean-Jacques Laffont prize for research which combines empirical work with theory, in  in 2018 the BBVA Frontiers of Knowledge Award  in Economics and Finance, and in 2022 the Nemmers for research of lasting significance in Economics.
+      </p>
+      <p>
+      Ariel's research has focused on developing methods for empirically analyzing market responses to environmental and policy changes. This includes developing: i) demand systems that are capable of analyzing the impact of environmental changes (e.g. mergers) on prices, ii) methods capable of analyzing the impact of policy changes (e.g. deregulation) on productivity, and iii) models capable of following the impacts of these changes on the evolution of markets over time.
+      Ariel also developed techniques for constructing a more accurate Consumer Price Index and analyzing the impact of incentive schemes on the hospital allocations of doctors.  He and his co-authors have applied these tools to the analysis of the  auto, health care, and telecommunications equipment industries.  
+      </p>
+      <p>
+      Ariel has mentored over seventy doctoral students, many of whom are now leading researchers at prestigious institutions.  Much of his methodological research has been incorporated into the work of government agencies.  Additionally, Pakes has done work for a number of consultancies, government agencies, and large firms.
+      </p>
+      <p>
+      Ariel is married with two children and two granddaughters. They all enjoy hiking, jazz, and watching the NBA.
+      </p>`,
+      reviews: [],
+      img: `arial_pakes.jpeg`,
+    },
+  ],
+  faqs: [
+    {
+      id: "discounts",
+      q: "Are discounts available?",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
+    },
+    {
+      q: "How do I access the material I need for the course?",
+      a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
+    },
+    {
+      q: "How long will it take me to master this?",
+      a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
+    },
+    {
+      q: "Will we practice programming?",
+      a: "Yes, We will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes we are making, and helping one another problem solve. We will usually assign more than we can do that faster workers always have something to work on. And in the end, we will distribute the solutions.",
+    },
+    {
+      q: "Will there be recordings?",
+      a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
+    },
+  ],
+};
+
+
+
 const sessions: Session[] = [
   ci_I,
   ci_II,
@@ -1361,7 +1457,8 @@ const sessions: Session[] = [
   design,
   empirical_bayes,
   // experimentation,
-  frontiers_did
+  frontiers_did, 
+  demand
 ];
 
 export default sessions;

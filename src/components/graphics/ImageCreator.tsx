@@ -1,6 +1,6 @@
 import { createSignal, For } from "solid-js";
 import { domToPng } from "modern-screenshot";
-import sessions from "../../../public/data/sessions";
+import sessions from "../../data/sessions";
 
 function Slides() {
   const formats = [
@@ -15,14 +15,19 @@ function Slides() {
       height: "607.5px",
     },
     {
+      name: "4/3",
+      width: "1080px",
+      height: "810px",
+    },
+    {
       name: "OG",
       width: "900px",
       height: "600px",
     },
     {
-      name: "4/3",
+      name: "eventbrite",
       width: "1080px",
-      height: "810px",
+      height: "540px",
     },
   ];
 
@@ -43,14 +48,11 @@ function Slides() {
   };
 
   const downloadImage = () => {
-    domToPng(
-      document.getElementById("graphic"), 
-      {
-        width: parseInt(format().width),
-        height: parseInt(format().height),
-        quality: 1
-      }
-    ).then(function (dataUrl) {
+    domToPng(document.getElementById("graphic"), {
+      width: parseInt(format().width),
+      height: parseInt(format().height),
+      quality: 1,
+    }).then(function (dataUrl) {
       var link = document.createElement("a");
       link.download = `${selected().id}-${format().name}.png`;
       console.log(link);
@@ -64,7 +66,7 @@ function Slides() {
       {/* Input controls */}
       <div class="w-72 flex flex-col gap-y-2 my-12">
         <select
-          class="grow bg-white rounded-lg shadow-md cursor-default focus:outline-none border-sun-400 border-2 sm:text-sm py-2 pl-3 pr-10 font-medium font-marker"
+          class="grow bg-white rounded-lg shadow-md focus:outline-none border-sun-400 border-2 sm:text-sm py-2 pl-3 pr-10 font-medium"
           onChange={(e) =>
             setSelected(
               sessions.filter(
@@ -77,26 +79,44 @@ function Slides() {
             {(session) => <option>{session.title}</option>}
           </For>
         </select>
-        <select
-          class="grow bg-white rounded-lg shadow-md cursor-default focus:outline-none border-sun-400 border-2 sm:text-sm py-2 pl-3 pr-10 font-medium font-marker"
-          onChange={(e) => {
-            setFormat(
-              formats.filter(
-                (format) => format.name == e.currentTarget.value
-              )[0]
-            );
-          }}
-        >
-          <For each={formats}>{(format) => <option>{format.name}</option>}</For>
-        </select>
+
         <input
-          class="grow bg-white rounded-lg shadow-md cursor-default focus:outline-none border-sun-400 border-2 sm:text-sm py-2 pl-3 pr-10 font-medium font-marker"
+          class="grow bg-white rounded-lg shadow-md focus:outline-none border-sun-400 border-2 sm:text-sm py-2 pl-3 pr-10 font-medium font-marker"
           value={subtitle()}
           onKeyUp={readSubtitleInput}
         >
           {subtitle()}
         </input>
-        <button onClick={downloadImage}>Download</button>
+        <div class="flex flex-row gap-x-4">
+          <select
+            class="grow bg-white rounded-lg shadow-md focus:outline-none border-sun-400 border-2 sm:text-sm py-2 pl-3 pr-10 font-medium"
+            onChange={(e) => {
+              setFormat(
+                formats.filter(
+                  (format) => format.name == e.currentTarget.value
+                )[0]
+              );
+            }}
+          >
+            <For each={formats}>
+              {(format) => <option>{format.name}</option>}
+            </For>
+          </select>
+          <button
+            class="bg-white rounded-lg shadow-md focus:outline-none border-sun-400 border-2 sm:text-sm py-2 px-4 font-medium cursor-pointer items-center"
+            onClick={downloadImage}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="inline-block w-5 h-5"
+            >
+              <path d="M10.75 2.75a.75.75 0 0 0-1.5 0v8.614L6.295 8.235a.75.75 0 1 0-1.09 1.03l4.25 4.5a.75.75 0 0 0 1.09 0l4.25-4.5a.75.75 0 0 0-1.09-1.03l-2.955 3.129V2.75Z" />
+              <path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z" />
+            </svg>
+          </button>
+        </div>
       </div>
 
       {/* Image */}
@@ -108,13 +128,13 @@ function Slides() {
         }}
         id="graphic"
       >
-        <div class={`h-3 ${selected().buttonGradient}`}></div>
+        <div class={`h-3 ${selected().gradient}`}></div>
         <div class="h-full pt-8 pb-8 flex flex-col justify-between">
           <div class="">
             <div class="text-center">
               <h2
-                class={`inline-block tracking-tight font-extrabold text-gray-900 text-[4.5rem] px-8 leading-[5.7rem] text-gradient ${
-                  selected().buttonGradient
+                class={`inline-block tracking-tight font-extrabold text-gray-900 text-[4.5rem] px-8 leading-[5.7rem] bg-clip-text text-transparent ${
+                  selected().gradient
                 }`}
               >
                 {selected().title}

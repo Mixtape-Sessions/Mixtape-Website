@@ -1,35 +1,17 @@
 ---
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
-import "../styles/main.css";
+import BaseLayout from "./BaseLayout.astro";
 
-// og-image by slug
 const {
   title = "Mixtape Sessions",
   description = "Causal Inference Workshops",
   slug = "banner",
 } = Astro.props;
-
-let ogImage = `https://www.mixtapesessions.io/img/og-images/${slug}-OG.png`;
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{title}</title>
-    <meta name="description" content="Mixtape Sessions" />
-    <meta property="og:image" content={ogImage} />
-    <meta property="twitter:image" content={ogImage} />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <link rel="icon" href="favicon.svg" />
-  </head>
-
-  <body>
-    <Nav />
-    <slot />
-    <Footer />
-  </body>
-</html>
+<BaseLayout title={title} description={description} slug={slug}>
+  <Nav />
+  <slot />
+  <Footer />
+</BaseLayout>

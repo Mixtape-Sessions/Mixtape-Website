@@ -20,7 +20,7 @@ const includeAbstract = true;
 
 <div class="py-4 sm:py-6 mt-4">
   <!-- Vertical Bar -->
-  <div class={`${session.buttonGradient} h-3 mb-4`}></div>
+  <div class={`${session.gradient} h-3 mb-4`}></div>
 
   <!-- Mixtape Session Title -->
   {
@@ -30,7 +30,7 @@ const includeAbstract = true;
         href={`/session/${session.dates[0].url}`}
       >
         <h2
-          class={`inline-block text-4xl md:text-[3rem] leading-[1.5] font-semibold tracking-tight text-gradient mr-2  ${session.buttonGradient}`}
+          class={`inline-block text-4xl md:text-[3rem] leading-[1.5] font-semibold tracking-tight bg-clip-text text-transparent mr-2 ${session.gradient}`}
         >
           {session.title}
         </h2>
@@ -38,7 +38,7 @@ const includeAbstract = true;
       </a>
     ) : (
       <h2
-        class={`inline-block text-4xl md:text-[3rem] leading-[1.5] font-semibold tracking-tight text-gradient ${session.buttonGradient}`}
+        class={`inline-block text-4xl md:text-[3rem] leading-[1.5] font-semibold tracking-tight bg-clip-text text-transparent ${session.gradient}`}
       >
         {session.title}
       </h2>

@@ -1,5 +1,5 @@
 ---
-import { type Date } from "../../../public/data/sessions";
+import { type Date } from "../../data/sessions";
 import SvgCd from "../svg/SvgCd.astro";
 export interface Props {
   date: Date;
@@ -35,7 +35,7 @@ const { date } = Astro.props;
                 return (
                   <li class="flex items-center text-lg md:text-xl text-slate-600">
                     <SvgCd svgClass="h-8 w-8 mr-4 text-gray-400 flex-shrink-0" />
-                    {topic}
+                    <Fragment set:html={topic} />
                   </li>
                 );
               })}
