@@ -1345,7 +1345,9 @@ let demand: Session = {
     <li>“Should we change prices?”</li>
   </ul>
 
-  <p>Through a running empirical example, the workshop will use a series of coding exercises to build up practical knowledge for studying these types of questions and more.</p>`,
+  <p>Through a running empirical example, the workshop will use a series of coding exercises to build up practical knowledge for studying these types of questions and more.</p>
+  
+  <p>This is one of our advanced courses. These courses are designed <strong>assuming a solid foundation in the basics of economic models and instrumental variables</strong>. Scott's Causal Inference (<a class="underline" href="https://github.com/Mixtape-Sessions/Causal-Inference-1">Part 1</a>) covers instrumental variables.</p>`,
   repo: "https://github.com/Mixtape-Sessions/Demand-Estimation",
   dates: [
     {
@@ -1397,7 +1399,7 @@ let demand: Session = {
       img: `jeff_gortmaker.jpeg`,
     },
     {
-      name: "Arial Pakes",
+      name: "Ariel Pakes",
       url: "https://scholar.harvard.edu/pakes/home",
       about: `<p><a href="https://scholar.harvard.edu/pakes/home" class="text-violet-red-500 hover:text-violet-red-600">Ariel Pakes</a> is the Thomas Professor of Economics in the Department of Economics at Harvard University, where he teaches courses in Industrial Organization and Econometrics. He received the Frisch Medal of the Econometric Society in 1986. He was elected as a fellow of that society in 1988, of the American Academy of Arts and Sciences in 2002, and of the National Academy of Sciences in 2017.  Ariel was the Distinguished Fellow of the Industrial Organization in 2007. In 2017 he received the Jean-Jacques Laffont prize for research which combines empirical work with theory, in  in 2018 the BBVA Frontiers of Knowledge Award  in Economics and Finance, and in 2022 the Nemmers for research of lasting significance in Economics.
       </p>
@@ -1412,7 +1414,7 @@ let demand: Session = {
       Ariel is married with two children and two granddaughters. They all enjoy hiking, jazz, and watching the NBA.
       </p>`,
       reviews: [],
-      img: `arial_pakes.jpeg`,
+      img: `ariel_pakes.jpeg`,
     },
   ],
   faqs: [
