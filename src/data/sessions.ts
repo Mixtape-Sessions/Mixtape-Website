@@ -1330,7 +1330,7 @@ let empirical_bayes: Session = {
   ],
 };
 
-// Demand Estimation (Arial Pakes and Jeff Gortmaker
+// Demand Estimation (Ariél Pakes and Jeff Gortmaker)
 let demand: Session = {
   id: "demand",
   title: "Demand Estimation",
@@ -1360,7 +1360,7 @@ let demand: Session = {
     			day: "February 26th",
     			time: "6pm-9pm EST",
     			topics: [
-    				"History and motivation for BLP (by Arial Pakes)",
+    				"History and motivation for BLP (by Ariél Pakes)",
             "The BLP model",
             "Pure logit estimation",
             "Dealing with price endogeneity",
@@ -1399,19 +1399,19 @@ let demand: Session = {
       img: `jeff_gortmaker.jpeg`,
     },
     {
-      name: "Ariel Pakes",
+      name: "Ariél Pakes",
       url: "https://scholar.harvard.edu/pakes/home",
-      about: `<p><a href="https://scholar.harvard.edu/pakes/home" class="text-violet-red-500 hover:text-violet-red-600">Ariel Pakes</a> is the Thomas Professor of Economics in the Department of Economics at Harvard University, where he teaches courses in Industrial Organization and Econometrics. He received the Frisch Medal of the Econometric Society in 1986. He was elected as a fellow of that society in 1988, of the American Academy of Arts and Sciences in 2002, and of the National Academy of Sciences in 2017.  Ariel was the Distinguished Fellow of the Industrial Organization in 2007. In 2017 he received the Jean-Jacques Laffont prize for research which combines empirical work with theory, in  in 2018 the BBVA Frontiers of Knowledge Award  in Economics and Finance, and in 2022 the Nemmers for research of lasting significance in Economics.
+      about: `<p><a href="https://scholar.harvard.edu/pakes/home" class="text-violet-red-500 hover:text-violet-red-600">Ariél Pakes</a> is the Thomas Professor of Economics in the Department of Economics at Harvard University, where he teaches courses in Industrial Organization and Econometrics. He received the Frisch Medal of the Econometric Society in 1986. He was elected as a fellow of that society in 1988, of the American Academy of Arts and Sciences in 2002, and of the National Academy of Sciences in 2017.  Ariél was the Distinguished Fellow of the Industrial Organization in 2007. In 2017 he received the Jean-Jacques Laffont prize for research which combines empirical work with theory, in  in 2018 the BBVA Frontiers of Knowledge Award  in Economics and Finance, and in 2022 the Nemmers for research of lasting significance in Economics.
       </p>
       <p>
-      Ariel's research has focused on developing methods for empirically analyzing market responses to environmental and policy changes. This includes developing: i) demand systems that are capable of analyzing the impact of environmental changes (e.g. mergers) on prices, ii) methods capable of analyzing the impact of policy changes (e.g. deregulation) on productivity, and iii) models capable of following the impacts of these changes on the evolution of markets over time.
-      Ariel also developed techniques for constructing a more accurate Consumer Price Index and analyzing the impact of incentive schemes on the hospital allocations of doctors.  He and his co-authors have applied these tools to the analysis of the  auto, health care, and telecommunications equipment industries.  
+      Ariél's research has focused on developing methods for empirically analyzing market responses to environmental and policy changes. This includes developing: i) demand systems that are capable of analyzing the impact of environmental changes (e.g. mergers) on prices, ii) methods capable of analyzing the impact of policy changes (e.g. deregulation) on productivity, and iii) models capable of following the impacts of these changes on the evolution of markets over time.
+      Ariél also developed techniques for constructing a more accurate Consumer Price Index and analyzing the impact of incentive schemes on the hospital allocations of doctors.  He and his co-authors have applied these tools to the analysis of the  auto, health care, and telecommunications equipment industries.  
       </p>
       <p>
-      Ariel has mentored over seventy doctoral students, many of whom are now leading researchers at prestigious institutions.  Much of his methodological research has been incorporated into the work of government agencies.  Additionally, Pakes has done work for a number of consultancies, government agencies, and large firms.
+      Ariél has mentored over seventy doctoral students, many of whom are now leading researchers at prestigious institutions.  Much of his methodological research has been incorporated into the work of government agencies.  Additionally, Pakes has done work for a number of consultancies, government agencies, and large firms.
       </p>
       <p>
-      Ariel is married with two children and two granddaughters. They all enjoy hiking, jazz, and watching the NBA.
+      Ariél is married with two children and two granddaughters. They all enjoy hiking, jazz, and watching the NBA.
       </p>`,
       reviews: [],
       img: `ariel_pakes.jpeg`,
