@@ -92,22 +92,22 @@ module.exports = {
 				'ci3': "linear-gradient(to right, #642B73, #C6426E)",
 				// https://uigradients.com/#Dania
 				'iv': "linear-gradient(to right, #be93c5, #7bc6cc)",
-				// https://uigradients.com/#Sunkist
-				'advanced-did': "linear-gradient(to right, #f2994a, #f2c94c)",
 				// https://uigradients.com/#HarmonicEnergy
 				'shift-share': "linear-gradient(to right, #8a2387, #e94057, #f27121)",
+				// https://uigradients.com/#PunYeta (modified)
+				'design': "linear-gradient(to right, #108dc7, #60E9A7)",
+				// https://uigradients.com/#Sunkist
+				'advanced-did': "linear-gradient(to right, #f2994a, #f2c94c)",
 				// https://uigradients.com/#DirtyFog
 				'applied': "linear-gradient(to right, #b993d6, #8ca6db)",
 				// https://uigradients.com/#PurpleBliss
 				'ml': "linear-gradient(to right, #61055c, #0b8793)",
-				// https://uigradients.com/#Lush
-				'synth-and-clust': "linear-gradient(to right, #56ab2f, #a8e063)",
 				// https://uigradients.com/#Turquoiseflow
 				'ml-het-effects': "linear-gradient(to right, #136a8a, #267871)",
+				// https://uigradients.com/#Lush
+				'synth-and-clust': "linear-gradient(to right, #56ab2f, #a8e063)",
 				// https://uigradients.com/#SteelGrey
 				'rdd': "linear-gradient(to right, #1F1C2C, #928DAB)",
-				// https://uigradients.com/#PunYeta (modified)
-				'design': "linear-gradient(to right, #108dc7, #60E9A7)",
 				// https://uigradients.com/#Delicate
 				'experiment': "linear-gradient(to right, #ff5e62, #ff9966)",
 				// https://uigradients.com/#UndertheLake

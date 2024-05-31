@@ -52,6 +52,7 @@ function Slides() {
       width: parseInt(format().width),
       height: parseInt(format().height),
       quality: 1,
+      scale: 3, 
     }).then(function (dataUrl) {
       var link = document.createElement("a");
       link.download = `${selected().id}-${format().name}.png`;
