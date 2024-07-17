@@ -31,8 +31,8 @@ const includeAbstract = true;
       >
         <h2
           class={`inline-block text-4xl md:text-[3rem] leading-[1.5] font-semibold tracking-tight bg-clip-text text-transparent mr-2 ${session.gradient}`}
+          set:html={session.title}
         >
-          {session.title}
         </h2>
         <HoverArrow />
       </a>
@@ -44,6 +44,11 @@ const includeAbstract = true;
       </h2>
     )
   }
+
+  <!-- Subtitle (if any) -->
+  { session.subtitle ? (
+    <p class="text-slate-900 text-[1.25rem] italic mt-4 lg:mt-2 mb-8" set:html={session.subtitle} />
+  ) : <></>}
 
   <!-- Instructors -->
   <div

@@ -25,6 +25,7 @@ export interface Instructor {
 export interface Session {
   id: string;
   title: string;
+  subtitle?: string;
   type: "The Classics" | "The Singles" | "The Deep Cuts";
   gradient: string;
   gradientColor1: string;
@@ -48,13 +49,13 @@ let ci_I: Session = {
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-1/",
   dates: [
     {
-      date: "February 3rd",
-      dateComputer: "2024-02-03",
-      url: "ci_I_feb3",
-      eventbrite: "https://eventbrite.com/e/779451479357",
+      date: "September 21st",
+      dateComputer: "2024-09-21",
+      url: "ci_I_sept21",
+      eventbrite: "https://eventbrite.com/e/949865682827",
       calendar: [
         {
-          day: "February 3rd",
+          day: "September 21st",
           time: "9am-5pm CST",
           topics: [
             "Introduction to causal inference",
@@ -64,7 +65,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "February 4th",
+          day: "September 22nd",
           time: "9am-5pm CST",
           topics: [
             "Introduction to causal graphs",
@@ -73,7 +74,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "February 10th",
+          day: "September 28th",
           time: "9am-5pm CST",
           topics: [
             "Instrumental variables",
@@ -85,7 +86,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "February 11th",
+          day: "September 29th",
           time: "9am-5pm CST",
           topics: [
             "Introduction to regression discontinuity ",
@@ -165,13 +166,13 @@ let ci_II: Session = {
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
   dates: [
     {
-      date: "March 16th",
-      dateComputer: "2024-03-16",
-      url: "ci_II_mar16",
-      eventbrite: "https://eventbrite.com/e/779455110217",
+      date: "October 19th",
+      dateComputer: "2024-10-19",
+      url: "ci_II_oct19",
+      eventbrite: "https://eventbrite.com/e/949865973697",
       calendar: [
         {
-          day: "March 16th",
+          day: "October 19th",
           time: "9am-5pm CST",
           topics: [
             "Introduction to DID",
@@ -180,7 +181,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "March 17th",
+          day: "October 20th",
           time: "9am-5pm CST",
           topics: [
             "DID with Covariates (Sant'Anna and Zhao 2020; Abadie 2005; Heckman, Ichimura and Todd 1997)",
@@ -189,7 +190,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "March 23rd",
+          day: "October 26th",
           time: "9am-5pm CST",
           topics: [
             "Pathologies in TWFE and alternative estimator (deChaisemartin and D'Haultfœille 2020)",
@@ -198,7 +199,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "March 24th",
+          day: "October 27th",
           time: "9am-5pm CST",
           topics: [
             "Imputation Estimators (Gardner 2021 and Borusyal et al 2021)",
@@ -280,13 +281,13 @@ let ci_III: Session = {
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
   dates: [
     {
-      date: "April 6th",
-      dateComputer: "2024-04-06",
-      url: "ci_III_apr6",
-      eventbrite: "https://eventbrite.com/e/779456373997",
+      date: "November 16th",
+      dateComputer: "2024-11-16",
+      url: "ci_III_nov16",
+      eventbrite: "https://eventbrite.com/e/949866304687",
       calendar: [
         {
-          day: "April 6th",
+          day: "November 16th",
           time: "9am-5pm CST",
           topics: [
             "Abadie's non-negative weighting method (Abadie, Diamond, and Hainmueller 2010)",
@@ -297,7 +298,7 @@ let ci_III: Session = {
           ],
         },
         {
-          day: "April 7th",
+          day: "November 17th",
           time: "9am-5pm CST",
           topics: [
             "Matrix completion with nuclear norm regularization (Athey et al. 2021)",
@@ -552,13 +553,13 @@ let design: Session = {
   repo: "https://github.com/Mixtape-Sessions/Design-Based-Inference",
   dates: [
     {
-    	date: "April 22nd, 2024",
-      dateComputer: "2024-04-22",
-    	url: "design_apr22",
-    	eventbrite: "https://eventbrite.com/e/760204802027",
+    	date: "September 9th, 2024",
+      dateComputer: "2024-09-09",
+    	url: "design_sept9",
+    	eventbrite: "https://eventbrite.com/e/949871058907",
     	calendar: [
     		{
-    			day: "April 22nd",
+    			day: "Septemer 9th",
     			time: "6pm-9pm EST",
     			topics: [
     				"Lecture 1: Introduction; Regression Recap",
@@ -567,7 +568,7 @@ let design: Session = {
     			],
     		},
     		{
-    			day: "April 24th",
+    			day: "September 11th",
     			time: "6pm-9pm EST",
     			topics: [
     				"Lecture 3: Negative Weights",
@@ -576,7 +577,7 @@ let design: Session = {
     			],
     		},
         {
-    			day: "April 26th",
+    			day: "September 13th",
     			time: "6pm-9pm EST",
     			topics: [
     				"Lecture 5: Recentered IV",
@@ -712,7 +713,8 @@ let advanced_did: Session = {
 // Doing Applied Research (Daniel Rees and Mark Anderson)
 let applied: Session = {
   id: "applied",
-  title: "Doing Applied Research",
+  title: "The Hidden Curriculum",
+  subtitle: "<span class='mt-[-0.5rem] text-[1.4rem]'>Everything You Weren't Taught in Graduate School about Doing Applied Research</span>",
   type: "The Singles",
   gradient: "bg-applied",
   gradientColor1: "#b993d6",
@@ -721,14 +723,14 @@ let applied: Session = {
   repo: "https://github.com/Mixtape-Sessions/Doing-Applied-Research/",
   dates: [
     {
-      date: "October 26th, 2023",
-      dateComputer: "2023-10-26",
-      url: "applied_oct26",
-      eventbrite: "https://eventbrite.com/e/687409619677",
+      date: "November 1st, 2024",
+      dateComputer: "2024-11-01",
+      url: "applied_nov1",
+      eventbrite: "https://eventbrite.com/e/949868671767",
       calendar: [
         {
-          day: "October 26th",
-          time: "11am-3pm EST",
+          day: "November 1st",
+          time: "12pm-4pm EST",
           topics: [
             "Starting Your Research Project",
             "Practical Tips for Writing Your Applied Paper",
@@ -736,8 +738,8 @@ let applied: Session = {
           ],
         },
         {
-          day: "October 27th",
-          time: "11am-3pm EST",
+          day: "November 2nd",
+          time: "12pm-4pm EST",
           topics: [
             "The Publication Process",
             "Refereeing",
@@ -769,7 +771,7 @@ let applied: Session = {
       name: "Prof. D. Mark Anderson",
       url: "http://www.dmarkanderson.com/",
       about: `<a href="http://www.dmarkanderson.com/" class="text-violet-red-500 hover:text-violet-red-600">D. Mark Anderson</a> is an Associate Professor in the Department of Agricultural Economics & Economics at Montana State University, a research associate at the National Bureau of Economic Research, and a co-editor of <i>Economic Inquiry</i>.  He received his Ph.D. in economics from the University of Washington in 2011. <br/><br/> Dr. Anderson is an applied microeconomist with research interests in health and economic history.  His research has appeared in the <i>American Economic Journal: Applied Economics</i>, <i>Economic Journal</i>, <i>Journal of Economic Literature</i>, <i>Journal of Law and Economics</i>, <i>Journal of Urban Economics</i>, <i>Journal of Political Economy</i>, and <i>Review of Economics and Statistics</i>.`,
-      img: `mark_anderson.jpeg`,
+      img: `mark_anderson.jpg`,
     },
   ],
   faqs: [
@@ -804,13 +806,13 @@ let ml: Session = {
   repo: "https://github.com/Mixtape-Sessions/Machine-Learning/",
   dates: [
     {
-      date: "October 30th, 2023",
-      dateComputer: "2023-10-30",
-      url: "ml_oct30",
-      eventbrite: "https://eventbrite.com/e/682653132897",
+      date: "October 21st, 2024",
+      dateComputer: "2023-10-21",
+      url: "ml_oct21",
+      eventbrite: "https://eventbrite.com/e/949869323717",
       calendar: [
         {
-          day: "October 30th",
+          day: "October 21st",
           time: "6pm-9pm EST",
           topics: [
             "Question your questions (are you asking a predictive or a causal question?)",
@@ -827,7 +829,7 @@ let ml: Session = {
           ],
         },
         {
-          day: "November 1st",
+          day: "October 22nd",
           time: "6pm-9pm EST",
           topics: [
             "Put ML to work in service of causality (concepts + python/Stata)",
@@ -1095,85 +1097,6 @@ let rdd: Session = {
     {
       q: "How do I access the material I need for the course?",
       a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700 underline decoration-2'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
-    },
-    {
-      q: "How long will it take me to master this?",
-      a: "That's a great question. Causal inference, and econometrics more generally, is largely a “returns to experience” type of skill as much as it is a returns to education. The best way for you to learn anything in these classes is to work on projects that require it. Our class is designed as a fast track to both.",
-    },
-    {
-      q: "Will we practice programming?",
-      a: "Yes, I will distribute assignments with readings with directions the night before. We will help each other in Discord, asking questions, pointing out mistakes I'm making, and helping one another problem solve. I will usually assign more than we can do that faster workers always have something to work on. And in the end, I will distribute the solutions. It'll be fun I promise!",
-    },
-    {
-      q: "Will there be recordings?",
-      a: "We will upload recordings to Vimeo and they will be password protected, so that only attendees can watch the videos.",
-    },
-    {
-      q: "I'm nervous that I can't handle the difficulty of the class.",
-      a: "Don't be. I'm a good teacher. If I can learn this, so can you.",
-    },
-  ],
-};
-
-// Experimentation (Rebecca Thornton)
-let experimentation: Session = {
-  id: "experiment",
-  title: "Experimentation",
-  type: "The Singles",
-  gradient: "bg-experiment",
-  gradientColor1: "#ff5e62",
-  gradientColor2: "#ff9966",
-  about: `TBD.`,
-  repo: "https://github.com/Mixtape-Sessions/Experimentation",
-  dates: [
-    {
-    	date: "September XX, 2023",
-      dateComputer: "2023-09-01",
-    	url: "experimental",
-    	eventbrite: "https://eventbrite.com/e/",
-    	calendar: [
-    		{
-    			day: "September 27th",
-    			time: "6pm-9pm EST",
-    			topics: [
-    				"TBD Day 1"
-    			],
-    		},
-    		{
-    			day: "September 29th",
-    			time: "6pm-9pm EST",
-    			topics: [
-    				"TBD Day 2"
-    			],
-    		},
-        {
-    			day: "September 1st",
-    			time: "6pm-9pm EST",
-    			topics: [
-    				"TBD Day 3"
-    			],
-    		},
-    	],
-    },
-  ],
-  instructors: [
-    {
-      name: "Prof. Rebecca Thornton",
-      url: "https://www.rebeccathornton.net/",
-      about: `<a href="https://www.rebeccathornton.net/" class="text-violet-red-500 hover:text-violet-red-600">Rebecca Thornton</a> is a Professor in the Department of Economics in the Hankamer School of Business at Baylor University. Prior to that she was an Associate Professor at the University of Illinois at Urbana-Champaign and an Assistant Professor at the University of Michigan in the Department of Economics and Population Studies Center. Dr. Thornton’s research focuses on health, education, and the status of women in developing countries. Across these topics, her work addresses core issues within Economics, including the role of subjective beliefs in decision-making and how social networks influence behavior and beliefs. Dr. Thornton has been the principal or co-investigator on studies in India, Jordan, Malawi, Nicaragua, Nepal, and Uganda. These studies have involved collecting longitudinal data and conducting field experiments to understand important development issues such as HIV prevention, family planning uptake, enrollment in health insurance, effects of merit-based scholarships, and effective ways to improve early grade literacy.`,
-      reviews: [],
-      img: `rebecca_thornton.jpeg`,
-    },
-  ],
-  faqs: [
-    {
-      id: "discounts",
-      q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
-    },
-    {
-      q: "How do I access the material I need for the course?",
-      a: "The course material will be availabe forever on <a href='https://github.com/Mixtape-Sessions/' class='text-violet-600 hover:text-violet-700'>Github</a>. We will also send you links to the video recordings on Vimeo after the workshop is completed.",
     },
     {
       q: "How long will it take me to master this?",
@@ -1490,7 +1413,6 @@ const sessions: Session[] = [
   iv,
   design,
   empirical_bayes,
-  // experimentation,
   frontiers_did, 
   demand
 ];
