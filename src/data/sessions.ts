@@ -807,7 +807,7 @@ let ml: Session = {
   dates: [
     {
       date: "October 21st, 2024",
-      dateComputer: "2023-10-21",
+      dateComputer: "2024-10-21",
       url: "ml_oct21",
       eventbrite: "https://eventbrite.com/e/949866766067",
       calendar: [
