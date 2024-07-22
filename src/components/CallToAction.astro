@@ -116,9 +116,9 @@ let isHetEffects = session.id === "ml_het_effects";
       </div>
 
       <div class="text-slate-600 text-center text-md w-4/5 mx-auto py-2 mt-2">
-        <a href="#discounts" class="underline"
+        {isDoingAppliedResearch ? <></> : <a href="#discounts" class="underline"
           ><span class="font-semibold">
-            {isDoingAppliedResearch ? "$125" : "$50"}
+            "$50"
           </span> for Students</a
         >
         <span class="mx-1">•</span>
@@ -126,6 +126,7 @@ let isHetEffects = session.id === "ml_het_effects";
           ><span class="font-semibold">$95</span> for Non Tenure-track Faculty</a
         >
         <span class="mx-1">•</span>
+        }
         <a href="#discounts" class="underline"
           ><span class="font-semibold">$1</span> for Low-income Countries</a
         >
