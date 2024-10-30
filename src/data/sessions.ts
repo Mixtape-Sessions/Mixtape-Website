@@ -730,7 +730,7 @@ let applied: Session = {
       calendar: [
         {
           day: "November 1st",
-          time: "12pm-4pm EST",
+          time: "1pm-5pm EST",
           topics: [
             "Starting Your Research Project",
             "Practical Tips for Writing Your Applied Paper",
@@ -739,7 +739,7 @@ let applied: Session = {
         },
         {
           day: "November 2nd",
-          time: "12pm-4pm EST",
+          time: "1pm-5pm EST",
           topics: [
             "The Publication Process",
             "Refereeing",
