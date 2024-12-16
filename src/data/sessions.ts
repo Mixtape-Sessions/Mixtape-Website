@@ -49,13 +49,13 @@ let ci_I: Session = {
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-1/",
   dates: [
     {
-      date: "September 21st",
-      dateComputer: "2024-09-21",
-      url: "ci_I_sept21",
-      eventbrite: "https://eventbrite.com/e/949865682827",
+      date: "January 25th",
+      dateComputer: "2025-01-25",
+      url: "ci_I_jan25",
+      eventbrite: "https://eventbrite.com/e/1114600733799",
       calendar: [
         {
-          day: "September 21st",
+          day: "January 25th",
           time: "9am-5pm CST",
           topics: [
             "Introduction to causal inference",
@@ -65,7 +65,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "September 22nd",
+          day: "January 26th",
           time: "9am-5pm CST",
           topics: [
             "Introduction to causal graphs",
@@ -74,7 +74,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "September 28th",
+          day: "February 1st",
           time: "9am-5pm CST",
           topics: [
             "Instrumental variables",
@@ -86,7 +86,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "September 29th",
+          day: "February 2nd",
           time: "9am-5pm CST",
           topics: [
             "Introduction to regression discontinuity ",
@@ -166,13 +166,13 @@ let ci_II: Session = {
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
   dates: [
     {
-      date: "October 19th",
-      dateComputer: "2024-10-19",
-      url: "ci_II_oct19",
-      eventbrite: "https://eventbrite.com/e/949865973697",
+      date: "March 22nd",
+      dateComputer: "2025-03-22",
+      url: "ci_II_mar22",
+      eventbrite: "https://eventbrite.com/e/1114601445929",
       calendar: [
         {
-          day: "October 19th",
+          day: "March 22nd",
           time: "9am-5pm CST",
           topics: [
             "Introduction to DID",
@@ -181,7 +181,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "October 20th",
+          day: "March 23rd",
           time: "9am-5pm CST",
           topics: [
             "DID with Covariates (Sant'Anna and Zhao 2020; Abadie 2005; Heckman, Ichimura and Todd 1997)",
@@ -190,7 +190,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "October 26th",
+          day: "March 29th",
           time: "9am-5pm CST",
           topics: [
             "Pathologies in TWFE and alternative estimator (deChaisemartin and D'Haultfœille 2020)",
@@ -199,7 +199,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "October 27th",
+          day: "March 30th",
           time: "9am-5pm CST",
           topics: [
             "Imputation Estimators (Gardner 2021 and Borusyal et al 2021)",
@@ -281,13 +281,13 @@ let ci_III: Session = {
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
   dates: [
     {
-      date: "November 16th",
-      dateComputer: "2024-11-16",
-      url: "ci_III_nov16",
-      eventbrite: "https://eventbrite.com/e/949866304687",
+      date: "April 26th",
+      dateComputer: "2025-04-26",
+      url: "ci_III_apr26",
+      eventbrite: "https://eventbrite.com/e/1114601686649",
       calendar: [
         {
-          day: "November 16th",
+          day: "April 26th",
           time: "9am-5pm CST",
           topics: [
             "Abadie's non-negative weighting method (Abadie, Diamond, and Hainmueller 2010)",
@@ -298,7 +298,7 @@ let ci_III: Session = {
           ],
         },
         {
-          day: "November 17th",
+          day: "April 27th",
           time: "9am-5pm CST",
           topics: [
             "Matrix completion with nuclear norm regularization (Athey et al. 2021)",
@@ -380,13 +380,13 @@ let iv: Session = {
   repo: "https://github.com/Mixtape-Sessions/Instrumental-Variables/",
   dates: [
     {
-    	date: "September 27th, 2022",
-      dateComputer: "2022-09-27",
-    	url: "iv_sept27",
-    	eventbrite: "https://eventbrite.com/e/",
+    	date: "February 10th",
+      dateComputer: "2025-02-10",
+    	url: "iv_feb10",
+    	eventbrite: "https://eventbrite.com/e/1114601867189",
     	calendar: [
     		{
-    			day: "September 27th",
+    			day: "February 10th",
     			time: "6pm-9pm EST",
     			topics: [
     				"Regression Review and Regression Endogeneity",
@@ -396,7 +396,7 @@ let iv: Session = {
     			],
     		},
     		{
-    			day: "September 28th",
+    			day: "February 12th",
     			time: "6pm-9pm EST",
     			topics: [
     				"Heterogeneous Treatment Effects; Characterizing Compliers; MTEs",
