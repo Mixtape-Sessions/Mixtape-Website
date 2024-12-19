@@ -896,13 +896,13 @@ let ml_het_effects: Session = {
   repo: "https://github.com/Mixtape-Sessions/Heterogeneous-Effects/",
   dates: [
     {
-      date: "November 15th, 2023",
-      dateComputer: "2023-11-15",
-      url: "ml_het_effects_nov15",
-      eventbrite: "https://eventbrite.com/e/682651197107",
+      date: "February 20th",
+      dateComputer: "2025-02-20",
+      url: "ml_het_effects_feb20",
+      eventbrite: "https://eventbrite.com/e/1118975258119",
       calendar: [
         {
-          day: "November 15th",
+          day: "February 20th",
           time: "6pm-9pm EST",
           topics: ["Machine Learning and Heterogeneous Effects"],
         },
