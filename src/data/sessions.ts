@@ -724,14 +724,14 @@ let applied: Session = {
   repo: "https://github.com/Mixtape-Sessions/Doing-Applied-Research/",
   dates: [
     {
-      date: "November 1st, 2024",
-      dateComputer: "2024-11-01",
-      url: "applied_nov1",
-      eventbrite: "https://eventbrite.com/e/949868671767",
+      date: "February 28th, 2025",
+      dateComputer: "2025-02-28",
+      url: "applied_feb28",
+      eventbrite: "https://eventbrite.com/e/1141171758449",
       calendar: [
         {
-          day: "November 1st",
-          time: "1pm-5pm EST",
+          day: "February 28th",
+          time: "11am-3pm EST",
           topics: [
             "Starting Your Research Project",
             "Practical Tips for Writing Your Applied Paper",
@@ -739,8 +739,8 @@ let applied: Session = {
           ],
         },
         {
-          day: "November 2nd",
-          time: "1pm-5pm EST",
+          day: "March 1st",
+          time: "11am-3pm EST",
           topics: [
             "The Publication Process",
             "Refereeing",
