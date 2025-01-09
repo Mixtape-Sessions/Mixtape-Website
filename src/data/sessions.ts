@@ -720,7 +720,7 @@ let applied: Session = {
   gradient: "bg-applied",
   gradientColor1: "#b993d6",
   gradientColor2: "#8ca6db",
-  about: `This course is intended to be a practical guide for graduate students and early career economists doing applied research. The nuts and bolts of writing, publishing, and service to the profession are covered in two half-day sessions, each lasting roughly four hours (including short breaks). We begin by providing tips on how to start a research project, when to switch topics, and how to effectively manage multiple projects at once. Next, we provide practical advice on how to write an applied economics paper, from structing the introduction to crafting the conclusion. The second half of the course takes participants through the publication process.  In addition, we discuss networking, refereeing for economics journals, getting the most out of conferences, and how to successfully navigate the academic job market.`,
+  about: `This course is intended to be a practical guide for graduate students and early career economists doing applied research. The nuts and bolts of coming up with viable research topics, writing, publishing, and service to the profession are covered in two half-day sessions, each lasting roughly four hours (including short breaks). We begin by providing tips on how to start a research project, when to switch topics, and how to effectively manage multiple projects at once. Next, we provide practical advice on how to write an applied economics paper, from structing the introduction to crafting the conclusion. The second half of the course takes participants through the publication process.  In addition, we discuss networking, refereeing for economics journals, getting the most out of conferences, and how to successfully navigate the academic job market.`,
   repo: "https://github.com/Mixtape-Sessions/Doing-Applied-Research/",
   dates: [
     {
@@ -735,7 +735,7 @@ let applied: Session = {
           topics: [
             "Starting Your Research Project",
             "Practical Tips for Writing Your Applied Paper",
-            "Grad Student Job Market Q&A",
+            "Presenting your Research",
           ],
         },
         {
@@ -744,9 +744,9 @@ let applied: Session = {
           topics: [
             "The Publication Process",
             "Refereeing",
+            "Presenting your event-study estimates",
             "Conferences and Networking",
-            "Ask the editor!",
-            "Grad Student Job Market Q&A",
+            "Q&A and Ask the editor!",
           ],
         },
       ],
@@ -771,7 +771,7 @@ let applied: Session = {
     {
       name: "Prof. D. Mark Anderson",
       url: "http://www.dmarkanderson.com/",
-      about: `<a href="http://www.dmarkanderson.com/" class="text-violet-red-500 hover:text-violet-red-600">D. Mark Anderson</a> is an Associate Professor in the Department of Agricultural Economics & Economics at Montana State University, a research associate at the National Bureau of Economic Research, and a co-editor of <i>Economic Inquiry</i>.  He received his Ph.D. in economics from the University of Washington in 2011. <br/><br/> Dr. Anderson is an applied microeconomist with research interests in health and economic history.  His research has appeared in the <i>American Economic Journal: Applied Economics</i>, <i>Economic Journal</i>, <i>Journal of Economic Literature</i>, <i>Journal of Law and Economics</i>, <i>Journal of Urban Economics</i>, <i>Journal of Political Economy</i>, and <i>Review of Economics and Statistics</i>.`,
+      about: `<a href="http://www.dmarkanderson.com/" class="text-violet-red-500 hover:text-violet-red-600">D. Mark Anderson</a> is an Associate Professor in the Department of Agricultural Economics & Economics at Montana State University, a research associate at the National Bureau of Economic Research, and serves on the editorial board at the <i>American Journal of Health Economics</i>. From 2018-2023, Dr. Anderson was a co-editor at <i>Economic Inquiry</i>.  He received his Ph.D. in economics from the University of Washington in 2011. <br/><br/> Dr. Anderson is an applied microeconomist with research interests in health and economic history.  His research has appeared in the <i>American Economic Journal: Applied Economics</i>, <i>Economic Journal</i>, <i>Journal of Economic Literature</i>, <i>Journal of Law and Economics</i>, <i>Journal of Urban Economics</i>, <i>Journal of Political Economy</i>, and <i>Review of Economics and Statistics</i>.`,
       img: `mark_anderson.jpg`,
     },
   ],
