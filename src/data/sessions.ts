@@ -724,6 +724,7 @@ let applied: Session = {
   repo: "https://github.com/Mixtape-Sessions/Doing-Applied-Research/",
   dates: [
     {
+      
       date: "February 28th, 2025",
       dateComputer: "2025-02-28",
       url: "applied_feb28",
