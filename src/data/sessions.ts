@@ -720,19 +720,19 @@ let applied: Session = {
   gradient: "bg-applied",
   gradientColor1: "#b993d6",
   gradientColor2: "#8ca6db",
-  about: `This course is intended to be a practical guide for graduate students and early career economists doing applied research. The nuts and bolts of coming up with viable research topics, writing, publishing, and service to the profession are covered in two half-day sessions, each lasting roughly four hours (including short breaks). We begin by providing tips on how to start a research project, when to switch topics, and how to effectively manage multiple projects at once. Next, we provide practical advice on how to write an applied economics paper, from structing the introduction to crafting the conclusion. The second half of the course takes participants through the publication process.  In addition, we discuss networking, refereeing for economics journals, getting the most out of conferences, and how to successfully navigate the academic job market.`,
+  about: `This course is intended to be a practical guide for graduate students and early career economists doing applied research. The nuts and bolts of coming up with viable research topics, writing, publishing, and service to the profession are covered in two half-day sessions, each lasting roughly four hours (including short breaks). We begin by providing tips on how to start a research project, when to switch topics, and how to effectively manage multiple projects at once. Next, we provide practical advice on how to write an applied economics paper, from structing the introduction to crafting the conclusion. The second half of the course takes participants through the publication process. In addition, we discuss networking, refereeing for economics journals, getting the most out of conferences, and how to successfully navigate the academic job market.`,
   repo: "https://github.com/Mixtape-Sessions/Doing-Applied-Research/",
   dates: [
     {
       
-      date: "February 28th, 2025",
-      dateComputer: "2025-02-28",
-      url: "applied_feb28",
-      eventbrite: "https://eventbrite.com/e/1141171758449",
+      date: "August 6th, 2025",
+      dateComputer: "2025-08-06",
+      url: "applied_aug6",
+      eventbrite: "https://eventbrite.com/e/1274067703799",
       calendar: [
         {
-          day: "February 28th",
-          time: "11am-3pm EST",
+          day: "August 6th",
+          time: "4am-8am EST",
           topics: [
             "Starting Your Research Project",
             "Practical Tips for Writing Your Applied Paper",
@@ -740,8 +740,8 @@ let applied: Session = {
           ],
         },
         {
-          day: "March 1st",
-          time: "11am-3pm EST",
+          day: "August 7th",
+          time: "4am-8am EST",
           topics: [
             "The Publication Process",
             "Refereeing",
