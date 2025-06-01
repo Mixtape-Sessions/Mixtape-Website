@@ -390,9 +390,9 @@ let iv: Session = {
     			day: "February 10th",
     			time: "6pm-9pm EST",
     			topics: [
-    				 "Just-Identified IV", 
-             "Overidentification", 
-             "Weak vs. Many-Weak Bias", 
+    				 "Just-Identified IV",
+             "Overidentification",
+             "Weak vs. Many-Weak Bias",
              "Local Average Treatment Effects"
     			],
     		},
@@ -400,9 +400,9 @@ let iv: Session = {
     			day: "February 12th",
     			time: "6pm-9pm EST",
     			topics: [
-            "Characterizing Compliers", 
-            "Diff-in-Diff and IV", 
-            "Shift-Share IV", 
+            "Characterizing Compliers",
+            "Diff-in-Diff and IV",
+            "Shift-Share IV",
             "Formula IVs"
     			],
     		},
@@ -465,14 +465,14 @@ let shift_share: Session = {
   repo: "https://github.com/Mixtape-Sessions/Shift-Share/",
   dates: [
     {
-    	date: "September 25th, 2023",
-      dateComputer: "2023-09-25",
-    	url: "shift_share_sept25",
-    	eventbrite: "https://eventbrite.com/e/682650565217",
+    	date: "July 29th, 2025",
+      dateComputer: "2025-07-29",
+    	url: "shift_share_july29",
+    	eventbrite: "https://eventbrite.com/e/1391801749499",
     	calendar: [
     		{
-    			day: "September 25th",
-    			time: "6pm-9pm EST",
+    			day: "July 29th",
+    			time: "1pm-4pm EST",
     			topics: [
     				"Introducing Shift-Share IV: Recent Applications",
     				"The 'Exogenous Shares' Approach (Goldsmith-Pinkham et al. 2020)",
@@ -480,8 +480,8 @@ let shift_share: Session = {
     			],
     		},
         {
-    			day: "September 27th",
-    			time: "6pm-9pm EST",
+    			day: "July 30th",
+    			time: "1pm-4pm EST",
     			topics: [
     				"The 'Exogenous Shocks' Approach (Borusyak et al., 2022)",
     				"Practical Implications from Exogenous Shares vs. Shocks",
@@ -725,7 +725,7 @@ let applied: Session = {
   repo: "https://github.com/Mixtape-Sessions/Doing-Applied-Research/",
   dates: [
     {
-      
+
       date: "August 6th, 2025",
       dateComputer: "2025-08-06",
       url: "applied_aug6",
@@ -1144,7 +1144,7 @@ let frontiers_did: Session = {
     			time: "6pm-9pm EST",
     			topics: [
     				"'Heterogeneity-robust' DID estimation",
-            "Including covariates in the parallel trends assumption", 
+            "Including covariates in the parallel trends assumption",
             "Dealing with 'bad controls'",
     			],
     		},
@@ -1220,7 +1220,7 @@ let empirical_bayes: Session = {
     			topics: [
     				"Classic parametric empirical Bayes methods",
             "Mechanics and justification for empirical Bayes shrinkage",
-            "Random and fixed effects perspectives", 
+            "Random and fixed effects perspectives",
             "Simple deconvolution methods",
             "James/Stein Theorem",
             "School value-added application"
@@ -1230,8 +1230,8 @@ let empirical_bayes: Session = {
     			day: "November 8th",
     			time: "6pm-9pm EST",
     			topics: [
-            "Bias-correction methods for variance estimation", 
-            "Flexible deconvolution approaches", 
+            "Bias-correction methods for variance estimation",
+            "Flexible deconvolution approaches",
             "Comparisons of nonparametric and linear shrinkage posteriors",
             "Connections to machine learning",
             "Application to an experiment studying the distribution of labor market discrimination across large US employers"
@@ -1242,8 +1242,8 @@ let empirical_bayes: Session = {
     			time: "6pm-9pm EST",
     			topics: [
     				"Partial identification of mixing distributions and posteriors",
-            "Connections to multiple testing (for example: how we decide which employers discriminate, or which subgroups benefit from an intervention?)", 
-            "Ranking problems (how do we use data to select the best neighborhoods or schools?)", 
+            "Connections to multiple testing (for example: how we decide which employers discriminate, or which subgroups benefit from an intervention?)",
+            "Ranking problems (how do we use data to select the best neighborhoods or schools?)",
             "Application to experimental data to discern which large employers discriminate most on the basis of race and gender."
     			],
     		},
@@ -1306,7 +1306,7 @@ let demand: Session = {
   </ul>
 
   <p>Through a running empirical example, the workshop will use a series of coding exercises to build up practical knowledge for studying these types of questions and more.</p>
-  
+
   <p>This is one of our advanced courses. These courses are designed <strong>assuming a solid foundation in the basics of economic models and instrumental variables</strong>. Scott's Causal Inference (<a class="underline" href="https://github.com/Mixtape-Sessions/Causal-Inference-1">Part 1</a>) covers instrumental variables.</p>`,
   repo: "https://github.com/Mixtape-Sessions/Demand-Estimation",
   dates: [
@@ -1331,7 +1331,7 @@ let demand: Session = {
     			day: "February 28th",
     			time: "6pm-9pm EST",
     			topics: [
-            "Mixed logit estimation", 
+            "Mixed logit estimation",
             "Differentiation instruments",
             "Numerical best practices",
             "Exercise 2: Adding random coefficients, incorporating consumer demographics, and evaluating improvements to the counterfactual"
@@ -1341,8 +1341,8 @@ let demand: Session = {
     			day: "March 1st",
     			time: "6pm-9pm EST",
     			topics: [
-            "Micro BLP estimation", 
-            "Incorporating consumer survey data", 
+            "Micro BLP estimation",
+            "Incorporating consumer survey data",
             "An overview of other extensions to the BLP approach",
             "Exercise 3: Adding micro moments, adding second choice moments, and evaluating improvements to the counterfactual"
     			],
@@ -1365,7 +1365,7 @@ let demand: Session = {
       </p>
       <p>
       Ariél's research has focused on developing methods for empirically analyzing market responses to environmental and policy changes. This includes developing: i) demand systems that are capable of analyzing the impact of environmental changes (e.g. mergers) on prices, ii) methods capable of analyzing the impact of policy changes (e.g. deregulation) on productivity, and iii) models capable of following the impacts of these changes on the evolution of markets over time.
-      Ariél also developed techniques for constructing a more accurate Consumer Price Index and analyzing the impact of incentive schemes on the hospital allocations of doctors.  He and his co-authors have applied these tools to the analysis of the  auto, health care, and telecommunications equipment industries.  
+      Ariél also developed techniques for constructing a more accurate Consumer Price Index and analyzing the impact of incentive schemes on the hospital allocations of doctors.  He and his co-authors have applied these tools to the analysis of the  auto, health care, and telecommunications equipment industries.
       </p>
       <p>
       Ariél has mentored over seventy doctoral students, many of whom are now leading researchers at prestigious institutions.  Much of his methodological research has been incorporated into the work of government agencies.  Additionally, Pakes has done work for a number of consultancies, government agencies, and large firms.
@@ -1416,7 +1416,7 @@ const sessions: Session[] = [
   iv,
   design,
   empirical_bayes,
-  frontiers_did, 
+  frontiers_did,
   demand
 ];
 
