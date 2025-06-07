@@ -118,7 +118,7 @@ let ci_I: Session = {
     {
       id: "discounts",
       q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $95 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
     },
     {
       q: "How do I access the material I need for the course?",
@@ -229,7 +229,7 @@ let ci_II: Session = {
     {
       id: "discounts",
       q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $95 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
     },
     {
       q: "How do I access the material I need for the course?",
@@ -328,7 +328,7 @@ let ci_III: Session = {
     {
       id: "discounts",
       q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $95 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
     },
     {
       q: "How do I access the material I need for the course?",
@@ -426,7 +426,7 @@ let iv: Session = {
     {
       id: "discounts",
       q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $95 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
     },
     {
       q: "How do I access the material I need for the course?",
@@ -509,7 +509,7 @@ let shift_share: Session = {
     {
       id: "discounts",
       q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $95 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
     },
     {
       q: "How do I access the material I need for the course?",
@@ -607,7 +607,7 @@ let design: Session = {
     {
       id: "discounts",
       q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $95 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
     },
     {
       q: "How do I access the material I need for the course?",
@@ -675,7 +675,7 @@ let advanced_did: Session = {
     {
       id: "discounts",
       q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $95 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
     },
     {
       q: "How do I access the material I need for the course?",
@@ -859,7 +859,7 @@ let ml: Session = {
     {
       id: "discounts",
       q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $95 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
     },
     {
       q: "How do I access the material I need for the course?",
@@ -927,7 +927,7 @@ let ml_het_effects: Session = {
     {
       id: "discounts",
       q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $95 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
     },
     {
       q: "How do I access the material I need for the course?",
@@ -996,7 +996,7 @@ let synth_and_clust: Session = {
     {
       id: "discounts",
       q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $95 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
     },
     {
       q: "How do I access the material I need for the course?",
@@ -1095,7 +1095,7 @@ let rdd: Session = {
     {
       id: "discounts",
       q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $95 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700 underline decoration-2'>causalinf@mixtape.consulting</a>.",
     },
     {
       q: "How do I access the material I need for the course?",
@@ -1172,7 +1172,7 @@ let frontiers_did: Session = {
     {
       id: "discounts",
       q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $95 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
     },
     {
       q: "How do I access the material I need for the course?",
@@ -1263,7 +1263,7 @@ let empirical_bayes: Session = {
     {
       id: "discounts",
       q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $95 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
     },
     {
       q: "How do I access the material I need for the course?",
@@ -1381,7 +1381,7 @@ let demand: Session = {
     {
       id: "discounts",
       q: "Are discounts available?",
-      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $50 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
+      a: "Yes! Students, postdocs, predocs and residents of middle-income countries can attend for $95 plus a few dollars in fees. Non-tenure track faculty can attend for $95. To receive your promo code, please include a photo of your student ID. International folks from <a href='https://g2lm-lic.iza.org/call-phase-iv/list-of-lic/'>low-income countries</a> can attend for $1. To receive promo codes, email us at <a href='mailto:causalinf@mixtape.consulting' class='text-violet-600 hover:text-violet-700'>causalinf@mixtape.consulting</a>.",
     },
     {
       q: "How do I access the material I need for the course?",
