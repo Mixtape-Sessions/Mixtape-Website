@@ -2,6 +2,27 @@ const sessions = [
   {
     event: "Causal Inference I",
     repo: "https://github.com/Mixtape-Sessions/Causal-Inference-1/",
+    eventbriteID: "949865682827",
+    startDate: "2024-09-21",
+    dates: "September 21st, 22nd, 28th, and 29th, 2024",
+  },
+  {
+    event: "Causal Inference II",
+    repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
+    eventbriteID: "949865973697",
+    startDate: "2024-10-19",
+    dates: "October 11th, 12th, 18th, and 19th, 2024",
+  },
+  {
+    event: "Causal Inference III",
+    repo: "https://github.com/Mixtape-Sessions/Causal-Inference-3/",
+    eventbriteID: "949866304687",
+    startDate: "2024-11-16",
+    dates: "November 16th and 17th, 2024",
+  },
+  {
+    event: "Causal Inference I",
+    repo: "https://github.com/Mixtape-Sessions/Causal-Inference-1/",
     eventbriteID: "1114600733799",
     startDate: "2025-01-25",
     dates: "January 25th, 26th and February 1st, 2nd, 2025",
