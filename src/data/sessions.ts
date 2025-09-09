@@ -1316,8 +1316,8 @@ let demand: Session = {
   repo: "https://github.com/Mixtape-Sessions/Demand-Estimation",
   dates: [
     {
-    	date: "October 20th, 2024",
-      dateComputer: "2024-10-20",
+    	date: "October 20th, 2025",
+      dateComputer: "2025-10-20",
     	url: "demand_oct20",
     	eventbrite: "https://eventbrite.com/e/1677709477209",
     	calendar: [
