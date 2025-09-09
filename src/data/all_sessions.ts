@@ -114,14 +114,14 @@ const sessions = [
   {
     event: "Causal Inference II",
     repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
-    eventbriteID: "1114601445929",
+    eventbriteID: "1677703790199",
     startDate: "2025-11-01",
     dates: "November 1st, 2nd, 8th, and 9th, 2025",
   },
   {
     event: "Machine Learning, AI, and Heterogeneous Effects",
     repo: "https://github.com/Mixtape-Sessions/Heterogeneous-Effects/",
-    eventbriteID: "1118975258119",
+    eventbriteID: "1677708263579",
     startDate: "2025-11-10",
     dates: "November 10th and 11th, 2025",
   }, 

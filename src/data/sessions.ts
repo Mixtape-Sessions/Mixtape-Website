@@ -170,7 +170,7 @@ let ci_II: Session = {
       date: "November 1st",
       dateComputer: "2025-11-01",
       url: "ci_II_nov1",
-      eventbrite: "https://eventbrite.com/e/1114601445929",
+      eventbrite: "https://eventbrite.com/e/1677703790199",
       calendar: [
         {
           day: "November 1st",
