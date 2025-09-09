@@ -65,8 +65,8 @@ const sessions = [
   {
     event: "Codechella Madrid",
     repo: "https://github.com/Mixtape-Sessions/Madrid-2024/",
-    eventbriteID: "1021303224437",
-    startDate: "2025-05-27",
+    eventbriteID: "792321674457",
+    startDate: "2024-05-27",
     dates: "May 27th, 28th, 29th, and 30th, 2024",
   },
   {
@@ -82,6 +82,55 @@ const sessions = [
     eventbriteID: "1391801749499",
     startDate: "2025-07-29",
     dates: "July 29th and 30th, 2025",
+  },
+  {
+    event: "The Hidden Curriculum of Doing Applied Research",
+    repo: "https://github.com/Mixtape-Sessions/Doing-Applied-Research/",
+    eventbriteID: "1274067703799",
+    startDate: "2025-08-06",
+    dates: "August 6th and 7th, 2025",
+  },
+  {
+    event: "Causal Inference I",
+    repo: "https://github.com/Mixtape-Sessions/Causal-Inference-1/",
+    eventbriteID: "1677702155309",
+    startDate: "2025-09-27",
+    dates: "September 27th and 28th and October 4th and 5th, 2025",
+  },
+  {
+    event: "Machine Learning, AI, and Causal Inference",
+    repo: "https://github.com/Mixtape-Sessions/Machine-Learning/",
+    eventbriteID: "1677707411029",
+    startDate: "2025-10-13",
+    dates: "October 13th and 14th, 2025",
+  },
+  {
+    event: "Demand Estimation",
+    repo: "https://github.com/Mixtape-Sessions/Demand-Estimation",
+    eventbriteID: "1677709477209",
+    startDate: "2025-10-20",
+    dates: "October 20th, 22nd, and 24th, 2025",
+  },
+  {
+    event: "Causal Inference II",
+    repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
+    eventbriteID: "1114601445929",
+    startDate: "2025-11-01",
+    dates: "November 1st, 2nd, 8th, and 9th, 2025",
+  },
+  {
+    event: "Machine Learning, AI, and Heterogeneous Effects",
+    repo: "https://github.com/Mixtape-Sessions/Heterogeneous-Effects/",
+    eventbriteID: "1118975258119",
+    startDate: "2025-11-10",
+    dates: "November 10th and 11th, 2025",
+  }, 
+  {
+    event: "Causal Inference III",
+    repo: "https://github.com/Mixtape-Sessions/Causal-Inference-3/",
+    eventbriteID: "1677705084069",
+    startDate: "2025-12-06",
+    dates: "December 6th and 7th, 2025",
   },
 ];
 

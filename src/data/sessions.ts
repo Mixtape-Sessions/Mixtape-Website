@@ -50,13 +50,13 @@ let ci_I: Session = {
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-1/",
   dates: [
     {
-      date: "January 25th",
-      dateComputer: "2025-01-25",
-      url: "ci_I_jan25",
-      eventbrite: "https://eventbrite.com/e/1114600733799",
+      date: "September 27th",
+      dateComputer: "2025-09-27",
+      url: "ci_I_sept27",
+      eventbrite: "https://eventbrite.com/e/1677702155309",
       calendar: [
         {
-          day: "January 25th",
+          day: "September 27th",
           time: "9am-5pm CST",
           topics: [
             "Introduction to causal inference",
@@ -66,7 +66,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "January 26th",
+          day: "September 28th",
           time: "9am-5pm CST",
           topics: [
             "Introduction to causal graphs",
@@ -75,7 +75,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "February 1st",
+          day: "October 4th",
           time: "9am-5pm CST",
           topics: [
             "Instrumental variables",
@@ -87,7 +87,7 @@ let ci_I: Session = {
           ],
         },
         {
-          day: "February 2nd",
+          day: "October 5th",
           time: "9am-5pm CST",
           topics: [
             "Introduction to regression discontinuity ",
@@ -167,13 +167,13 @@ let ci_II: Session = {
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
   dates: [
     {
-      date: "March 22nd",
-      dateComputer: "2025-03-22",
-      url: "ci_II_mar22",
+      date: "November 1st",
+      dateComputer: "2025-11-01",
+      url: "ci_II_nov1",
       eventbrite: "https://eventbrite.com/e/1114601445929",
       calendar: [
         {
-          day: "March 22nd",
+          day: "November 1st",
           time: "9am-5pm CST",
           topics: [
             "Introduction to DID",
@@ -182,7 +182,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "March 23rd",
+          day: "November 2nd",
           time: "9am-5pm CST",
           topics: [
             "DID with Covariates (Sant'Anna and Zhao 2020; Abadie 2005; Heckman, Ichimura and Todd 1997)",
@@ -191,7 +191,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "March 29th",
+          day: "November 8th",
           time: "9am-5pm CST",
           topics: [
             "Pathologies in TWFE and alternative estimator (deChaisemartin and D'Haultfœille 2020)",
@@ -200,7 +200,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "March 30th",
+          day: "November 9th",
           time: "9am-5pm CST",
           topics: [
             "Imputation Estimators (Gardner 2021 and Borusyal et al 2021)",
@@ -279,16 +279,16 @@ let ci_III: Session = {
   gradientColor1: "#642B73",
   gradientColor2: "#C6426E",
   about: `Synthetic control has been called the most important innovation in causal inference of the last two decades (Athey and Imbens 2018). It's use has been seen across the social sciences but even industry and government agencies.  The method combines many design elements from unconfoundedness principles to difference-in-differences estimation to help find suitable estimates of counterfactuals in panel settings. Each day is 8 hours with 15 minute breaks on the hour plus an hour for lunch. We will review the theory behind several estimators, go into detail on the intuition of the estimation strategies and identification itself, as well as explore code in R and Stata and applications using these methods. The goal as always is that participants leave the workshop with competency and confidence. This class will be a sequel to the Causal Inference I and II.`,
-  repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
+  repo: "https://github.com/Mixtape-Sessions/Causal-Inference-3/",
   dates: [
     {
-      date: "April 26th",
-      dateComputer: "2025-04-26",
-      url: "ci_III_apr26",
-      eventbrite: "https://eventbrite.com/e/1114601686649",
+      date: "December 6th",
+      dateComputer: "2025-12-06",
+      url: "ci_III_dec6",
+      eventbrite: "https://eventbrite.com/e/1677705084069",
       calendar: [
         {
-          day: "April 26th",
+          day: "December 6th",
           time: "9am-5pm CST",
           topics: [
             "Abadie's non-negative weighting method (Abadie, Diamond, and Hainmueller 2010)",
@@ -299,7 +299,7 @@ let ci_III: Session = {
           ],
         },
         {
-          day: "April 27th",
+          day: "December 7th",
           time: "9am-5pm CST",
           topics: [
             "Matrix completion with nuclear norm regularization (Athey et al. 2021)",
@@ -800,7 +800,7 @@ let applied: Session = {
 // Machine Learning and CI (Brigham Frandsen)
 let ml: Session = {
   id: "ml",
-  title: "Machine Learning and Causal Inference",
+  title: "Machine Learning, AI, and Causal Inference",
   type: "The Singles",
   gradient: "bg-ml",
   gradientColor1: "#61055c",
@@ -809,13 +809,13 @@ let ml: Session = {
   repo: "https://github.com/Mixtape-Sessions/Machine-Learning/",
   dates: [
     {
-      date: "October 21st, 2024",
-      dateComputer: "2024-10-21",
-      url: "ml_oct21",
-      eventbrite: "https://eventbrite.com/e/949866766067",
+      date: "October 13th",
+      dateComputer: "2025-10-13",
+      url: "ml_oct13",
+      eventbrite: "https://eventbrite.com/e/1677707411029",
       calendar: [
         {
-          day: "October 21st",
+          day: "October 13th",
           time: "6pm-9pm EST",
           topics: [
             "Question your questions (are you asking a predictive or a causal question?)",
@@ -832,7 +832,7 @@ let ml: Session = {
           ],
         },
         {
-          day: "October 22nd",
+          day: "October 14th",
           time: "6pm-9pm EST",
           topics: [
             "Put ML to work in service of causality (concepts + python/Stata)",
@@ -887,7 +887,7 @@ let ml: Session = {
 // Machine Learning and Heterogeneous Effects (Brigham Frandsen)
 let ml_het_effects: Session = {
   id: "ml_het_effects",
-  title: "Machine Learning and Heterogeneous Effects",
+  title: "Machine Learning, AI, and Heterogeneous Effects",
   type: "The Deep Cuts",
   gradient: "bg-ml-het-effects",
   gradientColor1: "#136a8a",
@@ -898,13 +898,18 @@ let ml_het_effects: Session = {
   repo: "https://github.com/Mixtape-Sessions/Heterogeneous-Effects/",
   dates: [
     {
-      date: "February 20th",
-      dateComputer: "2025-02-20",
-      url: "ml_het_effects_feb20",
+      date: "November 10th",
+      dateComputer: "2025-11-10",
+      url: "ml_het_effects_nov10",
       eventbrite: "https://eventbrite.com/e/1118975258119",
       calendar: [
         {
-          day: "February 20th",
+          day: "November 10th",
+          time: "6pm-9pm EST",
+          topics: ["Machine Learning and Heterogeneous Effects"],
+        },
+        {
+          day: "November 11th",
           time: "6pm-9pm EST",
           topics: ["Machine Learning and Heterogeneous Effects"],
         },
@@ -1311,13 +1316,13 @@ let demand: Session = {
   repo: "https://github.com/Mixtape-Sessions/Demand-Estimation",
   dates: [
     {
-    	date: "February 26th, 2024",
-      dateComputer: "2024-02-26",
-    	url: "demand_feb26",
-    	eventbrite: "https://eventbrite.com/e/794374634917",
+    	date: "October 20th, 2024",
+      dateComputer: "2024-10-20",
+    	url: "demand_oct20",
+    	eventbrite: "https://eventbrite.com/e/1677709477209",
     	calendar: [
     		{
-    			day: "February 26th",
+    			day: "October 20th",
     			time: "6pm-9pm EST",
     			topics: [
     				"History and motivation for BLP (by Ariél Pakes)",
@@ -1328,7 +1333,7 @@ let demand: Session = {
     			],
     		},
     		{
-    			day: "February 28th",
+    			day: "October 22nd",
     			time: "6pm-9pm EST",
     			topics: [
             "Mixed logit estimation",
@@ -1338,7 +1343,7 @@ let demand: Session = {
     			],
     		},
         {
-    			day: "March 1st",
+    			day: "October 24th",
     			time: "6pm-9pm EST",
     			topics: [
             "Micro BLP estimation",
