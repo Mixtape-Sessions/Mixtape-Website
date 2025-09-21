@@ -901,7 +901,7 @@ let ml_het_effects: Session = {
       date: "November 10th",
       dateComputer: "2025-11-10",
       url: "ml_het_effects_nov10",
-      eventbrite: "https://eventbrite.com/e/1118975258119",
+      eventbrite: "https://eventbrite.com/e/1677708263579",
       calendar: [
         {
           day: "November 10th",
