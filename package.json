@@ -5,6 +5,9 @@
   "prettier": {
     "proseWrap": "preserve"
   },
+  "engines": {
+    "node": ">=22.19.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
