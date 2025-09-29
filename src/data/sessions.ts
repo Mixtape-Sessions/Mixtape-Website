@@ -1359,7 +1359,7 @@ let demand: Session = {
     {
       name: "Jeff Gortmaker",
       url: "https://jeffgortmaker.com/",
-      about: `<a href="https://jeffgortmaker.com/" class="text-violet-red-500 hover:text-violet-red-600">Jeff Gortmaker</a> is a fifth-year PhD candidate at Harvard University studying Business Economics. He has published academic research on best practices for differentiated products demand estimation and maintains a popular open-source Python package, PyBLP, that makes such techniques accessible to a wider range of researchers. In addition to teaching demand estimation, he has taught workshops at Harvard Business School that introduce Python to researchers. Prior to Harvard, Jeff worked at the Federal Reserve Bank of New York.`,
+      about: `<a href="https://jeffgortmaker.com/" class="text-violet-red-500 hover:text-violet-red-600">Jeff Gortmaker</a> is a Postdoctoral Research Associate at Princeton University, joining NYU Stern School of Business as an Assistant Professor of Economics in 2026. He received his Ph.D. in Business Economics from Harvard University. His research focuses on industrial organization, with emphases on open source software and best practices for differentiated products demand estimation. He also maintains PyBLP, a widely used open source Python package that makes advanced demand estimation techniques accessible to researchers.`,
       reviews: [],
       img: `jeff_gortmaker.jpeg`,
     },
