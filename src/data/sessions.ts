@@ -167,13 +167,13 @@ let ci_II: Session = {
   repo: "https://github.com/Mixtape-Sessions/Causal-Inference-2/",
   dates: [
     {
-      date: "November 1st",
-      dateComputer: "2025-11-01",
-      url: "ci_II_nov1",
-      eventbrite: "https://eventbrite.com/e/1677703790199",
+      date: "November 15th",
+      dateComputer: "2025-11-15",
+      url: "ci_II_nov15",
+      eventbrite: "https://eventbrite.com/e/1956516767319",
       calendar: [
         {
-          day: "November 1st",
+          day: "November 15th",
           time: "9am-5pm CST",
           topics: [
             "Introduction to DID",
@@ -182,7 +182,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "November 2nd",
+          day: "November 16th",
           time: "9am-5pm CST",
           topics: [
             "DID with Covariates (Sant'Anna and Zhao 2020; Abadie 2005; Heckman, Ichimura and Todd 1997)",
@@ -191,7 +191,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "November 8th",
+          day: "November 22nd",
           time: "9am-5pm CST",
           topics: [
             "Pathologies in TWFE and alternative estimator (deChaisemartin and D'Haultfœille 2020)",
@@ -200,7 +200,7 @@ let ci_II: Session = {
           ],
         },
         {
-          day: "November 9th",
+          day: "November 23rd",
           time: "9am-5pm CST",
           topics: [
             "Imputation Estimators (Gardner 2021 and Borusyal et al 2021)",
