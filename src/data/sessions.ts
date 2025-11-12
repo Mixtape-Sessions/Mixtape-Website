@@ -729,7 +729,7 @@ let applied: Session = {
       date: "December 10th, 2025",
       dateComputer: "2025-12-10",
       url: "applied_dec10",
-      eventbrite: "https://eventbrite.com/e/1141171758449/",
+      eventbrite: "https://eventbrite.com/e/1830008317139/",
       calendar: [
         {
           day: "December 10th",

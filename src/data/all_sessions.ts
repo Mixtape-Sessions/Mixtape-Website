@@ -135,7 +135,7 @@ const sessions = [
   {
     event: "The Hidden Curriculum of Doing Applied Research",
     repo: "https://github.com/Mixtape-Sessions/Doing-Applied-Research/",
-    eventbriteID: "1141171758449/",
+    eventbriteID: "1830008317139",
     startDate: "2025-12-10",
     dates: "December 10th and 11th, 2025",
   },
