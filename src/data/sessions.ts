@@ -726,14 +726,14 @@ let applied: Session = {
   dates: [
     {
 
-      date: "December 10th, 2025",
-      dateComputer: "2025-12-10",
-      url: "applied_dec10",
-      eventbrite: "https://eventbrite.com/e/1830008317139/",
+      date: "August 5th, 2026",
+      dateComputer: "2026-08-05",
+      url: "applied_aug5",
+      eventbrite: "https://eventbrite.com/e/1983319544146/",
       calendar: [
         {
-          day: "December 10th",
-          time: "11am-3pm EST",
+          day: "August 5th",
+          time: "7am-11am EST",
           topics: [
             "Starting Your Research Project",
             "Practical Tips for Writing Your Applied Paper",
@@ -741,8 +741,8 @@ let applied: Session = {
           ],
         },
         {
-          day: "December 11th",
-          time: "11am-3pm EST",
+          day: "August 6th",
+          time: "7am-11am EST",
           topics: [
             "The Publication Process",
             "Refereeing",
