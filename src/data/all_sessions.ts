@@ -20,6 +20,13 @@ const sessions = [
     startDate: "2024-11-16",
     dates: "November 16th and 17th, 2024",
   },
+    {
+    event: "The Hidden Curriculum of Doing Applied Research",
+    repo: "https://github.com/Mixtape-Sessions/Doing-Applied-Research/",
+    eventbriteID: "949868671767",
+    startDate: "2024-11-01",
+    dates: "November 1st and 2nd, 2024",
+  },
   {
     event: "Causal Inference I",
     repo: "https://github.com/Mixtape-Sessions/Causal-Inference-1/",
