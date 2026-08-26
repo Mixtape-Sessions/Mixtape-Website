@@ -16,12 +16,12 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.9.10",
-    "@astrojs/netlify": "8.2.4",
-    "@tailwindcss/vite": "^4.1.12",
+    "@astrojs/netlify": "7.0.13",
+    "@tailwindcss/vite": "4.1.12",
     "@tailwindcss/typography": "^0.5.18",
-    "astro": "latest",
+    "astro": "6.4.8",
     "date-fns": "^3.6.0",
-    "tailwindcss": "^4.1.12",
+    "tailwindcss": "4.1.12",
     "typescript": "^5.9.2"
   },
   "dependencies": {
