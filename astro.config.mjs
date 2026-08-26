@@ -1,13 +1,14 @@
 import { defineConfig, passthroughImageService } from 'astro/config';
 import solid from '@astrojs/solid-js';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 
 import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [solid(), tailwind(), mdx()],
+  integrations: [solid(), mdx()],
   vite: {
+    plugins: [tailwindcss()],
     ssr: {
       external: ["svgo"]
     }
